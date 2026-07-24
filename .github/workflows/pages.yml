@@ -1,4 +1,4 @@
-name: Deploy Ascend Prep V20
+name: Deploy Fresh Ascend Prep
 
 on:
   push:
@@ -10,11 +10,8 @@ permissions:
   pages: write
   id-token: write
 
-env:
-  BUILD_VERSION: V20
-
 concurrency:
-  group: pages-v20
+  group: github-pages-fresh
   cancel-in-progress: true
 
 jobs:
@@ -24,42 +21,37 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout exact triggering commit
+      - name: Checkout exact commit
         uses: actions/checkout@v4
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
 
-      - name: Verify V20 source
-        shell: bash
+      - name: Verify fresh rebuild
         run: |
           set -euo pipefail
-          grep -q 'Ascend Prep V20' index.html
-          test -f v20.css
-          echo "Deploying commit: $GITHUB_SHA"
-          echo "Verified build: $BUILD_VERSION"
+          grep -q 'fresh.css?v=1' index.html
+          grep -q 'fresh.js?v=1' index.html
+          test -f fresh.css
+          test -f fresh.js
 
-      - name: Prepare clean Pages artifact
-        shell: bash
+      - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html _site/
-          cp app.js _site/
-          cp ./*.css _site/
-          cp ./*.js _site/
+          cp index.html fresh.css fresh.js _site/
           touch _site/.nojekyll
-          printf '%s\n' "$BUILD_VERSION $GITHUB_SHA" > _site/build.txt
+          printf 'FRESH-V1 %s\n' "$GITHUB_SHA" > _site/build.txt
 
-      - name: Configure GitHub Pages
+      - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload V20 artifact only
+      - name: Upload isolated site
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
-      - name: Deploy V20
+      - name: Deploy fresh build
         id: deployment
         uses: actions/deploy-pages@v4
