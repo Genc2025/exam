@@ -1,4 +1,4 @@
-name: Deploy Ascend Prep V17.2
+name: Deploy Ascend Prep V19
 
 on:
   push:
@@ -12,7 +12,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: github-pages
   cancel-in-progress: true
 
 jobs:
@@ -22,17 +22,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout main
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Configure Pages
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload site artifact
+      - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
-      - name: Deploy Pages
+      - name: Deploy V19 to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
