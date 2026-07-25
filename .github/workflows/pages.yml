@@ -1,4 +1,4 @@
-name: Deploy Fresh Ascend Prep
+name: Deploy Miranda
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages-fresh
+  group: github-pages-miranda
   cancel-in-progress: true
 
 jobs:
@@ -27,11 +27,11 @@ jobs:
           ref: ${{ github.sha }}
           fetch-depth: 1
 
-      - name: Verify fresh rebuild
+      - name: Verify Miranda build
         run: |
           set -euo pipefail
-          grep -q 'fresh.css?v=1' index.html
-          grep -q 'fresh.js?v=1' index.html
+          grep -q 'fresh.css?v=2' index.html
+          grep -q 'fresh.js?v=2' index.html
           test -f fresh.css
           test -f fresh.js
 
@@ -42,7 +42,7 @@ jobs:
           mkdir _site
           cp index.html fresh.css fresh.js _site/
           touch _site/.nojekyll
-          printf 'FRESH-V1 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-V2 %s\n' "$GITHUB_SHA" > _site/build.txt
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -52,6 +52,6 @@ jobs:
         with:
           path: _site
 
-      - name: Deploy fresh build
+      - name: Deploy Miranda
         id: deployment
         uses: actions/deploy-pages@v4
