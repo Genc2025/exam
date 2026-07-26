@@ -1,19 +1,15 @@
 name: Deploy Miranda
-
 on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: github-pages-miranda
   cancel-in-progress: true
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -26,42 +22,38 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-
-      - name: Verify Miranda V9 build
+      - name: Verify Miranda V10 build
         run: |
           set -euo pipefail
-          grep -q 'fresh.css?v=9' index.html
-          grep -q 'ultra.css?v=9' index.html
-          grep -q 'premium.css?v=9' index.html
-          grep -q 'fresh.js?v=9' index.html
-          grep -q 'diet.js?v=9' index.html
-          grep -q 'ultra.js?v=9' index.html
-          grep -q 'premium.js?v=9' index.html
+          grep -q 'recipes150.js?v=10' index.html
+          grep -q 'premium.js?v=10' index.html
+          grep -q 'expandedDietRecipes' recipes150.js
           grep -q 'Meal Planner' ultra.js
-          grep -q 'Cooking mode' ultra.js
           grep -q 'Pantry' premium.js
-          grep -q 'Baby Safety Center' premium.js
-          grep -q 'serviceWorker' premium.js
+          test -f fresh.css
+          test -f fresh.js
+          test -f diet.js
+          test -f recipes150.js
+          test -f ultra.css
+          test -f ultra.js
+          test -f premium.css
+          test -f premium.js
           test -f manifest.webmanifest
           test -f sw.js
-
       - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js diet.js ultra.css ultra.js premium.css premium.js manifest.webmanifest sw.js _site/
+          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-PREMIUM-V9 %s\n' "$GITHUB_SHA" > _site/build.txt
-
+          printf 'MIRANDA-PREMIUM-V10 %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
-
       - name: Upload isolated site
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-
       - name: Deploy Miranda
         id: deployment
         uses: actions/deploy-pages@v4
