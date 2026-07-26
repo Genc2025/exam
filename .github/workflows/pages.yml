@@ -22,12 +22,12 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify Miranda Family V14 build
+      - name: Verify Miranda Family V15 build
         run: |
           set -euo pipefail
-          grep -q 'nutrition.js?v=14' index.html
-          grep -q 'family.js?v=14' index.html
-          grep -q 'family.css?v=14' index.html
+          grep -q 'nutrition.js?v=15' index.html
+          grep -q 'family.js?v=15' index.html
+          grep -q 'family.css?v=15' index.html
           grep -q 'miranda_usda_complete.sqlite' nutrition.js
           test -s miranda_usda_complete.sqlite
           test -f fresh.css
@@ -51,7 +51,7 @@ jobs:
           mkdir _site
           cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-FAMILY-V14 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-FAMILY-V15 %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload isolated site
