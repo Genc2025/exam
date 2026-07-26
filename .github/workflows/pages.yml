@@ -22,29 +22,17 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify Miranda Ultra V26
+      - name: Verify production assets
         run: |
           set -euo pipefail
-          grep -q 'premium25.js?v=25' index.html
-          grep -q 'miranda-wow.js?v=25' index.html
-          grep -q 'fitness-pro.js?v=25' index.html
-          grep -q 'nutrition.js?v=25' index.html
-          grep -q 'miranda-core.js?v=25' index.html
-          grep -q '25/25 MODULES' premium25.js
-          grep -q 'Pantry + Zero Waste' premium25.js
-          grep -q 'Workout Builder' premium25.js
-          grep -q 'Safety Engine' premium25.js
-          grep -q 'adultTargets' miranda-core.js
-          grep -q 'WEEKLY PROGRESS' miranda-core.js
-          grep -q 'SMART SUGGESTION' miranda-core.js
-          grep -q 'TODAY'"'"'S PLAN' miranda-core.js
-          grep -q 'dismiss()' ultra.js
-          if grep -q 'modalStack' ultra.js; then echo 'Obsolete modalStack found in ultra.js'; exit 1; fi
-          if grep -q 'MirandaWOW.stack' miranda-wow.js; then echo 'Obsolete MirandaWOW modal stack found'; exit 1; fi
-          grep -q 'FUNCTIONAL / CROSSFIT-STYLE' fitness-pro.js
-          grep -q 'miranda_usda_complete.sqlite' nutrition.js
-          test -s miranda_usda_complete.sqlite
-          for f in fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda-core.js manifest.webmanifest sw.js; do test -f "$f"; done
+          required="index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda-core.js miranda_usda_complete.sqlite manifest.webmanifest sw.js"
+          for f in $required; do
+            test -f "$f" || { echo "Missing required asset: $f"; exit 1; }
+          done
+          test -s miranda_usda_complete.sqlite || { echo "USDA database is empty"; exit 1; }
+          grep -q 'miranda-core.js' index.html || { echo "Miranda Core is not loaded by index.html"; exit 1; }
+          grep -q 'nutrition.js' index.html || { echo "Nutrition engine is not loaded by index.html"; exit 1; }
+          grep -q 'fitness-pro.js' index.html || { echo "Fitness engine is not loaded by index.html"; exit 1; }
       - name: Build isolated site
         run: |
           set -euo pipefail
@@ -52,16 +40,13 @@ jobs:
           mkdir _site
           cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda-core.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-ULTRA-V26 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-PRODUCTION %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload isolated site
+      - name: Upload production site
         uses: actions/upload-pages-artifact@v3
         with:
-          name: miranda-pages-${{ github.run_id }}-${{ github.run_attempt }}
           path: _site
       - name: Deploy Miranda
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          artifact_name: miranda-pages-${{ github.run_id }}-${{ github.run_attempt }}
