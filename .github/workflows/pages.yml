@@ -27,25 +27,30 @@ jobs:
           ref: ${{ github.sha }}
           fetch-depth: 1
 
-      - name: Verify Miranda build
+      - name: Verify Miranda Ultra build
         run: |
           set -euo pipefail
-          grep -q 'fresh.css?v=7' index.html
-          grep -q 'fresh.js?v=7' index.html
-          grep -q 'diet.js?v=7' index.html
-          grep -q 'Healthy Table' diet.js
+          grep -q 'fresh.css?v=8' index.html
+          grep -q 'ultra.css?v=8' index.html
+          grep -q 'fresh.js?v=8' index.html
+          grep -q 'diet.js?v=8' index.html
+          grep -q 'ultra.js?v=8' index.html
+          grep -q 'Meal Planner' ultra.js
+          grep -q 'Cooking mode' ultra.js
           test -f fresh.css
           test -f fresh.js
           test -f diet.js
+          test -f ultra.css
+          test -f ultra.js
 
       - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js diet.js _site/
+          cp index.html fresh.css fresh.js diet.js ultra.css ultra.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-HEALTHY-V7 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-ULTRA-V8 %s\n' "$GITHUB_SHA" > _site/build.txt
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
