@@ -22,14 +22,15 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify Miranda V10 build
+      - name: Verify Miranda V11 build
         run: |
           set -euo pipefail
-          grep -q 'recipes150.js?v=10' index.html
-          grep -q 'premium.js?v=10' index.html
+          grep -q 'recipes150.js?v=11' index.html
+          grep -q 'nutrition.js?v=11' index.html
+          grep -q 'nutrition.css?v=11' index.html
+          grep -q 'FoodData Central' nutrition.js
+          grep -q 'fdcId' nutrition.js
           grep -q 'expandedDietRecipes' recipes150.js
-          grep -q 'Meal Planner' ultra.js
-          grep -q 'Pantry' premium.js
           test -f fresh.css
           test -f fresh.js
           test -f diet.js
@@ -38,6 +39,8 @@ jobs:
           test -f ultra.js
           test -f premium.css
           test -f premium.js
+          test -f nutrition.css
+          test -f nutrition.js
           test -f manifest.webmanifest
           test -f sw.js
       - name: Build isolated site
@@ -45,9 +48,9 @@ jobs:
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js manifest.webmanifest sw.js _site/
+          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-PREMIUM-V10 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-USDA-V11 %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload isolated site
