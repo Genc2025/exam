@@ -22,43 +22,31 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify Miranda Fitness Pro V19
+      - name: Verify Miranda OS V20
         run: |
           set -euo pipefail
-          grep -q 'nutrition.js?v=19' index.html
-          grep -q 'family.js?v=19' index.html
-          grep -q 'family-premium.js?v=19' index.html
-          grep -q 'fitness-pro.js?v=19' index.html
+          grep -q 'nutrition.js?v=20' index.html
+          grep -q 'family.js?v=20' index.html
+          grep -q 'family-premium.js?v=20' index.html
+          grep -q 'fitness-pro.js?v=20' index.html
+          grep -q 'miranda-os.js?v=20' index.html
           grep -q 'maxProfiles:6' family.js
           grep -q 'SMART MEALS' family-premium.js
           grep -q 'FUNCTIONAL / CROSSFIT-STYLE' fitness-pro.js
-          grep -q 'PERSONAL RECORDS' fitness-pro.js
+          grep -q 'ONE MEAL' miranda-os.js
+          grep -q 'GLOBAL SEARCH' miranda-os.js
+          grep -q 'Analytics' miranda-os.js
           grep -q 'miranda_usda_complete.sqlite' nutrition.js
           test -s miranda_usda_complete.sqlite
-          test -f fresh.css
-          test -f fresh.js
-          test -f diet.js
-          test -f recipes150.js
-          test -f ultra.css
-          test -f ultra.js
-          test -f premium.css
-          test -f premium.js
-          test -f nutrition.css
-          test -f nutrition.js
-          test -f family.css
-          test -f family.js
-          test -f family-premium.js
-          test -f fitness-pro.js
-          test -f manifest.webmanifest
-          test -f sw.js
+          for f in fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js manifest.webmanifest sw.js; do test -f "$f"; done
       - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
+          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-FITNESS-PRO-V19 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-OS-V20 %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload isolated site
