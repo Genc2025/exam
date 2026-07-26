@@ -22,7 +22,7 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify Miranda Core V25
+      - name: Verify Miranda Ultra V26
         run: |
           set -euo pipefail
           grep -q 'premium25.js?v=25' index.html
@@ -35,9 +35,9 @@ jobs:
           grep -q 'Workout Builder' premium25.js
           grep -q 'Safety Engine' premium25.js
           grep -q 'adultTargets' miranda-core.js
-          grep -q 'DAILY TARGETS' miranda-core.js
-          grep -q 'SMART MODULES' miranda-core.js
-          grep -q 'MirandaCore.dashboard' miranda-core.js
+          grep -q 'WEEKLY PROGRESS' miranda-core.js
+          grep -q 'SMART SUGGESTION' miranda-core.js
+          grep -q 'TODAY'"'"'S PLAN' miranda-core.js
           grep -q 'dismiss()' ultra.js
           if grep -q 'modalStack' ultra.js; then echo 'Obsolete modalStack found in ultra.js'; exit 1; fi
           if grep -q 'MirandaWOW.stack' miranda-wow.js; then echo 'Obsolete MirandaWOW modal stack found'; exit 1; fi
@@ -52,7 +52,7 @@ jobs:
           mkdir _site
           cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda-core.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-CORE-V25 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-ULTRA-V26 %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload isolated site
