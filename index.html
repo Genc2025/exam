@@ -1,12 +1,42 @@
 <!doctype html>
-<html lang="sq">
+<html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#0d100f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Miranda — Family Health & Nutrition</title>
-  <link rel="manifest" href="manifest.webmanifest?v=25"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="fresh.css?v=26"><link rel="stylesheet" href="ultra.css?v=25"><link rel="stylesheet" href="premium.css?v=25"><link rel="stylesheet" href="nutrition.css?v=25"><link rel="stylesheet" href="family.css?v=25"><link rel="stylesheet" href="food-photos.css?v=27"><link rel="stylesheet" href="miranda-redesign.css?v=28">
-</head><body><div id="app"></div>
-<script src="fresh.js?v=25"></script><script src="diet.js?v=26"></script><script src="recipes150.js?v=25"></script><script src="food-photos.js?v=27"></script>
-<script>const originalHome=home;home=function(){originalHome();const closing=document.querySelector('#rreth');if(closing){const launch=document.createElement('section');launch.className='healthy-launch reveal';launch.innerHTML='<div class="healthy-launch-card"><div><p class="eyebrow">MIRANDA · HEALTHY TABLE</p><h2>Edhe për të rriturit.</h2><p>Hyr në një bibliotekë të veçantë me mbi 150 receta healthy, vakte të balancuara dhe filtra sipas vaktit — pa dalë nga Miranda.</p></div><button onclick="openDiet()">Hape Healthy Table →</button></div>';closing.parentNode.insertBefore(launch,closing);initReveal();}};home();</script>
-<script src="ultra.js?v=25"></script><script src="premium.js?v=25"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.11.0/sql-wasm.js"></script><script src="nutrition.js?v=25"></script><script src="family.js?v=25"></script><script src="family-premium.js?v=25"></script><script src="fitness-pro.js?v=25"></script><script src="miranda-os.js?v=25"></script><script src="miranda-wow.js?v=25"></script><script src="premium25.js?v=25"></script><script src="miranda-core.js?v=25"></script><script src="miranda-redesign.js?v=28"></script>
-</body></html>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>PDF to TXT</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f4f6f8;color:#111827;min-height:100vh}.wrap{width:min(680px,100%);margin:auto;padding:24px 16px 48px}.head{padding:18px 2px 24px}.head h1{font-size:30px;margin:0 0 8px}.head p{margin:0;color:#667085;line-height:1.5}.card{background:#fff;border:1px solid #e5e7eb;border-radius:22px;padding:18px;box-shadow:0 12px 35px rgba(17,24,39,.06)}.drop{border:2px dashed #cbd5e1;border-radius:18px;padding:36px 18px;text-align:center;cursor:pointer}.drop.active{border-color:#111827;background:#f8fafc}.drop strong{display:block;font-size:18px;margin-bottom:7px}.drop span{font-size:14px;color:#667085}.file{display:none;margin-top:16px;padding:13px 14px;border-radius:14px;background:#f8fafc;font-size:14px;word-break:break-word}.btn{width:100%;border:0;border-radius:15px;padding:15px 16px;font-size:16px;font-weight:700;margin-top:14px;cursor:pointer}.convert{background:#111827;color:#fff}.convert:disabled{opacity:.4}.save{background:#e8eef8;color:#111827;display:none}.status{font-size:14px;color:#667085;margin-top:14px;min-height:21px}.progress{height:8px;background:#e5e7eb;border-radius:99px;overflow:hidden;margin-top:12px;display:none}.bar{height:100%;width:0;background:#111827;transition:width .15s}.output{display:none;margin-top:18px}.output textarea{width:100%;min-height:260px;resize:vertical;border:1px solid #d0d5dd;border-radius:16px;padding:14px;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}.note{font-size:12px;color:#98a2b3;line-height:1.45;margin-top:14px;text-align:center}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="head"><h1>PDF → TXT</h1><p>Choose a PDF, extract its text directly on your device, then save the result as a .txt file.</p></header>
+    <section class="card">
+      <input id="pdfInput" type="file" accept="application/pdf,.pdf" hidden>
+      <div id="drop" class="drop"><strong>Select PDF</strong><span>Tap here or drop a PDF file</span></div>
+      <div id="fileInfo" class="file"></div>
+      <button id="convertBtn" class="btn convert" disabled>Convert to TXT</button>
+      <div id="progress" class="progress"><div id="bar" class="bar"></div></div>
+      <div id="status" class="status"></div>
+      <div id="output" class="output"><textarea id="textOutput" spellcheck="false"></textarea></div>
+      <button id="saveBtn" class="btn save">Save TXT</button>
+      <div class="note">Processing happens in the browser. The selected PDF is not uploaded by this page.</div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs" type="module"></script>
+  <script type="module">
+    import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.min.mjs';
+    const input=document.getElementById('pdfInput'),drop=document.getElementById('drop'),info=document.getElementById('fileInfo'),convert=document.getElementById('convertBtn'),save=document.getElementById('saveBtn'),status=document.getElementById('status'),progress=document.getElementById('progress'),bar=document.getElementById('bar'),output=document.getElementById('output'),textOutput=document.getElementById('textOutput');
+    let selectedFile=null;
+    function setFile(file){if(!file||file.type!=='application/pdf'&&!file.name.toLowerCase().endsWith('.pdf')){status.textContent='Please select a PDF file.';return}selectedFile=file;info.style.display='block';info.textContent=file.name+' · '+(file.size/1024/1024).toFixed(2)+' MB';convert.disabled=false;save.style.display='none';output.style.display='none';status.textContent='Ready to convert.'}
+    drop.onclick=()=>input.click();input.onchange=()=>setFile(input.files[0]);
+    ['dragenter','dragover'].forEach(e=>drop.addEventListener(e,x=>{x.preventDefault();drop.classList.add('active')}));['dragleave','drop'].forEach(e=>drop.addEventListener(e,x=>{x.preventDefault();drop.classList.remove('active')}));drop.addEventListener('drop',e=>setFile(e.dataTransfer.files[0]));
+    convert.onclick=async()=>{if(!selectedFile)return;convert.disabled=true;save.style.display='none';progress.style.display='block';bar.style.width='0%';status.textContent='Opening PDF…';textOutput.value='';try{const data=new Uint8Array(await selectedFile.arrayBuffer());const pdf=await pdfjsLib.getDocument({data}).promise;const pages=[];for(let n=1;n<=pdf.numPages;n++){status.textContent=`Extracting page ${n} of ${pdf.numPages}…`;const page=await pdf.getPage(n);const content=await page.getTextContent();let lastY=null,line='';const lines=[];for(const item of content.items){if(!('str' in item))continue;const y=item.transform?.[5];if(lastY!==null&&y!==undefined&&Math.abs(y-lastY)>2){if(line.trim())lines.push(line.trim());line=''}line+=(line?' ':'')+item.str;lastY=y}if(line.trim())lines.push(line.trim());pages.push(`--- Page ${n} ---\n${lines.join('\n')}`);bar.style.width=Math.round(n/pdf.numPages*100)+'%'}textOutput.value=pages.join('\n\n');output.style.display='block';save.style.display='block';status.textContent=`Done. ${pdf.numPages} pages extracted.`}catch(err){console.error(err);status.textContent='Could not extract this PDF. It may be scanned, encrypted, damaged, or contain no text layer.'}finally{convert.disabled=false}};
+    save.onclick=()=>{const blob=new Blob([textOutput.value],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=(selectedFile?.name||'document').replace(/\.pdf$/i,'')+'.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)};
+  </script>
+</body>
+</html>
