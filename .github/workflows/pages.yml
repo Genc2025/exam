@@ -30,9 +30,11 @@ jobs:
       - name: Verify Miranda build
         run: |
           set -euo pipefail
-          grep -q 'fresh.css?v=5' index.html
-          grep -q 'fresh.js?v=5' index.html
-          grep -q '20 receta' fresh.js
+          grep -q 'fresh.css?v=6' index.html
+          grep -q 'fresh.js?v=6' index.html
+          grep -q 'Përgatitja hap pas hapi' fresh.js
+          grep -q 'Alergjenët' fresh.js
+          grep -q 'Ruajtja' fresh.js
           test -f fresh.css
           test -f fresh.js
 
@@ -43,7 +45,7 @@ jobs:
           mkdir _site
           cp index.html fresh.css fresh.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-EBOOK-V5 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-DETAILED-V6 %s\n' "$GITHUB_SHA" > _site/build.txt
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
