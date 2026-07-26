@@ -1,0 +1,19 @@
+{
+  "target": 200,
+  "passed": false,
+  "status": "BLOCKED_BEFORE_CANONICAL_MIGRATION",
+  "verifiedFacts": {
+    "publicDomainRecipesLicense": "Public Domain / Unlicense",
+    "licenseEvidence": "https://publicdomainrecipes.com/",
+    "upstreamImagePolicyEvidence": "https://github.com/LukeSmithxyz/based.cooking",
+    "existingSourceVerifiedBatch": 10,
+    "existingCompleteCanonicalRecipes": 0
+  },
+  "failures": [
+    {"id":"GLOBAL","issue":"Missing canonical dataset data/recipes.json with exactly 200 validated recipes."},
+    {"id":"GLOBAL","issue":"recipes150.js currently generates synthetic repeated recipe variants and is not acceptable as verified source data."},
+    {"id":"GLOBAL","issue":"food-photos.js currently uses LoremFlickr keyword images for baby recipes and is not acceptable as exact-match photography."},
+    {"id":"GLOBAL","issue":"diet.js currently uses runtime TheMealDB search photography rather than source-page exact-match local images."},
+    {"id":"GLOBAL","issue":"No set of 200 locally stored, individually license-verified matching recipe images exists in the repository."}
+  ]
+}
