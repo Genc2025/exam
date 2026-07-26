@@ -30,22 +30,22 @@ jobs:
       - name: Verify Miranda build
         run: |
           set -euo pipefail
-          grep -q 'fresh.css?v=6' index.html
-          grep -q 'fresh.js?v=6' index.html
-          grep -q 'Përgatitja hap pas hapi' fresh.js
-          grep -q 'Alergjenët' fresh.js
-          grep -q 'Ruajtja' fresh.js
+          grep -q 'fresh.css?v=7' index.html
+          grep -q 'fresh.js?v=7' index.html
+          grep -q 'diet.js?v=7' index.html
+          grep -q 'Healthy Table' diet.js
           test -f fresh.css
           test -f fresh.js
+          test -f diet.js
 
       - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js _site/
+          cp index.html fresh.css fresh.js diet.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-DETAILED-V6 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-HEALTHY-V7 %s\n' "$GITHUB_SHA" > _site/build.txt
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
