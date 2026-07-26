@@ -22,33 +22,33 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify Miranda WOW V21
+      - name: Verify Miranda Premium 25 V23
         run: |
           set -euo pipefail
-          grep -q 'miranda-wow.js?v=21' index.html
-          grep -q 'miranda-os.js?v=21' index.html
-          grep -q 'fitness-pro.js?v=21' index.html
-          grep -q 'family.js?v=21' index.html
-          grep -q 'nutrition.js?v=21' index.html
-          grep -q 'Miranda Today' miranda-wow.js
-          grep -q 'Workout Timer' miranda-wow.js
-          grep -q 'AMRAP' miranda-wow.js
-          grep -q 'EMOM' miranda-wow.js
-          grep -q 'Command Center' miranda-wow.js
-          grep -q 'Modal history' miranda-wow.js
+          grep -q 'premium25.js?v=23' index.html
+          grep -q 'miranda-wow.js?v=23' index.html
+          grep -q 'fitness-pro.js?v=23' index.html
+          grep -q 'nutrition.js?v=23' index.html
+          grep -q '25/25 MODULES' premium25.js
+          grep -q 'Pantry + Zero Waste' premium25.js
+          grep -q 'Nutrition Engine' premium25.js
+          grep -q 'Workout Builder' premium25.js
+          grep -q 'Local Backup' premium25.js
+          grep -q 'Safety Engine' premium25.js
+          grep -q 'modalStack' ultra.js
+          grep -q 'dismiss()' ultra.js
           grep -q 'FUNCTIONAL / CROSSFIT-STYLE' fitness-pro.js
-          grep -q 'ONE MEAL' miranda-os.js
           grep -q 'miranda_usda_complete.sqlite' nutrition.js
           test -s miranda_usda_complete.sqlite
-          for f in fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js manifest.webmanifest sw.js; do test -f "$f"; done
+          for f in fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js manifest.webmanifest sw.js; do test -f "$f"; done
       - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
+          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-WOW-V21 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-PREMIUM25-V23 %s\n' "$GITHUB_SHA" > _site/build.txt
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload isolated site
