@@ -1,0 +1,46 @@
+{
+  "target": 200,
+  "status": "IN_PROGRESS",
+  "source": {
+    "name": "Public Domain Recipes",
+    "url": "https://publicdomainrecipes.com/",
+    "license": "Public domain / Unlicense",
+    "verified": true
+  },
+  "photoSources": [
+    {
+      "name": "WordPress Photo Directory",
+      "url": "https://wordpress.org/photos/",
+      "license": "CC0",
+      "verified": true
+    },
+    {
+      "name": "Foodiesfeed",
+      "url": "https://www.foodiesfeed.com/",
+      "license": "CC0-equivalent",
+      "verified": true
+    }
+  ],
+  "rules": [
+    "Never invent recipe source data.",
+    "Store the exact source URL for every imported recipe.",
+    "Use only a source image whose reuse license is verified.",
+    "Do not mark an image as exact-match unless it depicts the same prepared dish.",
+    "Translate and restructure recipe instructions into Albanian without changing factual quantities, temperatures or timings.",
+    "Exclude alcohol-focused recipes from the consumer health library.",
+    "Adult recipes and baby recipes must remain separate datasets.",
+    "Baby recipes require an additional age, texture, allergen and food-safety review before publication."
+  ],
+  "verifiedExamples": [
+    {
+      "title": "Baked Salmon",
+      "sourceUrl": "https://publicdomainrecipes.com/baked-salmon/",
+      "prepMinutes": 5,
+      "cookMinutes": 19,
+      "temperatureC": 200,
+      "ingredients": ["Salmon steaks", "Red pepper flakes", "Lemon juice", "Butter", "Cooking oil or spray", "Aluminum foil"],
+      "sourceVerified": true,
+      "photoVerified": false
+    }
+  ]
+}
