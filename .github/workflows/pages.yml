@@ -27,30 +27,32 @@ jobs:
           ref: ${{ github.sha }}
           fetch-depth: 1
 
-      - name: Verify Miranda Ultra build
+      - name: Verify Miranda V9 build
         run: |
           set -euo pipefail
-          grep -q 'fresh.css?v=8' index.html
-          grep -q 'ultra.css?v=8' index.html
-          grep -q 'fresh.js?v=8' index.html
-          grep -q 'diet.js?v=8' index.html
-          grep -q 'ultra.js?v=8' index.html
+          grep -q 'fresh.css?v=9' index.html
+          grep -q 'ultra.css?v=9' index.html
+          grep -q 'premium.css?v=9' index.html
+          grep -q 'fresh.js?v=9' index.html
+          grep -q 'diet.js?v=9' index.html
+          grep -q 'ultra.js?v=9' index.html
+          grep -q 'premium.js?v=9' index.html
           grep -q 'Meal Planner' ultra.js
           grep -q 'Cooking mode' ultra.js
-          test -f fresh.css
-          test -f fresh.js
-          test -f diet.js
-          test -f ultra.css
-          test -f ultra.js
+          grep -q 'Pantry' premium.js
+          grep -q 'Baby Safety Center' premium.js
+          grep -q 'serviceWorker' premium.js
+          test -f manifest.webmanifest
+          test -f sw.js
 
       - name: Build isolated site
         run: |
           set -euo pipefail
           rm -rf _site
           mkdir _site
-          cp index.html fresh.css fresh.js diet.js ultra.css ultra.js _site/
+          cp index.html fresh.css fresh.js diet.js ultra.css ultra.js premium.css premium.js manifest.webmanifest sw.js _site/
           touch _site/.nojekyll
-          printf 'MIRANDA-ULTRA-V8 %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'MIRANDA-PREMIUM-V9 %s\n' "$GITHUB_SHA" > _site/build.txt
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
