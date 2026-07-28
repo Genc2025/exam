@@ -33,6 +33,7 @@
     .card h3{font-size:14px;margin:0 0 5px;line-height:1.2}
     .card small{color:#8f9a9f;line-height:1.35}
     .btn{width:100%;margin-top:9px;padding:10px;border:0;border-radius:10px;background:#172126;color:#adf22d;font-weight:850;cursor:pointer}
+    .more{display:block;margin:18px auto 0;padding:12px 20px;border:1px solid #314047;border-radius:14px;background:#10191d;color:#fff}
     .sheet{display:none;position:fixed;inset:0;background:#000c;z-index:30;align-items:flex-end;justify-content:center}
     .panel{width:min(760px,100%);max-height:94vh;overflow:auto;margin:auto;background:#091115;border-radius:25px 25px 0 0;padding:18px}
     .close{float:right;width:40px;height:40px;border:0;border-radius:50%;background:#182226;color:#fff;font-size:20px;cursor:pointer}
@@ -45,6 +46,7 @@
     .bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);height:70px;background:#081014ee;border-top:1px solid #1d292f;display:flex;justify-content:space-around;align-items:center;backdrop-filter:blur(14px)}
     .bottom button{border:0;background:none;color:#8a969b}.bottom .active{color:#adf22d}
     .note{margin:0 16px 18px;padding:14px;border:1px solid #223039;border-radius:16px;background:#0c1418;color:#bfc8cb;font-size:12px;line-height:1.45}
+    .status{padding:24px 16px;text-align:center;color:#8f9a9f}
     .empty{padding:24px 16px;text-align:center;color:#8f9a9f}
     @media(max-width:420px){.grid{grid-template-columns:1fr}.visual{height:220px}.heroGif{height:290px}}
   </style>
@@ -59,15 +61,15 @@
     <section class="hero">
       <small>FITPRO · SHQIP</small>
       <h1>Biblioteka e ushtrimeve.</h1>
-      <p>24 ushtrime të rregulluara, me preview real për secilën kartë dhe GIF të verifikuara aty ku janë të disponueshme.</p>
+      <p>App-i hapet menjëherë me starter-set, pastaj sinkronizon bibliotekën e plotë me 1,324 rekorde dhe GIF-et e tyre në background.</p>
       <div class="stats">
         <div class="stat"><b id="allCount">24</b><span class="muted">Ushtrime</span></div>
         <div class="stat"><b id="shownCount">24</b><span class="muted">Rezultate</span></div>
-        <div class="stat"><b>24</b><span class="muted">Karta</span></div>
+        <div class="stat"><b id="sourceCount">Lokale</b><span class="muted">Burimi</span></div>
       </div>
     </section>
 
-    <div class="note">Kartat pa GIF nuk janë bosh më; ato përdorin preview real dhe hapin pamjen më të mirë të disponueshme kur i hap.</div>
+    <div class="note" id="note">Po ngarkohet starter-set lokal; sinkronizimi me bibliotekën e plotë fillon menjëherë pas hapjes.</div>
 
     <section class="toolbar">
       <input class="search" id="search" placeholder="Kërko ushtrim, muskul ose pajisje..." />
@@ -79,6 +81,7 @@
 
     <section>
       <div class="grid" id="grid"></div>
+      <button class="more" id="more" style="display:none">Shfaq më shumë</button>
     </section>
   </main>
 
@@ -103,17 +106,20 @@
   </div>
 
 <script>
+const RAW = 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/';
+const REMOTE_DATA = RAW + 'data/exercises.json';
+const REMOTE_FALLBACK = 'https://cdn.jsdelivr.net/gh/hasaneyldrm/exercises-dataset@main/data/exercises.json';
+const GROUPS = ['Të gjitha','Gjoks','Shpinë','Shpatulla','Krahë','Bark/Core','Këmbë sipër','Këmbë poshtë','Cardio','Parakrah','Qafë'];
+const MAP = { chest:'Gjoks', back:'Shpinë', shoulders:'Shpatulla', 'upper arms':'Krahë', waist:'Bark/Core', 'upper legs':'Këmbë sipër', 'lower legs':'Këmbë poshtë', cardio:'Cardio', 'lower arms':'Parakrah', neck:'Qafë' };
+
 const GIFS = {
-  'Bench Press': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0025-EIeI8Vf.gif',
-  'Pull-Up': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0652-lBDjFxJ.gif',
-  'Dumbbell Biceps Curl': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0294-NbVPDMW.gif',
-  'Lateral Raise': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0334-DsgkuIt.gif'
+  'Bench Press': RAW + 'videos/0025-EIeI8Vf.gif',
+  'Pull-Up': RAW + 'videos/0652-lBDjFxJ.gif',
+  'Dumbbell Biceps Curl': RAW + 'videos/0294-NbVPDMW.gif',
+  'Lateral Raise': RAW + 'videos/0334-DsgkuIt.gif'
 };
 
-const IMG_BASE = 'https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/';
-const groups = ['Të gjitha','Gjoks','Shpinë','Shpatulla','Krahë'];
-
-const EX = [
+const LOCAL = [
   {name:'Bench Press', group:'Gjoks', target:'Pectoralis major', equip:'Barbell'},
   {name:'Incline Dumbbell Press', group:'Gjoks', target:'Upper chest', equip:'Dumbbell'},
   {name:'Push-Up', group:'Gjoks', target:'Chest', equip:'Body Weight'},
@@ -144,32 +150,54 @@ const stepsByGroup = {
   'Gjoks': ['Stabilizo shpatullat prapa dhe poshtë.', 'Ule peshën me kontroll.', 'Shtyje lart pa humbur formën.', 'Mbylle lëvizjen me kontroll.'],
   'Shpinë': ['Mbaje trungun stabil.', 'Tërhiq bërrylat drejt trupit.', 'Kontraktimi i shpinës duhet të ndihet qartë.', 'Kthehu ngadalë në start.'],
   'Shpatulla': ['Mbaje trungun të tendosur.', 'Shtyje ose ngrije peshën me kontroll.', 'Mos e ngrit qafën.', 'Ule ngadalë në start.'],
-  'Krahë': ['Mbaji bërrylat afër trupit.', 'Lëvize vetëm parakrahun.', 'Shtrëngo muskujt në pikën e sipërme.', 'Ule peshën ngadalë.']
+  'Krahë': ['Mbaji bërrylat afër trupit.', 'Lëvize vetëm parakrahun.', 'Shtrëngo muskujt në pikën e sipërme.', 'Ule peshën ngadalë.'],
+  'Bark/Core': ['Mbaje kolonën neutrale.', 'Mos e tepro me shtrirjen e qafës.', 'Punon me frymëmarrje të kontrolluar.', 'Kthehu ngadalë në pozicionin fillestar.'],
+  'Këmbë sipër': ['Mbaje gjurin në vijë me shputën.', 'Ruaj trungun të qëndrueshëm.', 'Ule dhe ngrihu me kontroll.', 'Mos e humb balancën.'],
+  'Këmbë poshtë': ['Mbaje thembrën stabile.', 'Puno me amplitudë të plotë.', 'Mos e shty lëvizjen me hov.', 'Kthehu ngadalë.'],
+  'Cardio': ['Rrit ritmin gradualisht.', 'Mbaj frymëmarrje të rregullt.', 'Ruaj formë të sigurt.', 'Ndalo nëse humb kontrollin.'],
+  'Parakrah': ['Mbaj bërrylin të stabilizuar.', 'Puno vetëm me parakrahun.', 'Ngrije dhe ule ngadalë.', 'Mos e tendos kyçin.'],
+  'Qafë': ['Lëviz shumë butë.', 'Mos përdor forcë të tepërt.', 'Ndalo nëse ndjen parehati.', 'Kryeje me amplitudë të vogël.']
 };
 
 const $ = (id) => document.getElementById(id);
-const state = { group:'Të gjitha', q:'', list:[...EX] };
+const state = { group:'Të gjitha', q:'', list:[...LOCAL], fullLoaded:false, page:24, source:'Lokale' };
 
-function slugify(name){
-  return name.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_+|_+$/g,'');
+function slugify(name){ return name.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_+|_+$/g,''); }
+function groupOf(x){ return MAP[String(x.body_part || x.category || '').toLowerCase()] || 'Tjetër'; }
+function previewUrl(x){ return `${RAW}images/${x.id || slugify(x.name)}.png`; }
+function mediaUrl(x){ return x.gif_url ? `${RAW}${x.gif_url.replace(/^\//,'')}` : (GIFS[x.name] || (x.image ? `${RAW}${x.image.replace(/^\//,'')}` : previewUrl(x))); }
+function thumbUrl(x){ return x.image ? `${RAW}${x.image.replace(/^\//,'')}` : previewUrl(x); }
+function mediaLabel(x){ return x.gif_url || GIFS[x.name] ? 'GIF' : 'Preview'; }
+function stepsFor(x){
+  const s = x.instruction_steps?.en || x.instructions?.en;
+  if (Array.isArray(s) && s.length) return s;
+  if (typeof s === 'string') return s.split('. ').filter(Boolean);
+  return stepsByGroup[x.group] || ['Shiko demonstrimin dhe kryeje ushtrimin me kontroll.'];
 }
-function previewUrl(x){
-  return `${IMG_BASE}${slugify(x.name)}/0.jpg`;
-}
-function mediaUrl(x){
-  return GIFS[x.name] || previewUrl(x);
-}
-function isGif(x){
-  return Boolean(GIFS[x.name]);
-}
-function mediaLabel(x){
-  return isGif(x) ? 'GIF' : 'Preview';
+function safeText(v){ return String(v || '').trim(); }
+
+function buildList(raw){
+  return raw
+    .filter(x => x && (x.name || x.exercise_name))
+    .map(x => ({
+      id: x.id,
+      name: x.name || x.exercise_name,
+      group: x.group || groupOf(x),
+      target: safeText(x.target),
+      equip: safeText(x.equipment || x.equip || x.equipment_name),
+      gif_url: x.gif_url || x.gifUrl || '',
+      image: x.image || x.thumbnail || '',
+      instructions: x.instructions || {},
+      instruction_steps: x.instruction_steps || {}
+    }))
+    .filter(x => x.name && x.group);
 }
 
 function renderChips(){
-  $('chips').innerHTML = groups.map(g => `<button class="chip ${g===state.group?'active':''}" data-g="${g}">${g}</button>`).join('');
+  $('chips').innerHTML = GROUPS.map(g => `<button class="chip ${g===state.group?'active':''}" data-g="${g}">${g}</button>`).join('');
   $('chips').querySelectorAll('button').forEach(btn => btn.onclick = () => {
     state.group = btn.dataset.g;
+    state.page = 24;
     renderChips();
     renderCards();
   });
@@ -177,21 +205,22 @@ function renderChips(){
 
 function filtered(){
   const q = state.q;
-  return state.list.filter(x => (state.group === 'Të gjitha' || x.group === state.group) && (!q || [x.name,x.target,x.equip,x.group].join(' ').toLowerCase().includes(q)));
+  return state.list.filter(x => (state.group === 'Të gjitha' || x.group === state.group) && (!q || [x.name, x.target, x.equip, x.group].join(' ').toLowerCase().includes(q)));
 }
 
 function cardHtml(x){
+  const media = thumbUrl(x);
   return `
     <article class="card" data-name="${x.name}">
       <div class="visual">
-        <img loading="lazy" alt="${x.name}" src="${mediaUrl(x)}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <img loading="lazy" alt="${x.name}" src="${media}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
         <div class="fallback" style="display:none">Pamje nuk u ngarkua</div>
         <span class="tag">${x.group}</span>
         <span class="kind">${mediaLabel(x)}</span>
       </div>
       <div class="cardbody">
         <h3>${x.name}</h3>
-        <small>${x.target} · ${x.equip}</small>
+        <small>${x.target || ''} · ${x.equip || ''}</small>
         <button class="btn">Shiko ushtrimin</button>
       </div>
     </article>`;
@@ -199,34 +228,69 @@ function cardHtml(x){
 
 function renderCards(){
   const list = filtered();
-  $('shownCount').textContent = list.length;
+  const page = Math.min(state.page, list.length);
+  $('shownCount').textContent = page;
   $('allCount').textContent = state.list.length;
-  $('total').textContent = `${state.list.length} ushtrime`;
-  $('grid').innerHTML = list.length ? list.map(cardHtml).join('') : '<div class="empty">Nuk u gjet asnjë ushtrim.</div>';
-  $('grid').querySelectorAll('.card').forEach(card => card.onclick = () => openItem(list.find(x => x.name === card.dataset.name)));
+  $('total').textContent = `${state.list.length.toLocaleString('en-US')} ushtrime`;
+  $('sourceCount').textContent = state.fullLoaded ? 'Remote' : 'Lokale';
+  $('grid').innerHTML = list.length ? list.slice(0, page).map(cardHtml).join('') : '<div class="empty">Nuk u gjet asnjë ushtrim.</div>';
+  $('more').style.display = page < list.length ? 'block' : 'none';
+  $('grid').querySelectorAll('.card').forEach(card => {
+    card.onclick = () => openItem(list.find(x => x.name === card.dataset.name));
+  });
 }
 
 function openItem(x){
-  const m = mediaUrl(x);
+  if (!x) return;
   const img = $('bigMedia');
   const fb = $('mediaFallback');
   fb.style.display = 'grid';
+  fb.textContent = 'Po ngarkohet...';
   img.onload = () => fb.style.display = 'none';
-  img.onerror = () => { fb.style.display='grid'; fb.textContent = 'Media nuk u ngarkua'; };
-  img.src = m;
+  img.onerror = () => { fb.style.display = 'grid'; fb.textContent = 'Media nuk u ngarkua'; };
+  img.src = mediaUrl(x);
   $('title').textContent = x.name;
-  $('info').innerHTML = `<b class="accent">${x.group}</b><br>${x.target} · ${x.equip}`;
-  $('steps').innerHTML = (stepsByGroup[x.group] || stepsByGroup['Krahë']).map(s => `<li>${s}</li>`).join('');
+  $('info').innerHTML = `<b class="accent">${x.group}</b><br>${x.target || ''} · ${x.equip || ''}`;
+  $('steps').innerHTML = stepsFor(x).map(s => `<li>${s}</li>`).join('');
   $('sheet').style.display = 'flex';
   document.body.classList.add('no-scroll');
 }
 
+function syncRemote(){
+  const urls = [REMOTE_DATA, REMOTE_FALLBACK];
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 7000);
+  return (async() => {
+    for (const url of urls) {
+      try {
+        const r = await fetch(url, { signal: controller.signal, cache: 'no-store' });
+        if (!r.ok) continue;
+        const raw = await r.json();
+        if (Array.isArray(raw) && raw.length) {
+          state.list = buildList(raw);
+          state.fullLoaded = true;
+          state.source = 'Remote';
+          $('note').textContent = 'Biblioteka e plotë është sinkronizuar me 1,324 ushtrime dhe GIF-et e dataset-it.';
+          renderChips();
+          renderCards();
+          return;
+        }
+      } catch (e) {
+        console.warn('remote sync failed', url, e);
+      }
+    }
+    $('note').textContent = 'Starter-set lokal po punon. Sinkronizimi me bibliotekën e plotë dështoi këtë herë, por app-i mbetet i përdorshëm.';
+  })().finally(() => clearTimeout(timer));
+}
+
 $('close').onclick = () => { $('sheet').style.display='none'; document.body.classList.remove('no-scroll'); };
-$('sheet').onclick = e => { if(e.target === $('sheet')) $('close').onclick(); };
-$('search').oninput = e => { state.q = e.target.value.trim().toLowerCase(); renderCards(); };
+$('sheet').onclick = e => { if (e.target === $('sheet')) $('close').onclick(); };
+$('search').oninput = e => { state.q = e.target.value.trim().toLowerCase(); state.page = 24; renderCards(); };
+$('more').onclick = () => { state.page += 24; renderCards(); };
 
 renderChips();
 renderCards();
+queueMicrotask(syncRemote);
 </script>
 </body>
 </html>
