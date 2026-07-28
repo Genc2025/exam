@@ -1,1 +1,232 @@
-<!doctype html><html lang="sq"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05090b"><title>FITPRO</title><style>*{box-sizing:border-box}body{margin:0;background:#05090b;color:#f5f7f7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.app{max-width:760px;margin:auto;min-height:100vh;background:linear-gradient(180deg,#081116,#030708);padding-bottom:90px}header{padding:18px;display:flex;justify-content:space-between;align-items:center}.logo{font-size:25px;font-weight:950}.logo b,.accent{color:#adf22d}.pill{padding:8px 12px;border:1px solid #2b3940;border-radius:999px;font-size:11px}.hero{margin:0 16px 14px;padding:22px;border:1px solid #1d2b31;border-radius:26px;background:radial-gradient(circle at 90% 10%,#2b3f11,#0b1418 55%)}.hero small{color:#adf22d;font-weight:900}.hero h1{font-size:35px;line-height:1;margin:8px 0}.hero p,.muted{color:#919da2}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}.stat{background:#ffffff08;border-radius:14px;padding:10px}.stat b{display:block}.toolbar,.section{padding:8px 16px}.search{width:100%;padding:14px;background:#0c1418;color:#fff;border:1px solid #233038;border-radius:15px;outline:0}.chips{display:flex;gap:8px;overflow:auto;padding:10px 0}.chip{white-space:nowrap;padding:9px 13px;border-radius:999px;border:1px solid #27343a;background:#0d1519;color:#cbd1d3;cursor:pointer}.chip.active{background:#adf22d;color:#071005}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}.card{overflow:hidden;border:1px solid #1c282e;border-radius:18px;background:#0c1317}.visual{height:180px;background:#fff;position:relative}.visual img{width:100%;height:100%;object-fit:contain}.ph{position:absolute;inset:0;display:grid;place-items:center;color:#6f7880;background:linear-gradient(180deg,#fff,#f2f2f2);font-size:12px;text-align:center;padding:12px}.tag{position:absolute;left:7px;top:7px;background:#adf22d;color:#071005;border-radius:999px;padding:5px 8px;font-size:9px;font-weight:900}.body{padding:11px}.body h3{font-size:13px;margin:0 0 5px}.body small{color:#8f9a9f}.btn{width:100%;margin-top:8px;padding:9px;border:0;border-radius:10px;background:#172126;color:#adf22d;font-weight:850;cursor:pointer}.more{display:block;margin:20px auto;padding:12px 20px;border:1px solid #314047;border-radius:14px;background:#10191d;color:#fff}.sheet{display:none;position:fixed;inset:0;background:#000c;z-index:30;align-items:flex-end}.panel{width:min(760px,100%);max-height:94vh;overflow:auto;margin:auto;background:#091115;border-radius:25px 25px 0 0;padding:18px}.close{float:right;width:40px;height:40px;border:0;border-radius:50%;background:#182226;color:#fff;font-size:20px}.heroGif{height:330px;clear:both;background:#fff;border-radius:20px;overflow:hidden;position:relative}.heroGif img{width:100%;height:100%;object-fit:contain}.panel h2{font-size:27px}.box{padding:14px;background:#10191d;border-radius:15px;margin:12px 0}.steps li{margin:10px 0;line-height:1.45}.bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);height:70px;background:#081014ee;border-top:1px solid #1d292f;display:flex;justify-content:space-around;align-items:center}.bottom button{border:0;background:none;color:#8a969b}.bottom .active{color:#adf22d}.note{margin:0 16px 18px;padding:14px;border:1px solid #223039;border-radius:16px;background:#0c1418;color:#bfc8cb;font-size:12px;line-height:1.45}@media(max-width:420px){.grid{grid-template-columns:1fr}.visual{height:220px}.heroGif{height:290px}}</style></head><body><main class="app"><header><div class="logo"><b>✣</b> FITPRO</div><div class="pill" id="total">12 ushtrime</div></header><section class="hero"><small>FITPRO · SHQIP</small><h1>Hapet menjëherë.</h1><p>Kjo version përdor bibliotekë lokale për startup të shpejtë dhe pa loading të bllokuar.</p><div class="stats"><div class="stat"><b id="allCount">12</b><span class="muted">Ushtrime</span></div><div class="stat"><b id="shownCount">12</b><span class="muted">Rezultate</span></div><div class="stat"><b>1</b><span class="muted">Paqe</span></div></div></section><div class="note">Ka GIF real vetëm aty ku është i verifikuar në starter-set; pjesa tjetër hapet si kartë lokale dhe mund të zgjerohet më vonë.</div><section class="toolbar"><input class="search" id="search" placeholder="Kërko ushtrim, muskul ose pajisje..."></section><section class="section"><div class="chips" id="chips"></div></section><section><div class="grid" id="grid"></div><button class="more" id="more" style="display:none">Shfaq më shumë</button></section></main><nav class="bottom"><button class="active">⌂<br>Home</button><button>▣<br>Ushtrime</button><button>★<br>Ruajtura</button></nav><div class="sheet" id="sheet"><div class="panel"><button class="close" id="close">×</button><div class="heroGif"><img id="bigGif" alt="GIF ushtrimi"><div class="ph" id="gifPh">GIF</div></div><h2 id="title"></h2><div class="box" id="info"></div><h3>Hapat</h3><ol class="steps" id="steps"></ol></div></div><script>const data=[{id:'0001',name:'Bench Press',group:'Gjoks',target:'Pectoralis major',equipment:'Barbell',gif:'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0025-EIeI8Vf.gif'},{id:'0002',name:'Incline Dumbbell Press',group:'Gjoks',target:'Upper chest',equipment:'Dumbbell'},{id:'0003',name:'Push-Up',group:'Gjoks',target:'Chest',equipment:'Body Weight'},{id:'0004',name:'Pull-Up',group:'Shpinë',target:'Lats',equipment:'Body Weight',gif:'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0652-lBDjFxJ.gif'},{id:'0005',name:'Seated Cable Row',group:'Shpinë',target:'Mid back',equipment:'Cable'},{id:'0006',name:'Face Pull',group:'Shpinë',target:'Rear delts',equipment:'Cable'},{id:'0007',name:'Overhead Press',group:'Shpatulla',target:'Deltoids',equipment:'Barbell'},{id:'0008',name:'Lateral Raise',group:'Shpatulla',target:'Lateral delts',equipment:'Dumbbell',gif:'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0334-DsgkuIt.gif'},{id:'0009',name:'Front Raise',group:'Shpatulla',target:'Anterior delts',equipment:'Dumbbell'},{id:'0010',name:'Dumbbell Biceps Curl',group:'Krahë',target:'Biceps',equipment:'Dumbbell',gif:'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0294-NbVPDMW.gif'},{id:'0011',name:'Hammer Curl',group:'Krahë',target:'Brachialis',equipment:'Dumbbell'},{id:'0012',name:'Triceps Pushdown',group:'Krahë',target:'Triceps',equipment:'Cable'}];const stepsByGroup={Gjoks:['Stabilizo shpatullat prapa dhe poshtë.','Ule peshen me kontroll.','Shtyje lart pa humbur formën.','Mbylle lëvizjen me kontroll.'],Shpinë:['Mbaje trupin stabil.','Tërhiq bërrylat drejt trupit.','Kontraktimi i shpinës duhet të ndihet qartë.','Kthehu ngadalë në start.'],Shpatulla:['Mbaje trungun të tendosur.','Shtyje ose ngrije peshën me kontroll.','Mos e ngrit qafën.','Ule ngadalë në start.'],Krahë:['Mbaji bërrylat afër trupit.','Lëvize vetëm parakrahun.','Shtrëngo muskujt në pikën e sipërme.','Ule peshën ngadalë.']};let group='Të gjitha',q='',limit=12;const grid=document.getElementById('grid'),chips=document.getElementById('chips'),search=document.getElementById('search'),more=document.getElementById('more');function groups(){return ['Të gjitha',...new Set(data.map(x=>x.group))]}function renderChips(){chips.innerHTML=groups().map(g=>`<button class="chip ${g===group?'active':''}" data-g="${g}">${g}</button>`).join('');chips.querySelectorAll('button').forEach(b=>b.onclick=()=>{group=b.dataset.g;limit=12;renderChips();render()})}function openItem(x){title.textContent=x.name;info.innerHTML=`<b class="accent">${x.group}</b><br>${x.target} · ${x.equipment}`;steps.innerHTML=(stepsByGroup[x.group]||stepsByGroup.Krahë).map(s=>`<li>${s}</li>`).join('');if(x.gif){bigGif.src=x.gif;bigGif.style.display='block';gifPh.style.display='none'}else{bigGif.removeAttribute('src');bigGif.style.display='none';gifPh.style.display='grid';gifPh.textContent='Nuk ka GIF për këtë ushtrim'}sheet.style.display='flex';document.body.style.overflow='hidden'}function render(){const list=data.filter(x=>(group==='Të gjitha'||x.group===group)&&(!q||[x.name,x.target,x.equipment,x.group].join(' ').toLowerCase().includes(q)));shownCount.textContent=list.length;allCount.textContent=data.length;grid.innerHTML=list.slice(0,limit).map(x=>`<article class="card"><div class="visual">${x.gif?`<img loading="lazy" src="${x.gif}" alt="${x.name}">`:'<div class="ph">Pamje lokale</div>'}<span class="tag">${x.group}</span></div><div class="body"><h3>${x.name}</h3><small>${x.target} · ${x.equipment}</small><button class="btn">Shiko ushtrimin</button></div></article>`).join('');more.style.display=limit<list.length?'block':'none';grid.querySelectorAll('.card').forEach((c,i)=>c.onclick=()=>openItem(list.slice(0,limit)[i]))}search.oninput=e=>{q=e.target.value.trim().toLowerCase();limit=12;render()};more.onclick=()=>{limit+=12;render()};close.onclick=()=>{sheet.style.display='none';document.body.style.overflow=''};sheet.onclick=e=>{if(e.target===sheet)close.onclick()};renderChips();render();</script></body></html>
+<!doctype html>
+<html lang="sq">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#05090b" />
+  <title>FITPRO</title>
+  <style>
+    *{box-sizing:border-box} html,body{margin:0;background:#05090b;color:#f5f7f7;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body.no-scroll{overflow:hidden}
+    .app{max-width:760px;margin:auto;min-height:100vh;background:linear-gradient(180deg,#081116,#030708);padding-bottom:92px}
+    header{padding:18px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .logo{font-size:25px;font-weight:950;letter-spacing:-.03em}.logo b,.accent{color:#adf22d}
+    .pill{padding:8px 12px;border:1px solid #2b3940;border-radius:999px;font-size:11px;color:#d8dee1}
+    .hero{margin:0 16px 14px;padding:22px;border:1px solid #1d2b31;border-radius:26px;background:radial-gradient(circle at 90% 10%,#2b3f11,#0b1418 55%);box-shadow:0 18px 60px #0004}
+    .hero small{color:#adf22d;font-weight:900;letter-spacing:1.3px;text-transform:uppercase}
+    .hero h1{font-size:35px;line-height:1;margin:8px 0 8px;letter-spacing:-.04em}
+    .hero p,.muted{color:#919da2}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px}
+    .stat{background:#ffffff08;border-radius:14px;padding:10px}.stat b{display:block;font-size:18px}
+    .toolbar,.section{padding:8px 16px}
+    .search{width:100%;padding:14px;background:#0c1418;color:#fff;border:1px solid #233038;border-radius:15px;outline:0}
+    .chips{display:flex;gap:8px;overflow:auto;padding:10px 0}.chip{white-space:nowrap;padding:9px 13px;border-radius:999px;border:1px solid #27343a;background:#0d1519;color:#cbd1d3;cursor:pointer}.chip.active{background:#adf22d;color:#071005;border-color:#adf22d}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}
+    .card{overflow:hidden;border:1px solid #1c282e;border-radius:18px;background:#0c1317;box-shadow:0 10px 28px #0003}
+    .visual{height:182px;background:linear-gradient(180deg,#fff,#f4f4f4);position:relative}
+    .visual img{width:100%;height:100%;object-fit:contain;display:block}
+    .fallback{position:absolute;inset:0;display:grid;place-items:center;color:#6d757d;background:linear-gradient(180deg,#fff,#f2f2f2);font-size:12px;text-align:center;padding:14px;animation:pulse 1.8s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:.68}50%{opacity:1}}
+    .tag,.kind{position:absolute;border-radius:999px;padding:5px 8px;font-size:9px;font-weight:900;line-height:1}
+    .tag{left:8px;top:8px;background:#adf22d;color:#071005}.kind{right:8px;bottom:8px;background:#071005e8;color:#adf22d}
+    .cardbody{padding:12px}
+    .card h3{font-size:14px;margin:0 0 5px;line-height:1.2}
+    .card small{color:#8f9a9f;line-height:1.35}
+    .btn{width:100%;margin-top:9px;padding:10px;border:0;border-radius:10px;background:#172126;color:#adf22d;font-weight:850;cursor:pointer}
+    .sheet{display:none;position:fixed;inset:0;background:#000c;z-index:30;align-items:flex-end;justify-content:center}
+    .panel{width:min(760px,100%);max-height:94vh;overflow:auto;margin:auto;background:#091115;border-radius:25px 25px 0 0;padding:18px}
+    .close{float:right;width:40px;height:40px;border:0;border-radius:50%;background:#182226;color:#fff;font-size:20px;cursor:pointer}
+    .heroGif{height:330px;clear:both;background:#fff;border-radius:20px;overflow:hidden;position:relative}
+    .heroGif img{width:100%;height:100%;object-fit:contain;display:block}
+    .heroGif .fallback{font-size:13px}
+    .panel h2{font-size:27px;margin:12px 0 6px}
+    .box{padding:14px;background:#10191d;border-radius:15px;margin:12px 0}
+    .steps{padding-left:18px}.steps li{margin:10px 0;line-height:1.45;color:#e3e6e8}
+    .bottom{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);height:70px;background:#081014ee;border-top:1px solid #1d292f;display:flex;justify-content:space-around;align-items:center;backdrop-filter:blur(14px)}
+    .bottom button{border:0;background:none;color:#8a969b}.bottom .active{color:#adf22d}
+    .note{margin:0 16px 18px;padding:14px;border:1px solid #223039;border-radius:16px;background:#0c1418;color:#bfc8cb;font-size:12px;line-height:1.45}
+    .empty{padding:24px 16px;text-align:center;color:#8f9a9f}
+    @media(max-width:420px){.grid{grid-template-columns:1fr}.visual{height:220px}.heroGif{height:290px}}
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo"><b>✣</b> FITPRO</div>
+      <div class="pill" id="total">24 ushtrime</div>
+    </header>
+
+    <section class="hero">
+      <small>FITPRO · SHQIP</small>
+      <h1>Biblioteka e ushtrimeve.</h1>
+      <p>24 ushtrime të rregulluara, me preview real për secilën kartë dhe GIF të verifikuara aty ku janë të disponueshme.</p>
+      <div class="stats">
+        <div class="stat"><b id="allCount">24</b><span class="muted">Ushtrime</span></div>
+        <div class="stat"><b id="shownCount">24</b><span class="muted">Rezultate</span></div>
+        <div class="stat"><b>24</b><span class="muted">Karta</span></div>
+      </div>
+    </section>
+
+    <div class="note">Kartat pa GIF nuk janë bosh më; ato përdorin preview real dhe hapin pamjen më të mirë të disponueshme kur i hap.</div>
+
+    <section class="toolbar">
+      <input class="search" id="search" placeholder="Kërko ushtrim, muskul ose pajisje..." />
+    </section>
+
+    <section class="section">
+      <div class="chips" id="chips"></div>
+    </section>
+
+    <section>
+      <div class="grid" id="grid"></div>
+    </section>
+  </main>
+
+  <nav class="bottom">
+    <button class="active">⌂<br>Home</button>
+    <button>▣<br>Ushtrime</button>
+    <button>★<br>Ruajtura</button>
+  </nav>
+
+  <div class="sheet" id="sheet">
+    <div class="panel">
+      <button class="close" id="close">×</button>
+      <div class="heroGif">
+        <img id="bigMedia" alt="Media e ushtrimit" />
+        <div class="fallback" id="mediaFallback">Po ngarkohet...</div>
+      </div>
+      <h2 id="title"></h2>
+      <div class="box" id="info"></div>
+      <h3>Hapat</h3>
+      <ol class="steps" id="steps"></ol>
+    </div>
+  </div>
+
+<script>
+const GIFS = {
+  'Bench Press': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0025-EIeI8Vf.gif',
+  'Pull-Up': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0652-lBDjFxJ.gif',
+  'Dumbbell Biceps Curl': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0294-NbVPDMW.gif',
+  'Lateral Raise': 'https://raw.githubusercontent.com/hasaneyldrm/exercises-dataset/main/videos/0334-DsgkuIt.gif'
+};
+
+const IMG_BASE = 'https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/';
+const groups = ['Të gjitha','Gjoks','Shpinë','Shpatulla','Krahë'];
+
+const EX = [
+  {name:'Bench Press', group:'Gjoks', target:'Pectoralis major', equip:'Barbell'},
+  {name:'Incline Dumbbell Press', group:'Gjoks', target:'Upper chest', equip:'Dumbbell'},
+  {name:'Push-Up', group:'Gjoks', target:'Chest', equip:'Body Weight'},
+  {name:'Chest Dip', group:'Gjoks', target:'Lower chest', equip:'Body Weight'},
+  {name:'Dumbbell Fly', group:'Gjoks', target:'Chest', equip:'Dumbbell'},
+  {name:'Cable Crossover', group:'Gjoks', target:'Chest', equip:'Cable'},
+  {name:'Pull-Up', group:'Shpinë', target:'Lats', equip:'Body Weight'},
+  {name:'Seated Cable Row', group:'Shpinë', target:'Mid back', equip:'Cable'},
+  {name:'Face Pull', group:'Shpinë', target:'Rear delts', equip:'Cable'},
+  {name:'Lat Pulldown', group:'Shpinë', target:'Lats', equip:'Machine'},
+  {name:'One Arm Dumbbell Row', group:'Shpinë', target:'Lats', equip:'Dumbbell'},
+  {name:'Straight Arm Pulldown', group:'Shpinë', target:'Lats', equip:'Cable'},
+  {name:'Overhead Press', group:'Shpatulla', target:'Deltoids', equip:'Barbell'},
+  {name:'Dumbbell Shoulder Press', group:'Shpatulla', target:'Deltoids', equip:'Dumbbell'},
+  {name:'Arnold Press', group:'Shpatulla', target:'Deltoids', equip:'Dumbbell'},
+  {name:'Lateral Raise', group:'Shpatulla', target:'Lateral delts', equip:'Dumbbell'},
+  {name:'Front Raise', group:'Shpatulla', target:'Anterior delts', equip:'Dumbbell'},
+  {name:'Reverse Fly', group:'Shpatulla', target:'Rear delts', equip:'Dumbbell'},
+  {name:'Dumbbell Biceps Curl', group:'Krahë', target:'Biceps', equip:'Dumbbell'},
+  {name:'Hammer Curl', group:'Krahë', target:'Brachialis', equip:'Dumbbell'},
+  {name:'Preacher Curl', group:'Krahë', target:'Biceps', equip:'EZ Barbell'},
+  {name:'Triceps Pushdown', group:'Krahë', target:'Triceps', equip:'Cable'},
+  {name:'Overhead Triceps Extension', group:'Krahë', target:'Triceps', equip:'Dumbbell'},
+  {name:'Skull Crusher', group:'Krahë', target:'Triceps', equip:'EZ Barbell'}
+];
+
+const stepsByGroup = {
+  'Gjoks': ['Stabilizo shpatullat prapa dhe poshtë.', 'Ule peshën me kontroll.', 'Shtyje lart pa humbur formën.', 'Mbylle lëvizjen me kontroll.'],
+  'Shpinë': ['Mbaje trungun stabil.', 'Tërhiq bërrylat drejt trupit.', 'Kontraktimi i shpinës duhet të ndihet qartë.', 'Kthehu ngadalë në start.'],
+  'Shpatulla': ['Mbaje trungun të tendosur.', 'Shtyje ose ngrije peshën me kontroll.', 'Mos e ngrit qafën.', 'Ule ngadalë në start.'],
+  'Krahë': ['Mbaji bërrylat afër trupit.', 'Lëvize vetëm parakrahun.', 'Shtrëngo muskujt në pikën e sipërme.', 'Ule peshën ngadalë.']
+};
+
+const $ = (id) => document.getElementById(id);
+const state = { group:'Të gjitha', q:'', list:[...EX] };
+
+function slugify(name){
+  return name.replace(/[^A-Za-z0-9]+/g,'_').replace(/^_+|_+$/g,'');
+}
+function previewUrl(x){
+  return `${IMG_BASE}${slugify(x.name)}/0.jpg`;
+}
+function mediaUrl(x){
+  return GIFS[x.name] || previewUrl(x);
+}
+function isGif(x){
+  return Boolean(GIFS[x.name]);
+}
+function mediaLabel(x){
+  return isGif(x) ? 'GIF' : 'Preview';
+}
+
+function renderChips(){
+  $('chips').innerHTML = groups.map(g => `<button class="chip ${g===state.group?'active':''}" data-g="${g}">${g}</button>`).join('');
+  $('chips').querySelectorAll('button').forEach(btn => btn.onclick = () => {
+    state.group = btn.dataset.g;
+    renderChips();
+    renderCards();
+  });
+}
+
+function filtered(){
+  const q = state.q;
+  return state.list.filter(x => (state.group === 'Të gjitha' || x.group === state.group) && (!q || [x.name,x.target,x.equip,x.group].join(' ').toLowerCase().includes(q)));
+}
+
+function cardHtml(x){
+  return `
+    <article class="card" data-name="${x.name}">
+      <div class="visual">
+        <img loading="lazy" alt="${x.name}" src="${mediaUrl(x)}" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <div class="fallback" style="display:none">Pamje nuk u ngarkua</div>
+        <span class="tag">${x.group}</span>
+        <span class="kind">${mediaLabel(x)}</span>
+      </div>
+      <div class="cardbody">
+        <h3>${x.name}</h3>
+        <small>${x.target} · ${x.equip}</small>
+        <button class="btn">Shiko ushtrimin</button>
+      </div>
+    </article>`;
+}
+
+function renderCards(){
+  const list = filtered();
+  $('shownCount').textContent = list.length;
+  $('allCount').textContent = state.list.length;
+  $('total').textContent = `${state.list.length} ushtrime`;
+  $('grid').innerHTML = list.length ? list.map(cardHtml).join('') : '<div class="empty">Nuk u gjet asnjë ushtrim.</div>';
+  $('grid').querySelectorAll('.card').forEach(card => card.onclick = () => openItem(list.find(x => x.name === card.dataset.name)));
+}
+
+function openItem(x){
+  const m = mediaUrl(x);
+  const img = $('bigMedia');
+  const fb = $('mediaFallback');
+  fb.style.display = 'grid';
+  img.onload = () => fb.style.display = 'none';
+  img.onerror = () => { fb.style.display='grid'; fb.textContent = 'Media nuk u ngarkua'; };
+  img.src = m;
+  $('title').textContent = x.name;
+  $('info').innerHTML = `<b class="accent">${x.group}</b><br>${x.target} · ${x.equip}`;
+  $('steps').innerHTML = (stepsByGroup[x.group] || stepsByGroup['Krahë']).map(s => `<li>${s}</li>`).join('');
+  $('sheet').style.display = 'flex';
+  document.body.classList.add('no-scroll');
+}
+
+$('close').onclick = () => { $('sheet').style.display='none'; document.body.classList.remove('no-scroll'); };
+$('sheet').onclick = e => { if(e.target === $('sheet')) $('close').onclick(); };
+$('search').oninput = e => { state.q = e.target.value.trim().toLowerCase(); renderCards(); };
+
+renderChips();
+renderCards();
+</script>
+</body>
+</html>
