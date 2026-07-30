@@ -16,6 +16,13 @@ export const lessons = [
     detail: 'Use active listening, root-cause analysis, and escalation rules.'
   },
   {
+    id: 'people-3',
+    title: 'Team motivation and coaching',
+    domain: 'People',
+    minutes: 20,
+    detail: 'Recognize progress, remove blockers, and coach for performance.'
+  },
+  {
     id: 'process-1',
     title: 'Change control',
     domain: 'Process',
@@ -30,6 +37,13 @@ export const lessons = [
     detail: 'Choose avoid, mitigate, transfer, accept, or exploit appropriately.'
   },
   {
+    id: 'process-3',
+    title: 'Quality and lessons learned',
+    domain: 'Process',
+    minutes: 18,
+    detail: 'Inspect outcomes, capture lessons, and improve the next cycle.'
+  },
+  {
     id: 'business-1',
     title: 'Governance and compliance',
     domain: 'Business Environment',
@@ -42,6 +56,13 @@ export const lessons = [
     domain: 'Business Environment',
     minutes: 24,
     detail: 'Track outcomes, benefits, and business value realization.'
+  },
+  {
+    id: 'business-3',
+    title: 'Business case alignment',
+    domain: 'Business Environment',
+    minutes: 16,
+    detail: 'Keep the work tied to measurable organizational outcomes.'
   }
 ];
 
@@ -213,6 +234,174 @@ export const practiceQuestions = [
     ],
     answer: 1,
     rationale: 'Recognition and blocker removal support sustained motivation.'
+  },
+  {
+    id: 13,
+    domain: 'Process',
+    difficulty: 'Medium',
+    stem: 'A schedule milestone is slipping. What is the best immediate action?',
+    options: [
+      'Hide the delay until the next release.',
+      'Assess impact, update stakeholders, and replan recovery options.',
+      'Cancel the milestone without discussion.',
+      'Ignore the dependency chain.'
+    ],
+    answer: 1,
+    rationale: 'A slip should trigger impact analysis, communication, and replanning.'
+  },
+  {
+    id: 14,
+    domain: 'Business Environment',
+    difficulty: 'Hard',
+    stem: 'What is the strongest indicator that an initiative should continue?',
+    options: [
+      'The team enjoys the work.',
+      'The value delivered still supports strategic outcomes.',
+      'The budget remains large.',
+      'The schedule is full of activities.'
+    ],
+    answer: 1,
+    rationale: 'Continuation should be driven by ongoing strategic value, not activity volume.'
+  },
+  {
+    id: 15,
+    domain: 'People',
+    difficulty: 'Hard',
+    stem: 'A difficult stakeholder keeps pushing for scope beyond the plan. What should the team do first?',
+    options: [
+      'Accept every request to stay friendly.',
+      'Reconfirm scope, explain impact, and use change control.',
+      'Stop all communication with the stakeholder.',
+      'Escalate without any discussion.'
+    ],
+    answer: 1,
+    rationale: 'Use scope clarification and change control before escalation.'
+  },
+  {
+    id: 16,
+    domain: 'Process',
+    difficulty: 'Easy',
+    stem: 'Which action best supports quality management?',
+    options: [
+      'Inspect late and correct everything at the end.',
+      'Build quality into the process and verify outputs along the way.',
+      'Ignore defects until the final audit.',
+      'Focus only on speed.'
+    ],
+    answer: 1,
+    rationale: 'Quality is managed continuously, not only at the end.'
+  },
+  {
+    id: 17,
+    domain: 'Business Environment',
+    difficulty: 'Medium',
+    stem: 'Why should lessons learned be captured during delivery?',
+    options: [
+      'To create more paperwork.',
+      'To improve future decisions and organizational learning.',
+      'To slow the team down.',
+      'To avoid communication.'
+    ],
+    answer: 1,
+    rationale: 'Lessons learned support continuous improvement and future performance.'
+  },
+  {
+    id: 18,
+    domain: 'People',
+    difficulty: 'Medium',
+    stem: 'What is the best way to handle a quiet team member with useful ideas?',
+    options: [
+      'Assume they have nothing to add.',
+      'Invite them directly to contribute in a safe setting.',
+      'Allow others to speak over them.',
+      'Wait until the meeting ends.'
+    ],
+    answer: 1,
+    rationale: 'A psychologically safe invitation can surface valuable input.'
+  },
+  {
+    id: 19,
+    domain: 'Process',
+    difficulty: 'Medium',
+    stem: 'What is the correct purpose of a retrospective?',
+    options: [
+      'Assign blame for the last iteration.',
+      'Identify improvements for future work.',
+      'Cancel all remaining work.',
+      'Approve funding changes.'
+    ],
+    answer: 1,
+    rationale: 'Retrospectives are used to improve the next cycle, not to assign blame.'
+  },
+  {
+    id: 20,
+    domain: 'Business Environment',
+    difficulty: 'Easy',
+    stem: 'Which statement best describes value delivery?',
+    options: [
+      'Finishing tasks as fast as possible.',
+      'Producing measurable outcomes that matter to the organization.',
+      'Holding more meetings.',
+      'Expanding scope continuously.'
+    ],
+    answer: 1,
+    rationale: 'Value delivery is about measurable outcomes, not output volume.'
+  },
+  {
+    id: 21,
+    domain: 'People',
+    difficulty: 'Medium',
+    stem: 'A new team member is struggling with the process. What is the best support action?',
+    options: [
+      'Expect them to learn everything alone.',
+      'Pair them with a mentor and clarify expectations.',
+      'Remove them from the project.',
+      'Reduce communication until they catch up.'
+    ],
+    answer: 1,
+    rationale: 'Mentoring and expectation setting accelerate integration.'
+  },
+  {
+    id: 22,
+    domain: 'Process',
+    difficulty: 'Hard',
+    stem: 'A change introduces risk to multiple deliverables. What should happen first?',
+    options: [
+      'Approve it immediately to avoid delay.',
+      'Assess impact across scope, schedule, and risk before approval.',
+      'Ignore downstream effects.',
+      'Ask the team to implement and analyze later.'
+    ],
+    answer: 1,
+    rationale: 'Multi-deliverable changes require cross-impact analysis before approval.'
+  },
+  {
+    id: 23,
+    domain: 'Business Environment',
+    difficulty: 'Hard',
+    stem: 'How should leadership respond when a project no longer aligns with strategy?',
+    options: [
+      'Continue because the team has already worked on it.',
+      'Reevaluate the initiative and consider stopping or reshaping it.',
+      'Ignore the strategy change.',
+      'Add more reporting only.'
+    ],
+    answer: 1,
+    rationale: 'Projects should be reevaluated when strategic alignment changes.'
+  },
+  {
+    id: 24,
+    domain: 'Process',
+    difficulty: 'Medium',
+    stem: 'What should a project manager do before the final handoff?',
+    options: [
+      'Skip verification to close faster.',
+      'Confirm deliverables, acceptance, and documentation completeness.',
+      'Delete the issue log.',
+      'Rename unfinished tasks as complete.'
+    ],
+    answer: 1,
+    rationale: 'Closure requires verified deliverables, acceptance, and complete documentation.'
   }
 ];
 
@@ -224,5 +413,9 @@ export const flashcards = [
   { front: 'Risk response', back: 'Execute the predefined response when the risk occurs.' },
   { front: 'Governance', back: 'Ensure decisions align with strategy, policy, and accountability.' },
   { front: 'Conflict resolution', back: 'Clarify interests first, then mediate a solution.' },
-  { front: 'Team motivation', back: 'Recognize progress and remove blockers.' }
+  { front: 'Team motivation', back: 'Recognize progress and remove blockers.' },
+  { front: 'Lessons learned', back: 'Capture insights during delivery to improve future performance.' },
+  { front: 'Quality management', back: 'Build quality into the process and verify outputs continuously.' },
+  { front: 'Strategic alignment', back: 'Keep work tied to measurable organizational objectives.' },
+  { front: 'Retrospective', back: 'Identify improvements for the next cycle, not blame.' }
 ];
