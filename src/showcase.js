@@ -60,7 +60,6 @@ style.textContent = `
     color-scheme: dark;
     --bg: #070818;
     --card: rgba(255,255,255,.08);
-    --card-strong: rgba(255,255,255,.12);
     --text: #f8fafc;
     --muted: rgba(248,250,252,.68);
     --accent: #7c4dff;
@@ -71,9 +70,7 @@ style.textContent = `
   * { box-sizing: border-box; }
   html, body { margin: 0; min-height: 100%; }
   body {
-    background:
-      radial-gradient(circle at top, rgba(124,77,255,.22), transparent 24%),
-      linear-gradient(180deg, #05060f 0%, #070818 100%);
+    background: linear-gradient(180deg, #05060f 0%, #070818 100%);
     color: var(--text);
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
@@ -98,7 +95,6 @@ style.textContent = `
     justify-content: space-between;
     align-items: flex-end;
     gap: 12px;
-    padding: 6px 2px 0;
   }
 
   .eyebrow {
@@ -122,7 +118,9 @@ style.textContent = `
     white-space: nowrap;
   }
 
-  .hero-card, .prayer-list, .city-row {
+  .hero-card,
+  .prayer-list,
+  .city-row {
     border: 1px solid var(--line);
     background: var(--card);
     backdrop-filter: blur(18px);
@@ -185,7 +183,7 @@ style.textContent = `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 14px 14px;
+    padding: 14px;
     border-radius: 18px;
     background: rgba(255,255,255,.04);
     border: 1px solid transparent;
