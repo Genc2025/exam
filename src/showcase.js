@@ -58,7 +58,6 @@ const style = document.createElement('style');
 style.textContent = `
   :root {
     color-scheme: dark;
-    --bg: #070818;
     --card: rgba(255,255,255,.08);
     --text: #f8fafc;
     --muted: rgba(248,250,252,.68);
