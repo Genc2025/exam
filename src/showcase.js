@@ -11,6 +11,9 @@ const prayers = [
 
 const cities = ['Prishtinë', 'Prizren', 'Pejë', 'Gjakovë', 'Gjilan'];
 const currentCity = 'Prishtinë';
+const currentPrayer = 'Dhuhr';
+const nextPrayerTime = '12:18';
+const countdown = '02:31:42';
 
 app.innerHTML = `
   <div class="app-shell">
@@ -26,24 +29,24 @@ app.innerHTML = `
       <div class="hero-top">
         <div>
           <div class="label">Next prayer</div>
-          <div class="next-prayer">Dhuhr</div>
-          <div class="next-time">12:18</div>
+          <div class="next-prayer">${currentPrayer}</div>
+          <div class="next-time">${nextPrayerTime}</div>
         </div>
-        <div class="countdown">02:31:42</div>
+        <div class="countdown">${countdown}</div>
       </div>
       <div class="subtext">Time remaining until the next prayer</div>
     </section>
 
     <section class="prayer-list">
-      ${prayers.map((prayer, index) => `
-        <div class="prayer-item ${index === 2 ? 'active' : ''}">
+      ${prayers.map((prayer) => `
+        <div class="prayer-item ${prayer.name === currentPrayer ? 'active' : ''}">
           <span>${prayer.name}</span>
           <strong>${prayer.time}</strong>
         </div>
       `).join('')}
     </section>
 
-    <section class="city-row">
+    <section class="city-row" aria-label="Cities">
       ${cities.map((city, index) => `
         <button class="city-pill ${index === 0 ? 'active' : ''}" type="button">${city}</button>
       `).join('')}
@@ -127,9 +130,7 @@ style.textContent = `
     box-shadow: 0 18px 60px rgba(0,0,0,.26);
   }
 
-  .hero-card {
-    padding: 18px;
-  }
+  .hero-card { padding: 18px; }
 
   .hero-top {
     display: flex;
