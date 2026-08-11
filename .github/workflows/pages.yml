@@ -33,12 +33,21 @@ jobs:
           test -f index.html
           test -f src/store-cj.js
           test -f src/store-cj.css
-          test -f scripts/sync-cj.mjs
+          test -f scripts/sync-cj-germany.mjs
           test -f data/products.json
           test -f data/catalog-config.json
           node --check src/store-cj.js
-          node --check scripts/sync-cj.mjs
-          node -e "JSON.parse(require('fs').readFileSync('data/products.json','utf8')); JSON.parse(require('fs').readFileSync('data/catalog-config.json','utf8'));"
+          node --check scripts/sync-cj-germany.mjs
+          node - <<'NODE'
+          const fs = require('fs');
+          const feed = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
+          const config = JSON.parse(fs.readFileSync('data/catalog-config.json', 'utf8'));
+          if (feed.source !== 'cj') throw new Error('Catalog source must be cj.');
+          if (config.market !== 'DE') throw new Error('Market must be DE.');
+          if (JSON.stringify(config.warehouseCountries) !== JSON.stringify(['DE'])) throw new Error('Only DE warehouse is allowed in initial catalog.');
+          if (!(Number(config.minStock) >= 25)) throw new Error('minStock must be at least 25.');
+          console.log('Static CJ Germany storefront validation passed.');
+          NODE
 
       - name: Build isolated storefront
         run: |
