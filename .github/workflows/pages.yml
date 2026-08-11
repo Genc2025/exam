@@ -31,12 +31,13 @@ jobs:
         run: |
           set -euo pipefail
           test -f index.html
-          test -f src/store.js
-          test -f scripts/sync-bigbuy.mjs
+          test -f src/store-cj.js
+          test -f src/store-cj.css
+          test -f scripts/sync-cj-germany.mjs
           test -f data/products.json
           test -f data/catalog-config.json
-          node --check src/store.js
-          node --check scripts/sync-bigbuy.mjs
+          node --check src/store-cj.js
+          node --check scripts/sync-cj-germany.mjs
           node -e "JSON.parse(require('fs').readFileSync('data/products.json','utf8')); JSON.parse(require('fs').readFileSync('data/catalog-config.json','utf8'));"
 
       - name: Build isolated storefront
@@ -45,7 +46,8 @@ jobs:
           rm -rf _site
           mkdir -p _site/src _site/data
           cp index.html _site/
-          cp src/store.js _site/src/
+          cp src/store-cj.js _site/src/
+          cp src/store-cj.css _site/src/
           cp data/products.json _site/data/
           touch _site/.nojekyll
           printf 'VIRELLO %s\n' "$GITHUB_SHA" > _site/build.txt
