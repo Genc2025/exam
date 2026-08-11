@@ -1,0 +1,45 @@
+name: Sync BigBuy Catalog
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bigbuy-catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Sync BigBuy catalog
+        env:
+          BIGBUY_API_TOKEN: ${{ secrets.BIGBUY_API_TOKEN }}
+          BIGBUY_API_BASE: ${{ vars.BIGBUY_API_BASE }}
+        run: node scripts/sync-bigbuy.mjs
+
+      - name: Commit catalog changes
+        run: |
+          if git diff --quiet -- data/products.json; then
+            echo "No catalog changes."
+            exit 0
+          fi
+          git config user.name "virello-catalog-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/products.json
+          git commit -m "Sync BigBuy catalog"
+          git push
