@@ -1,27 +1,36 @@
 {
   "market": "DE",
   "currency": "EUR",
-  "maxWholesalePrice": 35,
-  "maxRetailPrice": 69.9,
-  "minStock": 10,
-  "maxProducts": 120,
-  "maxAdCandidates": 12,
-  "targetRetailMin": 19.9,
-  "targetRetailMax": 59.9,
-  "markupMultiplier": 2.2,
+  "warehouseCountries": ["DE", "PL", "CZ", "ES", "FR", "NL"],
+  "searchKeywords": [
+    "pet hair remover",
+    "bathroom organizer",
+    "under sink organizer",
+    "car organizer",
+    "travel organizer"
+  ],
+  "searchPageSize": 60,
+  "minStock": 20,
+  "maxInventoryVerificationCandidates": 36,
+  "maxProducts": 24,
+  "maxAdCandidates": 6,
+  "minSupplierUsdPrice": 0.5,
+  "maxSupplierUsdPrice": 40,
+  "maxWholesalePrice": 18,
+  "targetRetailMin": 14.9,
+  "targetRetailMax": 39.9,
+  "maxRetailPrice": 44.9,
+  "markupMultiplier": 2.35,
+  "minimumMarginMultiplier": 1.8,
   "preferredCategoryKeywords": [
-    "home",
-    "kitchen",
-    "house",
-    "car",
-    "auto",
     "pet",
-    "travel",
-    "office",
-    "electronics",
-    "lighting",
-    "tools",
-    "garden"
+    "clean",
+    "organizer",
+    "storage",
+    "bathroom",
+    "home",
+    "car",
+    "travel"
   ],
   "blockedKeywords": [
     "supplement",
@@ -36,6 +45,9 @@
     "alcohol",
     "weapon",
     "knife",
-    "baby food"
+    "baby food",
+    "battery",
+    "lithium",
+    "power bank"
   ]
 }
