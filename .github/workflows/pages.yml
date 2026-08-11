@@ -32,8 +32,12 @@ jobs:
           set -euo pipefail
           test -f index.html
           test -f src/store.js
+          test -f scripts/sync-bigbuy.mjs
           test -f data/products.json
           test -f data/catalog-config.json
+          node --check src/store.js
+          node --check scripts/sync-bigbuy.mjs
+          node -e "JSON.parse(require('fs').readFileSync('data/products.json','utf8')); JSON.parse(require('fs').readFileSync('data/catalog-config.json','utf8'));"
 
       - name: Build isolated storefront
         run: |
