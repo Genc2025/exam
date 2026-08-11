@@ -1,0 +1,41 @@
+{
+  "market": "DE",
+  "currency": "EUR",
+  "maxWholesalePrice": 35,
+  "maxRetailPrice": 69.9,
+  "minStock": 10,
+  "maxProducts": 120,
+  "maxAdCandidates": 12,
+  "targetRetailMin": 19.9,
+  "targetRetailMax": 59.9,
+  "markupMultiplier": 2.2,
+  "preferredCategoryKeywords": [
+    "home",
+    "kitchen",
+    "house",
+    "car",
+    "auto",
+    "pet",
+    "travel",
+    "office",
+    "electronics",
+    "lighting",
+    "tools",
+    "garden"
+  ],
+  "blockedKeywords": [
+    "supplement",
+    "vitamin",
+    "medical",
+    "medicine",
+    "prescription",
+    "adult",
+    "sex",
+    "vape",
+    "nicotine",
+    "alcohol",
+    "weapon",
+    "knife",
+    "baby food"
+  ]
+}
