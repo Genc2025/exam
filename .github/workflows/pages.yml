@@ -1,15 +1,19 @@
-name: Deploy Miranda
+name: Deploy Virello Store
+
 on:
   push:
     branches: [main]
   workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
-  group: github-pages-miranda
+  group: github-pages-virello
   cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -22,31 +26,34 @@ jobs:
         with:
           ref: ${{ github.sha }}
           fetch-depth: 1
-      - name: Verify production assets
+
+      - name: Verify storefront assets
         run: |
           set -euo pipefail
-          required="index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda-core.js miranda_usda_complete.sqlite manifest.webmanifest sw.js"
-          for f in $required; do
-            test -f "$f" || { echo "Missing required asset: $f"; exit 1; }
-          done
-          test -s miranda_usda_complete.sqlite || { echo "USDA database is empty"; exit 1; }
-          grep -q 'miranda-core.js' index.html || { echo "Miranda Core is not loaded by index.html"; exit 1; }
-          grep -q 'nutrition.js' index.html || { echo "Nutrition engine is not loaded by index.html"; exit 1; }
-          grep -q 'fitness-pro.js' index.html || { echo "Fitness engine is not loaded by index.html"; exit 1; }
-      - name: Build isolated site
+          test -f index.html
+          test -f src/store.js
+          test -f data/products.json
+          test -f data/catalog-config.json
+
+      - name: Build isolated storefront
         run: |
           set -euo pipefail
           rm -rf _site
-          mkdir _site
-          cp index.html fresh.css fresh.js diet.js recipes150.js ultra.css ultra.js premium.css premium.js nutrition.css nutrition.js family.css family.js family-premium.js fitness-pro.js miranda-os.js miranda-wow.js premium25.js miranda-core.js miranda_usda_complete.sqlite manifest.webmanifest sw.js _site/
+          mkdir -p _site/src _site/data
+          cp index.html _site/
+          cp src/store.js _site/src/
+          cp data/products.json _site/data/
           touch _site/.nojekyll
-          printf 'MIRANDA-PRODUCTION %s\n' "$GITHUB_SHA" > _site/build.txt
+          printf 'VIRELLO %s\n' "$GITHUB_SHA" > _site/build.txt
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
-      - name: Upload production site
+
+      - name: Upload storefront
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
-      - name: Deploy Miranda
+
+      - name: Deploy storefront
         id: deployment
         uses: actions/deploy-pages@v4
