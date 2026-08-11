@@ -1,20 +1,21 @@
-name: Sync BigBuy Catalog
+name: Sync CJ EU Catalog
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '23 */6 * * *'
 
 permissions:
   contents: write
 
 concurrency:
-  group: bigbuy-catalog-sync
+  group: cj-eu-catalog-sync
   cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,11 +27,11 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Sync BigBuy catalog
+      - name: Sync verified CJ EU catalog
         env:
-          BIGBUY_API_TOKEN: ${{ secrets.BIGBUY_API_TOKEN }}
-          BIGBUY_API_BASE: ${{ vars.BIGBUY_API_BASE }}
-        run: node scripts/sync-bigbuy.mjs
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+          CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
+        run: node scripts/sync-cj.mjs
 
       - name: Commit catalog changes
         run: |
@@ -38,8 +39,8 @@ jobs:
             echo "No catalog changes."
             exit 0
           fi
-          git config user.name "virello-catalog-bot"
+          git config user.name "virello-cj-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/products.json
-          git commit -m "Sync BigBuy catalog"
+          git commit -m "Sync verified CJ EU catalog"
           git push
