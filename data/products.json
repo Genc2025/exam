@@ -1,6 +1,10 @@
 {
   "generatedAt": null,
-  "source": "bigbuy",
+  "source": "cj",
   "mode": "awaiting-api-token",
+  "selection": {
+    "market": "DE",
+    "note": "No live CJ product data is stored until the CJ_API_KEY workflow sync succeeds."
+  },
   "products": []
 }
