@@ -7,6 +7,7 @@ on:
     paths:
       - 'scripts/sync-cj-europe-v4.mjs'
       - 'scripts/enrich-cj-economics.mjs'
+      - 'scripts/normalize-catalog-mode.mjs'
       - 'data/catalog-config.json'
       - '.github/workflows/cj-sync.yml'
   schedule:
@@ -38,6 +39,7 @@ jobs:
         run: |
           node --check scripts/sync-cj-europe-v4.mjs
           node --check scripts/enrich-cj-economics.mjs
+          node --check scripts/normalize-catalog-mode.mjs
 
       - name: Sync verified CJ Europe catalog
         id: cj
@@ -63,6 +65,10 @@ jobs:
           CJ_API_DELAY_MS: 2600
         run: node scripts/enrich-cj-economics.mjs
 
+      - name: Normalize live storefront mode
+        if: steps.cj.outputs.configured == 'true'
+        run: node scripts/normalize-catalog-mode.mjs
+
       - name: Validate generated Europe catalog
         if: steps.cj.outputs.configured == 'true'
         run: |
@@ -72,6 +78,7 @@ jobs:
           const allowed = new Set((config.warehouseCountries || []).map(v => String(v).toUpperCase()));
           if (feed.source !== 'cj') throw new Error('Catalog source must be cj.');
           if (!Array.isArray(feed.products)) throw new Error('Catalog products must be an array.');
+          if (feed.mode !== 'live-api') throw new Error('Storefront mode must be live-api.');
           if (feed.selection?.warehouseRegion !== 'EUROPE') throw new Error('Catalog must be Europe-wide.');
           if (!feed.economicsSummary) throw new Error('Economics summary missing.');
           for (const product of feed.products) {
