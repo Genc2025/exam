@@ -1,5 +1,6 @@
 name: Sync CJ Germany Catalog
 
+# Re-triggered after CJ_API_KEY configuration.
 on:
   workflow_dispatch:
   push:
