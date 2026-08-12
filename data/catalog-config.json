@@ -18,7 +18,7 @@
   "demoVatRate": 0.19,
   "demoPaymentFeeRate": 0.03,
   "demoTargetPreAdMargin": 0.30,
-  "maxEconomicsProducts": 500,
+  "maxEconomicsProducts": 24,
   "preferredCategoryKeywords": [
     "home", "storage", "organizer", "cleaning", "household", "kitchen", "bathroom", "pet", "dog", "cat", "car", "travel", "garden", "outdoor", "tool"
   ],
