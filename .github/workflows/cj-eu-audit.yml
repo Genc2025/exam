@@ -1,0 +1,48 @@
+name: Audit CJ EU Inventory
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/audit-cj-eu-inventory.mjs'
+      - '.github/workflows/cj-eu-audit.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cj-eu-catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate audit script
+        run: node --check scripts/audit-cj-eu-inventory.mjs
+
+      - name: Audit CJ EU inventory
+        env:
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+          CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
+          CJ_API_DELAY_MS: 1800
+        run: node scripts/audit-cj-eu-inventory.mjs
+
+      - name: Commit audit result
+        run: |
+          git config user.name "virello-cj-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/cj-eu-audit.json
+          git commit -m "Update CJ EU inventory audit" || exit 0
+          git pull --rebase origin main
+          git push origin main
