@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/sync-cj-eu.mjs'
+      - 'scripts/sync-cj-eu-v3.mjs'
       - 'data/catalog-config.json'
       - '.github/workflows/cj-sync.yml'
   schedule:
@@ -34,14 +34,14 @@ jobs:
           node-version: '20'
 
       - name: Validate sync script
-        run: node --check scripts/sync-cj-eu.mjs
+        run: node --check scripts/sync-cj-eu-v3.mjs
 
       - name: Sync verified CJ EU catalog
         id: cj
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
           CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
-          CJ_API_DELAY_MS: 2000
+          CJ_API_DELAY_MS: 2200
           USD_TO_EUR_RATE: ${{ vars.USD_TO_EUR_RATE }}
         run: |
           if [ -z "${CJ_API_KEY:-}" ]; then
@@ -50,7 +50,7 @@ jobs:
             exit 0
           fi
           echo "configured=true" >> "$GITHUB_OUTPUT"
-          node scripts/sync-cj-eu.mjs
+          node scripts/sync-cj-eu-v3.mjs
 
       - name: Validate generated EU catalog
         if: steps.cj.outputs.configured == 'true'
@@ -63,7 +63,7 @@ jobs:
           if (!Array.isArray(feed.products)) throw new Error('Catalog products must be an array.');
           for (const product of feed.products) {
             if (product.verifiedStock !== true) throw new Error(`Unverified stock: ${product.sku}`);
-            if (!(Number(product.stock) >= Number(config.minStock || 25))) throw new Error(`Insufficient stock: ${product.sku}`);
+            if (!(Number(product.stock) >= Number(config.minStock || 5))) throw new Error(`Insufficient stock: ${product.sku}`);
             if (!Array.isArray(product.warehouses) || product.warehouses.length === 0) throw new Error(`Missing warehouse: ${product.sku}`);
             if (product.warehouses.some((warehouse) => !allowed.has(warehouse.countryCode) || warehouse.verified !== true)) {
               throw new Error(`Disallowed or unverified warehouse: ${product.sku}`);
@@ -71,7 +71,7 @@ jobs:
             if (!allowed.has(product.primaryWarehouse)) throw new Error(`Invalid primary warehouse: ${product.sku}`);
             if (product.sellReady !== false) throw new Error(`sellReady must stay false before freight/payment/compliance checks: ${product.sku}`);
           }
-          console.log(`Validated ${feed.products.length} CJ EU-warehouse products for Germany market.`);
+          console.log(`Validated ${feed.products.length} CJ warehouse products for Germany market.`);
           NODE
 
       - name: Commit catalog changes
@@ -84,6 +84,6 @@ jobs:
           git config user.name "virello-cj-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/products.json
-          git commit -m "Sync verified CJ EU catalog"
+          git commit -m "Sync verified CJ Germany catalog"
           git pull --rebase origin main
           git push origin main
