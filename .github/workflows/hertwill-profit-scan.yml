@@ -1,0 +1,44 @@
+name: Hertwill Profit Scan
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/scan-hertwill-profit.mjs'
+      - '.github/workflows/hertwill-profit-scan.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hertwill-profit-scan
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Scan Hertwill economics
+        env:
+          HERTWILL_API_KEY: ${{ secrets.HERTWILL_API_KEY }}
+        run: node scripts/scan-hertwill-profit.mjs
+
+      - name: Commit profit scan
+        run: |
+          git config user.name "virello-hertwill-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/hertwill-profit-scan.json
+          if git diff --cached --quiet; then
+            echo "No Hertwill profit scan changes."
+            exit 0
+          fi
+          git commit -m "Refresh Hertwill profit scan"
+          git pull --rebase origin main
+          git push origin main
