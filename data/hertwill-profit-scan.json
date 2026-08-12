@@ -1,0 +1,2409 @@
+{
+  "generatedAt": "2026-08-12T02:46:37.165Z",
+  "source": "Hertwill authenticated API",
+  "assumptions": {
+    "destination": "DE",
+    "vatReserveRate": 0.19,
+    "paymentFeeReserveRate": 0.03,
+    "targetProfitBeforeAdsEur": 15
+  },
+  "discoveredCount": 455,
+  "scannedCount": 120,
+  "eligibleCount": 15,
+  "note": "Target profit is contribution before advertising, returns and business income tax. Final market competitiveness requires external price validation.",
+  "products": [
+    {
+      "id": 6302,
+      "sku": "leash-travel",
+      "name": "Leash – Travel",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories",
+        "car organizer",
+        "travel accessories"
+      ],
+      "image": null,
+      "slug": "leash-travel",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 4.13,
+        "max": 12.34
+      },
+      "economics": {
+        "supplierCostEur": 4.13,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 11.62,
+        "targetSellingPriceEur": 32.9,
+        "vatReserveEur": 5.25,
+        "paymentReserveEur": 0.99,
+        "profitBeforeAdsEur": 15.04
+      },
+      "eligible": true
+    },
+    {
+      "id": 6165,
+      "sku": "1472",
+      "name": "Harness And Leash Set for Cat - Boho",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "harness-and-leash-set-for-cat-boho",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 9.51,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 17,
+        "targetSellingPriceEur": 39.9,
+        "vatReserveEur": 6.37,
+        "paymentReserveEur": 1.2,
+        "profitBeforeAdsEur": 15.33
+      },
+      "eligible": true
+    },
+    {
+      "id": 6164,
+      "sku": "1471",
+      "name": "Harness And Leash Set for Cat - Red Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "harness-and-leash-set-for-cat-red-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 9.51,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 17,
+        "targetSellingPriceEur": 39.9,
+        "vatReserveEur": 6.37,
+        "paymentReserveEur": 1.2,
+        "profitBeforeAdsEur": 15.33
+      },
+      "eligible": true
+    },
+    {
+      "id": 6168,
+      "sku": "1475",
+      "name": "Harness And Leash Set for Cat - Blue Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "harness-and-leash-set-for-cat-blue-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 9.51,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 17,
+        "targetSellingPriceEur": 39.9,
+        "vatReserveEur": 6.37,
+        "paymentReserveEur": 1.2,
+        "profitBeforeAdsEur": 15.33
+      },
+      "eligible": true
+    },
+    {
+      "id": 6166,
+      "sku": "1473",
+      "name": "Harness And Leash Set for Cat - Pixels",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "harness-and-leash-set-for-cat-pixels",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 9.51,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 17,
+        "targetSellingPriceEur": 39.9,
+        "vatReserveEur": 6.37,
+        "paymentReserveEur": 1.2,
+        "profitBeforeAdsEur": 15.33
+      },
+      "eligible": true
+    },
+    {
+      "id": 6249,
+      "sku": "nylon-harness-bluegraffiti",
+      "name": "Nylon Harness – Blue Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "nylon-harness-blue-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 11.75,
+        "max": 25.42
+      },
+      "economics": {
+        "supplierCostEur": 11.75,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 19.24,
+        "targetSellingPriceEur": 42.99,
+        "vatReserveEur": 6.86,
+        "paymentReserveEur": 1.29,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": true
+    },
+    {
+      "id": 6227,
+      "sku": "nylon-harness-redgraffiti",
+      "name": "Nylon Harness – Red Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "nylon-harness-red-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 11.75,
+        "max": 25.42
+      },
+      "economics": {
+        "supplierCostEur": 11.75,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 19.24,
+        "targetSellingPriceEur": 42.99,
+        "vatReserveEur": 6.86,
+        "paymentReserveEur": 1.29,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": true
+    },
+    {
+      "id": 6238,
+      "sku": "nylon-harness-pixels",
+      "name": "Nylon Harness – Pixels",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "nylon-harness-pixels",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 11.75,
+        "max": 25.42
+      },
+      "economics": {
+        "supplierCostEur": 11.75,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 19.24,
+        "targetSellingPriceEur": 42.99,
+        "vatReserveEur": 6.86,
+        "paymentReserveEur": 1.29,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": true
+    },
+    {
+      "id": 6305,
+      "sku": "nylon-harness-travel",
+      "name": "Nylon Harness – Travel",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "travel accessories"
+      ],
+      "image": null,
+      "slug": "nylon-harness-travel",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 11.75,
+        "max": 25.42
+      },
+      "economics": {
+        "supplierCostEur": 11.75,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 19.24,
+        "targetSellingPriceEur": 42.99,
+        "vatReserveEur": 6.86,
+        "paymentReserveEur": 1.29,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": true
+    },
+    {
+      "id": 6325,
+      "sku": "pressure-free-harness-pixels",
+      "name": "Pressure Free Harness – Pixels",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "pressure-free-harness-pixels",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 17.68,
+        "max": 31.08
+      },
+      "economics": {
+        "supplierCostEur": 17.68,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 25.17,
+        "targetSellingPriceEur": 49.99,
+        "vatReserveEur": 7.98,
+        "paymentReserveEur": 1.5,
+        "profitBeforeAdsEur": 15.34
+      },
+      "eligible": true
+    },
+    {
+      "id": 6323,
+      "sku": "pressure-free-harness-redgraffiti",
+      "name": "Pressure Free Harness – Red Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "pressure-free-harness-red-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 18.56,
+        "max": 32.63
+      },
+      "economics": {
+        "supplierCostEur": 18.56,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 26.05,
+        "targetSellingPriceEur": 50.99,
+        "vatReserveEur": 8.14,
+        "paymentReserveEur": 1.53,
+        "profitBeforeAdsEur": 15.27
+      },
+      "eligible": true
+    },
+    {
+      "id": 6331,
+      "sku": "pressure-free-harness-travel",
+      "name": "Pressure Free Harness – Travel",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories",
+        "travel accessories"
+      ],
+      "image": null,
+      "slug": "pressure-free-harness-travel",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 18.56,
+        "max": 32.63
+      },
+      "economics": {
+        "supplierCostEur": 18.56,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 26.05,
+        "targetSellingPriceEur": 50.99,
+        "vatReserveEur": 8.14,
+        "paymentReserveEur": 1.53,
+        "profitBeforeAdsEur": 15.27
+      },
+      "eligible": true
+    },
+    {
+      "id": 6327,
+      "sku": "pressure-free-harness-bluegraffiti",
+      "name": "Pressure Free Harness – Blue Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "pressure-free-harness-blue-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 18.56,
+        "max": 32.63
+      },
+      "economics": {
+        "supplierCostEur": 18.56,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 26.05,
+        "targetSellingPriceEur": 50.99,
+        "vatReserveEur": 8.14,
+        "paymentReserveEur": 1.53,
+        "profitBeforeAdsEur": 15.27
+      },
+      "eligible": true
+    },
+    {
+      "id": 6324,
+      "sku": "pressure-free-harness-boho",
+      "name": "Pressure Free Harness – Boho",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "pressure-free-harness-boho",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 18.56,
+        "max": 29.24
+      },
+      "economics": {
+        "supplierCostEur": 18.56,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 26.05,
+        "targetSellingPriceEur": 50.99,
+        "vatReserveEur": 8.14,
+        "paymentReserveEur": 1.53,
+        "profitBeforeAdsEur": 15.27
+      },
+      "eligible": true
+    },
+    {
+      "id": 5129,
+      "sku": "matteo-adjustable-leash-boho",
+      "name": "Adjustable Dog Leash - Boho",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "adjustable-dog-leash-boho",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 6.09,
+        "max": 19.68
+      },
+      "economics": {
+        "supplierCostEur": 19.68,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 27.17,
+        "targetSellingPriceEur": 52.99,
+        "vatReserveEur": 8.46,
+        "paymentReserveEur": 1.59,
+        "profitBeforeAdsEur": 15.77
+      },
+      "eligible": true
+    },
+    {
+      "id": 6304,
+      "sku": "harness-leather-travel",
+      "name": "Harness With Leather – Travel",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories",
+        "travel accessories"
+      ],
+      "image": null,
+      "slug": "harness-with-leather-travel",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 6.74,
+        "max": 14.22
+      },
+      "economics": {
+        "supplierCostEur": 6.74,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 14.23,
+        "targetSellingPriceEur": 36.9,
+        "vatReserveEur": 5.89,
+        "paymentReserveEur": 1.11,
+        "profitBeforeAdsEur": 15.67
+      },
+      "eligible": false
+    },
+    {
+      "id": 6226,
+      "sku": "harness-leather-redgraffiti",
+      "name": "Harness With Leather – Red Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "harness-with-leather-red-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 6.74,
+        "max": 14.22
+      },
+      "economics": {
+        "supplierCostEur": 6.74,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 14.23,
+        "targetSellingPriceEur": 36.9,
+        "vatReserveEur": 5.89,
+        "paymentReserveEur": 1.11,
+        "profitBeforeAdsEur": 15.67
+      },
+      "eligible": false
+    },
+    {
+      "id": 6248,
+      "sku": "harness-leather-bluegraffiti",
+      "name": "Harness With Leather – Blue Graffiti",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "harness-with-leather-blue-graffiti",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 6.74,
+        "max": 14.22
+      },
+      "economics": {
+        "supplierCostEur": 6.74,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 14.23,
+        "targetSellingPriceEur": 36.9,
+        "vatReserveEur": 5.89,
+        "paymentReserveEur": 1.11,
+        "profitBeforeAdsEur": 15.67
+      },
+      "eligible": false
+    },
+    {
+      "id": 6237,
+      "sku": "harness-leather-pixels",
+      "name": "Harness With Leather – Pixels",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "harness-with-leather-pixels",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 6.74,
+        "max": 14.22
+      },
+      "economics": {
+        "supplierCostEur": 6.74,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 14.23,
+        "targetSellingPriceEur": 36.9,
+        "vatReserveEur": 5.89,
+        "paymentReserveEur": 1.11,
+        "profitBeforeAdsEur": 15.67
+      },
+      "eligible": false
+    },
+    {
+      "id": 6216,
+      "sku": "nylon-harness-boho",
+      "name": "Nylon Dog Harness – Boho",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "dog accessories"
+      ],
+      "image": null,
+      "slug": "nylon-dog-harness-boho",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Matteo April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": {
+        "min": 11.19,
+        "max": 24.21
+      },
+      "economics": {
+        "supplierCostEur": 11.19,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 18.68,
+        "targetSellingPriceEur": 41.99,
+        "vatReserveEur": 6.7,
+        "paymentReserveEur": 1.26,
+        "profitBeforeAdsEur": 15.35
+      },
+      "eligible": false
+    },
+    {
+      "id": 7477,
+      "sku": "5400858932228",
+      "name": "Small Backpack - Mrs. Cat",
+      "brandId": 121,
+      "brand": "Trixie Baby",
+      "category": "Backpacks & Daypacks",
+      "originCountryCode": "PL",
+      "stock": 3,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "small-backpack-mrs-cat",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Trixie Baby April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 22.45,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 29.94,
+        "targetSellingPriceEur": 55.99,
+        "vatReserveEur": 8.94,
+        "paymentReserveEur": 1.68,
+        "profitBeforeAdsEur": 15.43
+      },
+      "eligible": false
+    },
+    {
+      "id": 5878,
+      "sku": "5400858931979",
+      "name": "Small Backpack - Mr. Bear",
+      "brandId": 121,
+      "brand": "Trixie Baby",
+      "category": "Backpacks & Daypacks",
+      "originCountryCode": "PL",
+      "stock": 8,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "small-backpack-mr-bear",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Trixie Baby April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 22.47,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 29.96,
+        "targetSellingPriceEur": 55.99,
+        "vatReserveEur": 8.94,
+        "paymentReserveEur": 1.68,
+        "profitBeforeAdsEur": 15.41
+      },
+      "eligible": false
+    },
+    {
+      "id": 1561,
+      "sku": "nordhale-malmo-15-dark-grey",
+      "name": "Laptop Sleeve Malmö 15' Black",
+      "brandId": 6,
+      "brand": "Nordhale",
+      "category": "Laptop Sleeves & Briefcases",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "malmo-15",
+      "germanyShippingRoute": {
+        "originIsoCode": "EE",
+        "destinationIsoCode": "DE",
+        "price": 15.99,
+        "listName": "Nordhale"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 29.78,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 45.77,
+        "targetSellingPriceEur": 74.99,
+        "vatReserveEur": 11.97,
+        "paymentReserveEur": 2.25,
+        "profitBeforeAdsEur": 15
+      },
+      "eligible": false
+    },
+    {
+      "id": 1563,
+      "sku": "nordhale-malmo-13-grey",
+      "name": "Laptop Sleeve Malmö 13' Grey",
+      "brandId": 6,
+      "brand": "Nordhale",
+      "category": "Laptop Sleeves & Briefcases",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "malmo-13-2",
+      "germanyShippingRoute": {
+        "originIsoCode": "EE",
+        "destinationIsoCode": "DE",
+        "price": 15.99,
+        "listName": "Nordhale"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 29.78,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 45.77,
+        "targetSellingPriceEur": 74.99,
+        "vatReserveEur": 11.97,
+        "paymentReserveEur": 2.25,
+        "profitBeforeAdsEur": 15
+      },
+      "eligible": false
+    },
+    {
+      "id": 1564,
+      "sku": "nordhale-malmo-13-dark-grey",
+      "name": "Laptop Sleeve Malmö 13' Black",
+      "brandId": 6,
+      "brand": "Nordhale",
+      "category": "Laptop Sleeves & Briefcases",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "malmo-13",
+      "germanyShippingRoute": {
+        "originIsoCode": "EE",
+        "destinationIsoCode": "DE",
+        "price": 15.99,
+        "listName": "Nordhale"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 29.78,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 45.77,
+        "targetSellingPriceEur": 74.99,
+        "vatReserveEur": 11.97,
+        "paymentReserveEur": 2.25,
+        "profitBeforeAdsEur": 15
+      },
+      "eligible": false
+    },
+    {
+      "id": 1567,
+      "sku": "nordhale-malmo-15-grey",
+      "name": "Laptop Sleeve Malmö 15' Grey",
+      "brandId": 6,
+      "brand": "Nordhale",
+      "category": "Laptop Sleeves & Briefcases",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "malmo-15-2",
+      "germanyShippingRoute": {
+        "originIsoCode": "EE",
+        "destinationIsoCode": "DE",
+        "price": 15.99,
+        "listName": "Nordhale"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 29.78,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 45.77,
+        "targetSellingPriceEur": 74.99,
+        "vatReserveEur": 11.97,
+        "paymentReserveEur": 2.25,
+        "profitBeforeAdsEur": 15
+      },
+      "eligible": false
+    },
+    {
+      "id": 6814,
+      "sku": "5907614621452",
+      "name": "Ocon Blanket - Grayish",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "ocon-blanket-grayish",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 39.77,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 49.76,
+        "targetSellingPriceEur": 79.99,
+        "vatReserveEur": 12.77,
+        "paymentReserveEur": 2.4,
+        "profitBeforeAdsEur": 15.06
+      },
+      "eligible": false
+    },
+    {
+      "id": 7871,
+      "sku": "480-55/DM/O1",
+      "name": "Natural Wicker Pet Carrier Efa With Cushion",
+      "brandId": 200,
+      "brand": "Wicker Stories",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 0,
+      "stockStatus": "outofstock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "natural-wicker-pet-carrier-efa-with-cushion",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 18,
+        "listName": "EU · UK · USA"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 38.77,
+        "shippingGermanyEur": 18,
+        "landedCostEur": 56.77,
+        "targetSellingPriceEur": 88.99,
+        "vatReserveEur": 14.21,
+        "paymentReserveEur": 2.67,
+        "profitBeforeAdsEur": 15.34
+      },
+      "eligible": false
+    },
+    {
+      "id": 7872,
+      "sku": "497-60/P1",
+      "name": "Natural Wicker Pet House Elsa With Cushion",
+      "brandId": 200,
+      "brand": "Wicker Stories",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 0,
+      "stockStatus": "outofstock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "natural-wicker-pet-house-elsa-with-cushion",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 18,
+        "listName": "EU · UK · USA"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 41.92,
+        "shippingGermanyEur": 18,
+        "landedCostEur": 59.92,
+        "targetSellingPriceEur": 92.99,
+        "vatReserveEur": 14.85,
+        "paymentReserveEur": 2.79,
+        "profitBeforeAdsEur": 15.43
+      },
+      "eligible": false
+    },
+    {
+      "id": 9339,
+      "sku": "502-75 Braz",
+      "name": "Esmira Natural Wicker Dog Bed With Brown Dot Cushion, 75x57 cm",
+      "brandId": 200,
+      "brand": "Wicker Stories",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "esmira-natural-wicker-dog-bed-with-brown-dot-cushion-75x57-cm",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 18,
+        "listName": "EU · UK · USA"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 46.2,
+        "shippingGermanyEur": 18,
+        "landedCostEur": 64.2,
+        "targetSellingPriceEur": 97.99,
+        "vatReserveEur": 15.65,
+        "paymentReserveEur": 2.94,
+        "profitBeforeAdsEur": 15.2
+      },
+      "eligible": false
+    },
+    {
+      "id": 6823,
+      "sku": "5907614621544",
+      "name": "Rino Blanket - Grayish",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "rino-blanket-grayish",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 57.06,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 67.05,
+        "targetSellingPriceEur": 101.99,
+        "vatReserveEur": 16.28,
+        "paymentReserveEur": 3.06,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": false
+    },
+    {
+      "id": 6817,
+      "sku": "5907614621483",
+      "name": "Huma Blanket - Grayish",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "huma-blanket-grayish",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 57.06,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 67.05,
+        "targetSellingPriceEur": 101.99,
+        "vatReserveEur": 16.28,
+        "paymentReserveEur": 3.06,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": false
+    },
+    {
+      "id": 6818,
+      "sku": "5907614621490",
+      "name": "Haakla Blanket - Grayish",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "haakla-blanket-grayish",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 57.06,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 67.05,
+        "targetSellingPriceEur": 101.99,
+        "vatReserveEur": 16.28,
+        "paymentReserveEur": 3.06,
+        "profitBeforeAdsEur": 15.6
+      },
+      "eligible": false
+    },
+    {
+      "id": 9338,
+      "sku": "502-85 Braz",
+      "name": "Esmira Natural Wicker Dog Bed With Brown Dot Cushion, 85x67 cm",
+      "brandId": 200,
+      "brand": "Wicker Stories",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "esmira-natural-wicker-dog-bed-with-brown-dot-cushion-85x67-cm",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 18,
+        "listName": "EU · UK · USA"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 50.4,
+        "shippingGermanyEur": 18,
+        "landedCostEur": 68.4,
+        "targetSellingPriceEur": 102.99,
+        "vatReserveEur": 16.44,
+        "paymentReserveEur": 3.09,
+        "profitBeforeAdsEur": 15.06
+      },
+      "eligible": false
+    },
+    {
+      "id": 5479,
+      "sku": "8435392628945",
+      "name": "Decorative Basket Watering Can",
+      "brandId": 167,
+      "brand": "Lorena Canals",
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 8,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories",
+        "home accessories"
+      ],
+      "image": null,
+      "slug": "decorative-watering-can",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Lorena Canals April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 63.94,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 71.43,
+        "targetSellingPriceEur": 106.99,
+        "vatReserveEur": 17.08,
+        "paymentReserveEur": 3.21,
+        "profitBeforeAdsEur": 15.27
+      },
+      "eligible": false
+    },
+    {
+      "id": 5480,
+      "sku": "8435392628938",
+      "name": "Decorative Basket Country Barn",
+      "brandId": 167,
+      "brand": "Lorena Canals",
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 4,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": true,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "decorative-basket-country-barn",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 7.49,
+        "listName": "EE flat-rate EU - Lorena Canals April 2026"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 106.93,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 114.42,
+        "targetSellingPriceEur": 159.99,
+        "vatReserveEur": 25.54,
+        "paymentReserveEur": 4.8,
+        "profitBeforeAdsEur": 15.23
+      },
+      "eligible": false
+    },
+    {
+      "id": 6779,
+      "sku": "5907614620660",
+      "name": "Coco Dog/Cat Bed - Light Brown",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "coco-dogcat-bed-light-brown",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 104.74,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 114.73,
+        "targetSellingPriceEur": 160.99,
+        "vatReserveEur": 25.7,
+        "paymentReserveEur": 4.83,
+        "profitBeforeAdsEur": 15.73
+      },
+      "eligible": false
+    },
+    {
+      "id": 6777,
+      "sku": "5907614620646",
+      "name": "Coco Dog/Cat Bed - Beige",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "coco-dogcat-bed-beige",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 104.74,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 114.73,
+        "targetSellingPriceEur": 160.99,
+        "vatReserveEur": 25.7,
+        "paymentReserveEur": 4.83,
+        "profitBeforeAdsEur": 15.73
+      },
+      "eligible": false
+    },
+    {
+      "id": 6778,
+      "sku": "5907614620653",
+      "name": "Coco Dog/Cat Bed - Green",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "coco-dogcat-bed-green",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 104.74,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 114.73,
+        "targetSellingPriceEur": 160.99,
+        "vatReserveEur": 25.7,
+        "paymentReserveEur": 4.83,
+        "profitBeforeAdsEur": 15.73
+      },
+      "eligible": false
+    },
+    {
+      "id": 6780,
+      "sku": "5907614620677",
+      "name": "Coco Dog/Cat Bed - Anthracite",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories",
+        "cat accessories"
+      ],
+      "image": null,
+      "slug": "coco-dogcat-bed-anthracite",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 104.74,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 114.73,
+        "targetSellingPriceEur": 160.99,
+        "vatReserveEur": 25.7,
+        "paymentReserveEur": 4.83,
+        "profitBeforeAdsEur": 15.73
+      },
+      "eligible": false
+    },
+    {
+      "id": 6802,
+      "sku": "5907614621193",
+      "name": "Elva Dog Carrier & Personal Bag - Light Grey",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "elva-dog-carrieright-grey",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 238.34,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 248.33,
+        "targetSellingPriceEur": 324.99,
+        "vatReserveEur": 51.89,
+        "paymentReserveEur": 9.75,
+        "profitBeforeAdsEur": 15.02
+      },
+      "eligible": false
+    },
+    {
+      "id": 6803,
+      "sku": "5907614621209",
+      "name": "Elva Dog Carrier & Personal Bag - Nude",
+      "brandId": 180,
+      "brand": "Labbvenn",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "blocked": false,
+      "sourceQueries": [
+        "pet accessories"
+      ],
+      "image": null,
+      "slug": "elva-dog-carrier-nude",
+      "germanyShippingRoute": {
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": 9.99,
+        "listName": "EU · UK · USA — Bags & Apparel"
+      },
+      "suggestedRetailFields": {
+        "retailPrice": null,
+        "recommendedRetailPrice": null,
+        "rrp": null,
+        "msrp": null,
+        "compareAtPrice": null
+      },
+      "maxKnownRetail": null,
+      "priceVsKnownRetail": null,
+      "variationPriceRange": null,
+      "economics": {
+        "supplierCostEur": 238.34,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 248.33,
+        "targetSellingPriceEur": 324.99,
+        "vatReserveEur": 51.89,
+        "paymentReserveEur": 9.75,
+        "profitBeforeAdsEur": 15.02
+      },
+      "eligible": false
+    },
+    {
+      "id": 5877,
+      "name": "Small Backpack - Mr. Dragon",
+      "error": "HTTP 429 /v1/products/5877: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7870,
+      "name": "Whitewashed Wicker Pet House Elsa With Cushion",
+      "error": "HTTP 429 /v1/products/7870: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6744,
+      "name": "Fosser Travel Mat - Brown ",
+      "error": "HTTP 429 /v1/products/6744: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6309,
+      "name": "Shock Absorbing Dog Leash - Boho",
+      "error": "HTTP 429 /v1/products/6309: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5876,
+      "name": "Small Backpack - Mrs. Butterfly",
+      "error": "HTTP 429 /v1/products/5876: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6815,
+      "name": "Manno Blanket - Grayish ",
+      "error": "HTTP 429 /v1/products/6815: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7866,
+      "name": "Dark Wicker Pet Bed Alfie With Cushion and Decorative Bone, 74×52 cm",
+      "error": "HTTP 429 /v1/products/7866: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7865,
+      "name": "Dark Wicker Pet Bed Alfie With Cushion, 74×52 cm ",
+      "error": "HTTP 429 /v1/products/7865: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4935,
+      "name": "Wooden Dollhouse Crystal with LED Lights",
+      "error": "HTTP 429 /v1/products/4935: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5130,
+      "name": "Quick Fastning Dog Collar - Boho",
+      "error": "HTTP 429 /v1/products/5130: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6308,
+      "name": "Shock Absorbing Dog Leash - Red Graffiti",
+      "error": "HTTP 429 /v1/products/6308: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5132,
+      "name": "Dog Leash - Boho",
+      "error": "HTTP 429 /v1/products/5132: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6312,
+      "name": "Shock Absorbing Dog Leash - Blue Graffiti",
+      "error": "HTTP 429 /v1/products/6312: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5654,
+      "name": "Dog Harness With Leather – Boho",
+      "error": "HTTP 429 /v1/products/5654: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5128,
+      "name": "Dog Collar With a Plastic Buckle - Boho",
+      "error": "HTTP 429 /v1/products/5128: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6811,
+      "name": "Kiima Cushion - Dark Grey ",
+      "error": "HTTP 429 /v1/products/6811: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6810,
+      "name": "Kiima Cushion - Light Beige ",
+      "error": "HTTP 429 /v1/products/6810: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6217,
+      "name": "Safety Belt For Dogs - Boho",
+      "error": "HTTP 429 /v1/products/6217: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6812,
+      "name": "Kiima Cushion - Soft Teal ",
+      "error": "HTTP 429 /v1/products/6812: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5131,
+      "name": "Dog Collar With a Plastic LED Buckle - Boho",
+      "error": "HTTP 429 /v1/products/5131: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6322,
+      "name": "Shock Absorbing Dog Leash - Travel",
+      "error": "HTTP 429 /v1/products/6322: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6250,
+      "name": "Safety Belt - Blue Graffiti",
+      "error": "HTTP 429 /v1/products/6250: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6754,
+      "name": "Inko Neck Warmer - White Sand ",
+      "error": "HTTP 429 /v1/products/6754: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6726,
+      "name": "Töve Cushion - Brown ",
+      "error": "HTTP 429 /v1/products/6726: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6228,
+      "name": "Safety Belt - Red Graffiti",
+      "error": "HTTP 429 /v1/products/6228: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5134,
+      "name": "Martingale Dog Collar - Boho",
+      "error": "HTTP 429 /v1/products/5134: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6782,
+      "name": "Lukko Dog Bed - Light Brown ",
+      "error": "HTTP 429 /v1/products/6782: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6838,
+      "name": "Bosca Dog Cushion - Beige ",
+      "error": "HTTP 429 /v1/products/6838: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6837,
+      "name": "Bosca Dog Cushion - Grey ",
+      "error": "HTTP 429 /v1/products/6837: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6725,
+      "name": "Töve Cushion - Nut ",
+      "error": "HTTP 429 /v1/products/6725: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6752,
+      "name": "Inko Neck Warmer - Turquoise ",
+      "error": "HTTP 429 /v1/products/6752: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6310,
+      "name": "Shock Absorbing Dog Leash - Pixels",
+      "error": "HTTP 429 /v1/products/6310: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6724,
+      "name": "Töve Cushion - Anthracite ",
+      "error": "HTTP 429 /v1/products/6724: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6828,
+      "name": "Strippo Dog Bed - Honey ",
+      "error": "HTTP 429 /v1/products/6828: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6781,
+      "name": "Lukko Dog Bed - Anthracite ",
+      "error": "HTTP 429 /v1/products/6781: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6783,
+      "name": "Lukko Dog Bed - Light Grey ",
+      "error": "HTTP 429 /v1/products/6783: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6751,
+      "name": "Inko Neck Warmer - Gold ",
+      "error": "HTTP 429 /v1/products/6751: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6753,
+      "name": "Inko Neck Warmer - Light Melange ",
+      "error": "HTTP 429 /v1/products/6753: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6830,
+      "name": "Strippo Dog Bed - Mokka ",
+      "error": "HTTP 429 /v1/products/6830: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6829,
+      "name": "Strippo Dog Bed - Dark Grey ",
+      "error": "HTTP 429 /v1/products/6829: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6839,
+      "name": "Bosca Dog Cushion - Soft Teal ",
+      "error": "HTTP 429 /v1/products/6839: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6805,
+      "name": "Liiva Dog Carrier & Personal Bag - Beige ",
+      "error": "HTTP 429 /v1/products/6805: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6831,
+      "name": "Furo Dog Cushion - Black ",
+      "error": "HTTP 429 /v1/products/6831: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6786,
+      "name": "Tollo Cat Toy - Anthracite ",
+      "error": "HTTP 429 /v1/products/6786: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2352,
+      "name": "Pencil Case Happy Cat",
+      "error": "HTTP 429 /v1/products/2352: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6787,
+      "name": "Tollo Cat Toy - Cappuccino ",
+      "error": "HTTP 429 /v1/products/6787: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4948,
+      "name": "Earrings Kitty - For Kids",
+      "error": "HTTP 429 /v1/products/4948: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9344,
+      "name": "Erif Wicker Cat House With Brown Cushions",
+      "error": "HTTP 429 /v1/products/9344: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9341,
+      "name": "Erif Wicker Cat House With Beige Cushions",
+      "error": "HTTP 429 /v1/products/9341: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9349,
+      "name": "Erif Wicker Cat House With Black Cushions",
+      "error": "HTTP 429 /v1/products/9349: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9350,
+      "name": "Erif Wicker Cat House With Black Cushions",
+      "error": "HTTP 429 /v1/products/9350: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9343,
+      "name": "Erif Wicker Cat House With Black Cushions",
+      "error": "HTTP 429 /v1/products/9343: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9347,
+      "name": "Erif Wicker Cat House With Grey Cushions",
+      "error": "HTTP 429 /v1/products/9347: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3136,
+      "name": "Short-Sleeve Poncho CAT for Adults - Bamboo Terry",
+      "error": "HTTP 429 /v1/products/3136: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7869,
+      "name": "Natural Wicker Cat House Cari With Cushions",
+      "error": "HTTP 429 /v1/products/7869: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7867,
+      "name": "Whitewashed Wicker Cat House Cari With Cushions",
+      "error": "HTTP 429 /v1/products/7867: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4820,
+      "name": "Bamboo Terry Bathrobe CAT – For KIDS (Size 122-150)",
+      "error": "HTTP 429 /v1/products/4820: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6768,
+      "name": "Kikko Table - Honey ",
+      "error": "HTTP 429 /v1/products/6768: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6767,
+      "name": "Kikko Table - Anthracite ",
+      "error": "HTTP 429 /v1/products/6767: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7876,
+      "name": "Natural Wicker Cat House Rosie With Cushions ",
+      "error": "HTTP 429 /v1/products/7876: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6770,
+      "name": "Kikko Table - Raspberry ",
+      "error": "HTTP 429 /v1/products/6770: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4817,
+      "name": "Bamboo Terry Bathrobe CAT - For TODDLERS (Size 82/86-116)",
+      "error": "HTTP 429 /v1/products/4817: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7320,
+      "name": "Cat Mask - Pink Sequins",
+      "error": "HTTP 429 /v1/products/7320: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7318,
+      "name": "Cat Mask - Rose Gold Sequins",
+      "error": "HTTP 429 /v1/products/7318: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9321,
+      "name": "Estrella Wicker Cat House",
+      "error": "HTTP 429 /v1/products/9321: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9320,
+      "name": "Estrella Wicker Cat House",
+      "error": "HTTP 429 /v1/products/9320: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9319,
+      "name": "Estrella Wicker Cat House",
+      "error": "HTTP 429 /v1/products/9319: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9317,
+      "name": "Estrella Wicker Cat House",
+      "error": "HTTP 429 /v1/products/9317: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9316,
+      "name": "Estrella Wicker Cat House",
+      "error": "HTTP 429 /v1/products/9316: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7321,
+      "name": "Cat Mask - Black",
+      "error": "HTTP 429 /v1/products/7321: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6769,
+      "name": "Kikko Table - Light Grey ",
+      "error": "HTTP 429 /v1/products/6769: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8683,
+      "name": "Tummy Time Pillow - Mrs. Cat",
+      "error": "HTTP 429 /v1/products/8683: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7319,
+      "name": "Cat Mask - Gold Sequins",
+      "error": "HTTP 429 /v1/products/7319: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7322,
+      "name": "Cat Mask - Ginger",
+      "error": "HTTP 429 /v1/products/7322: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3339,
+      "name": "Lucky Cat Silicone Lamp - White",
+      "error": "HTTP 429 /v1/products/3339: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5359,
+      "name": "Silicone Night Light - Mrs. Cat",
+      "error": "HTTP 429 /v1/products/5359: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6763,
+      "name": "Lulu Dog/Cat Bed - Anthracite ",
+      "error": "HTTP 429 /v1/products/6763: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6764,
+      "name": "Lulu Dog/Cat Bed - Honey ",
+      "error": "HTTP 429 /v1/products/6764: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    }
+  ]
+}
