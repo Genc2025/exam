@@ -1,0 +1,83 @@
+name: Inspect CJ EU Warehouses
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cj-eu-diagnostics.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cj-eu-catalog-sync
+  cancel-in-progress: false
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Inspect CJ verified EU warehouse inventory
+        env:
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const base = 'https://developers.cjdropshipping.com/api2.0/v1';
+          const countries = ['DE','PL','CZ','NL','FR','ES'];
+          const wait = ms => new Promise(r => setTimeout(r, ms));
+          let lastCompleted = 0;
+          async function req(url, options={}) {
+            const elapsed = Date.now() - lastCompleted;
+            if (lastCompleted && elapsed < 2000) await wait(2000 - elapsed);
+            try {
+              const r = await fetch(url, options);
+              const p = await r.json();
+              if (!r.ok || p.result === false || p.success === false) throw new Error(p.message || `HTTP ${r.status}`);
+              return p;
+            } finally {
+              lastCompleted = Date.now();
+            }
+          }
+          const auth = await req(`${base}/authentication/getAccessToken`, {
+            method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({apiKey:process.env.CJ_API_KEY})
+          });
+          const token = auth.data.accessToken;
+          const out = {generatedAt:new Date().toISOString(), countries:{}};
+          for (const countryCode of countries) {
+            const u = new URL(`${base}/product/listV2`);
+            u.searchParams.set('page','1'); u.searchParams.set('size','100');
+            u.searchParams.set('countryCode',countryCode);
+            u.searchParams.set('startWarehouseInventory','1');
+            u.searchParams.set('verifiedWarehouse','1');
+            u.searchParams.set('isWarehouse','true');
+            u.searchParams.set('orderBy','4'); u.searchParams.set('sort','desc');
+            u.searchParams.append('features','enable_category');
+            const p = await req(u,{headers:{'CJ-Access-Token':token,Accept:'application/json'}});
+            const rows = (p.data?.content || []).flatMap(x => x.productList || []);
+            out.countries[countryCode] = {
+              count: rows.length,
+              products: rows.slice(0,30).map(x => ({
+                id:x.id, name:x.nameEn, sku:x.sku, category:x.threeCategoryName || x.twoCategoryName || x.oneCategoryName,
+                nowPrice:x.nowPrice, sellPrice:x.sellPrice, listedNum:x.listedNum,
+                warehouseInventoryNum:x.warehouseInventoryNum, totalVerifiedInventory:x.totalVerifiedInventory,
+                directMinOrderNum:x.directMinOrderNum, isVideo:x.isVideo, hasCECertification:x.hasCECertification
+              }))
+            };
+          }
+          fs.writeFileSync('data/cj-eu-diagnostics.json', JSON.stringify(out,null,2)+'\n');
+          NODE
+      - name: Commit diagnostics
+        run: |
+          git config user.name "virello-cj-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/cj-eu-diagnostics.json
+          git commit -m "Update CJ EU warehouse diagnostics" || exit 0
+          git pull --rebase origin main
+          git push origin main
