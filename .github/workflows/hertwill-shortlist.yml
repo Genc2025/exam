@@ -1,0 +1,36 @@
+name: Hertwill Shortlist
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/shortlist-hertwill.mjs'
+      - '.github/workflows/hertwill-shortlist.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hertwill-shortlist
+  cancel-in-progress: true
+
+jobs:
+  shortlist:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Build shortlist
+        run: node scripts/shortlist-hertwill.mjs
+      - name: Commit shortlist
+        run: |
+          git config user.name "virello-hertwill-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/hertwill-shortlist.json
+          git commit -m "Refresh Hertwill EU shortlist" || exit 0
+          git pull --rebase origin main
+          git push origin main
