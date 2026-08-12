@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-08-12T00:37:31.437Z",
+  "generatedAt": "2026-08-12T00:49:41.903Z",
   "source": "cj",
   "mode": "live-api-empty",
   "selection": {
     "market": "DE",
     "warehouseCountries": [
-      "DE"
+      "DE",
+      "PL",
+      "CZ",
+      "NL",
+      "FR",
+      "ES"
+    ],
+    "warehousePriority": [
+      "DE",
+      "PL",
+      "CZ",
+      "NL",
+      "FR",
+      "ES"
     ],
     "verifiedWarehouseOnly": true,
     "minStock": 25,
@@ -14,7 +27,7 @@
       "usdToEur": 0.866551,
       "source": "ecb"
     },
-    "note": "Product List V2 is used only for broad discovery. Every published product independently passed the CJ variant inventory endpoint with countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified."
+    "note": "Product List V2 is used for broad discovery. Every published product independently passed the CJ variant inventory endpoint in an allowed EU warehouse with verifiedWarehouse=1. Germany is ranked first when available. Checkout remains disabled until Germany shipping cost/time and product compliance are verified."
   },
   "products": []
 }
