@@ -1,0 +1,65 @@
+name: Sync Hertwill Storefront
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/sync-hertwill-store.mjs'
+      - 'data/hertwill-config.json'
+      - '.github/workflows/hertwill-sync.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hertwill-storefront-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Sync Hertwill products
+        env:
+          HERTWILL_API_KEY: ${{ secrets.HERTWILL_API_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "${HERTWILL_API_KEY:-}"
+          node scripts/sync-hertwill-store.mjs
+
+      - name: Validate Hertwill feed
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const feed = JSON.parse(fs.readFileSync('data/hertwill-products.json', 'utf8'));
+          if (feed.source !== 'hertwill') throw new Error('Invalid Hertwill source.');
+          if (!Array.isArray(feed.products) || !feed.products.length) throw new Error('No Hertwill products generated.');
+          for (const p of feed.products) {
+            if (p.source !== 'hertwill') throw new Error(`Invalid source for ${p.id}`);
+            if (!(Number(p.stock) >= 0)) throw new Error(`Invalid stock for ${p.id}`);
+            if (p.economics && !(Number(p.economics.landedCostEur) > 0)) throw new Error(`Invalid economics for ${p.id}`);
+          }
+          console.log(`Validated ${feed.products.length} Hertwill storefront products.`);
+          NODE
+
+      - name: Commit Hertwill feed
+        run: |
+          git config user.name "virello-hertwill-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/hertwill-products.json
+          if git diff --cached --quiet; then
+            echo "No Hertwill storefront changes."
+            exit 0
+          fi
+          git commit -m "Sync Hertwill storefront catalog"
+          git pull --rebase origin main
+          git push origin main
