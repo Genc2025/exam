@@ -1,0 +1,293 @@
+{
+  "generatedAt": "2026-08-12T02:43:56.187Z",
+  "assumptions": {
+    "destination": "DE",
+    "vatReserveRate": 0.19,
+    "paymentFeeReserveRate": 0.03,
+    "targetProfitBeforeAdsEur": 15
+  },
+  "note": "Profit is before advertising, returns and business income tax. VAT/payment are conservative demo reserves, not tax advice.",
+  "products": [
+    {
+      "id": 6302,
+      "sku": "leash-travel",
+      "name": "Leash – Travel",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 314,
+        "listName": "EE flat-rate EU - Matteo April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100,
+      "authenticatedPriceFields": {
+        "productPrice": 4.13,
+        "salePrice": null,
+        "variationPrices": [
+          {
+            "id": 14855,
+            "sku": "6918",
+            "price": 12.34,
+            "salePrice": null,
+            "stock": 20
+          },
+          {
+            "id": 14854,
+            "sku": "6818",
+            "price": 10.47,
+            "salePrice": null,
+            "stock": 20
+          },
+          {
+            "id": 14853,
+            "sku": "6718",
+            "price": 10.47,
+            "salePrice": null,
+            "stock": 20
+          },
+          {
+            "id": 14852,
+            "sku": "6618",
+            "price": 8.23,
+            "salePrice": null,
+            "stock": 20
+          },
+          {
+            "id": 14851,
+            "sku": "6518",
+            "price": 4.13,
+            "salePrice": null,
+            "stock": 20
+          }
+        ],
+        "germanyShippingPrice": 7.49
+      },
+      "economics": {
+        "supplierCostEur": 4.13,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 11.62,
+        "minimumSellingPriceFor15EurPreAdProfit": 32.99,
+        "vatReserveEur": 5.27,
+        "paymentReserveEur": 0.99,
+        "estimatedProfitBeforeAdsEur": 15.11
+      },
+      "pricingVerified": true
+    },
+    {
+      "id": 5495,
+      "sku": "8435392628952",
+      "name": "Decorative Basket Tractor",
+      "brandId": 167,
+      "brand": "Lorena Canals",
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 5,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 304,
+        "listName": "EE flat-rate EU - Lorena Canals April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": false,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 85,
+      "authenticatedPriceFields": {
+        "productPrice": 24.19,
+        "salePrice": null,
+        "variationPrices": [],
+        "germanyShippingPrice": 7.49
+      },
+      "economics": {
+        "supplierCostEur": 24.19,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 31.68,
+        "minimumSellingPriceFor15EurPreAdProfit": 57.99,
+        "vatReserveEur": 9.26,
+        "paymentReserveEur": 1.74,
+        "estimatedProfitBeforeAdsEur": 15.31
+      },
+      "pricingVerified": true
+    },
+    {
+      "id": 7205,
+      "sku": "5906508784372",
+      "name": "Origami Nursery Mobile - Gold Dust",
+      "brandId": 186,
+      "brand": "moi mili",
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 316,
+        "listName": "EE flat-rate EU - moi mili April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100,
+      "authenticatedPriceFields": {
+        "productPrice": 27.04,
+        "salePrice": null,
+        "variationPrices": [],
+        "germanyShippingPrice": 7.49
+      },
+      "economics": {
+        "supplierCostEur": 27.04,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 34.53,
+        "minimumSellingPriceFor15EurPreAdProfit": 61.99,
+        "vatReserveEur": 9.9,
+        "paymentReserveEur": 1.86,
+        "estimatedProfitBeforeAdsEur": 15.7
+      },
+      "pricingVerified": true
+    },
+    {
+      "id": 7206,
+      "sku": "5904119248856",
+      "name": "Origami Nursery Mobile - Vintage Vibe",
+      "brandId": 186,
+      "brand": "moi mili",
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 316,
+        "listName": "EE flat-rate EU - moi mili April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100,
+      "authenticatedPriceFields": {
+        "productPrice": 27.04,
+        "salePrice": null,
+        "variationPrices": [],
+        "germanyShippingPrice": 7.49
+      },
+      "economics": {
+        "supplierCostEur": 27.04,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 34.53,
+        "minimumSellingPriceFor15EurPreAdProfit": 61.99,
+        "vatReserveEur": 9.9,
+        "paymentReserveEur": 1.86,
+        "estimatedProfitBeforeAdsEur": 15.7
+      },
+      "pricingVerified": true
+    },
+    {
+      "id": 7208,
+      "sku": "5904119243219",
+      "name": "Origami Nursery Mobile - White",
+      "brandId": 186,
+      "brand": "moi mili",
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 316,
+        "listName": "EE flat-rate EU - moi mili April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100,
+      "authenticatedPriceFields": {
+        "productPrice": 27.04,
+        "salePrice": null,
+        "variationPrices": [],
+        "germanyShippingPrice": 7.49
+      },
+      "economics": {
+        "supplierCostEur": 27.04,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 34.53,
+        "minimumSellingPriceFor15EurPreAdProfit": 61.99,
+        "vatReserveEur": 9.9,
+        "paymentReserveEur": 1.86,
+        "estimatedProfitBeforeAdsEur": 15.7
+      },
+      "pricingVerified": true
+    }
+  ]
+}
