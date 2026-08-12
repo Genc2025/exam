@@ -4,7 +4,7 @@ import path from 'node:path';
 const ROOT = process.cwd();
 const API_BASE = (process.env.CJ_API_BASE || 'https://developers.cjdropshipping.com/api2.0/v1').replace(/\/$/, '');
 const API_KEY = process.env.CJ_API_KEY;
-const DELAY_MS = Number(process.env.CJ_API_DELAY_MS || 1800);
+const DELAY_MS = Number(process.env.CJ_API_DELAY_MS || 3000);
 const CONFIG_PATH = path.join(ROOT, 'data', 'catalog-config.json');
 const OUTPUT_PATH = path.join(ROOT, 'data', 'cj-eu-audit.json');
 
@@ -17,21 +17,36 @@ const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 let lastCompletedAt = 0;
 
 async function requestJson(url, options = {}) {
-  const elapsed = Date.now() - lastCompletedAt;
-  if (lastCompletedAt && elapsed < DELAY_MS) await wait(DELAY_MS - elapsed);
-  try {
-    const response = await fetch(url, options);
-    const text = await response.text();
+  for (let attempt = 1; attempt <= 5; attempt += 1) {
+    const elapsed = Date.now() - lastCompletedAt;
+    if (lastCompletedAt && elapsed < DELAY_MS) await wait(DELAY_MS - elapsed);
+
+    let response;
     let payload;
-    try { payload = text ? JSON.parse(text) : {}; }
-    catch { throw new Error(`Invalid JSON from ${new URL(url).pathname}`); }
-    if (!response.ok || payload?.result === false || payload?.success === false) {
-      throw new Error(`CJ API error ${new URL(url).pathname}: ${payload?.message || response.status}`);
+    try {
+      response = await fetch(url, options);
+      const text = await response.text();
+      try { payload = text ? JSON.parse(text) : {}; }
+      catch { throw new Error(`Invalid JSON from ${new URL(url).pathname}`); }
+    } finally {
+      lastCompletedAt = Date.now();
+    }
+
+    const message = String(payload?.message || '');
+    const rateLimited = response?.status === 429 || /too many requests|qps limit/i.test(message);
+    if (rateLimited && attempt < 5) {
+      const backoff = 5000 * attempt;
+      console.log(`CJ rate limit hit; retrying in ${backoff}ms (attempt ${attempt}/5)...`);
+      await wait(backoff);
+      continue;
+    }
+
+    if (!response?.ok || payload?.result === false || payload?.success === false) {
+      throw new Error(`CJ API error ${new URL(url).pathname}: ${message || response?.status || 'unknown'}`);
     }
     return payload;
-  } finally {
-    lastCompletedAt = Date.now();
   }
+  throw new Error(`CJ request retries exhausted for ${new URL(url).pathname}`);
 }
 
 async function getToken() {
@@ -131,6 +146,7 @@ for (const countryCode of configuredCountries) {
   }
 
   audit.countries[countryCode] = country;
+  await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(audit, null, 2)}\n`);
 }
 
 const totals = Object.entries(audit.countries).map(([countryCode, v]) => ({
