@@ -31,16 +31,20 @@ async function loadEconomics() {
 
 function economicsMarkup(product) {
   const e = product?.economics;
+  const supplierName = product?.supplier || (product?.source === 'hertwill' ? 'Hertwill' : 'CJ');
   if (!e) return '<div class="econ-status">Economics sync pending</div>';
 
-  const supplier = e?.representativeVariant?.supplierCostEur;
+  const supplier = e?.representativeVariant?.supplierCostEur ?? e?.supplierCostEur;
   if (e.status !== 'freight-verified-demo') {
-    return `<div class="econ-status"><b>DEMO COST</b><span>Produkt ${euro(supplier)}</span><span>Transport: noch nicht von CJ berechnet</span></div>`;
+    return `<div class="econ-status"><b>DEMO COST</b><span>Produkt bei ${supplierName} ${euro(supplier)}</span><span>Transport: noch nicht verifiziert</span></div>`;
   }
 
+  const marketLabel = e.marketValidatedCompetitivePrice ? 'MARKET VERIFIED' : 'PRICE MODEL';
+  const sellReadyLabel = product?.sellReady === false ? ' · NICHT FREIGEGEBEN' : '';
+
   return `<div class="econ-box">
-    <div class="econ-head"><span>INTERNAL DEMO</span><b>${e.marketValidatedCompetitivePrice ? 'MARKET VERIFIED' : 'PRICE MODEL'}</b></div>
-    <div class="econ-line"><span>Produkt bei CJ</span><strong>${euro(supplier)}</strong></div>
+    <div class="econ-head"><span>INTERNAL DEMO${sellReadyLabel}</span><b>${marketLabel}</b></div>
+    <div class="econ-line"><span>Produkt bei ${supplierName}</span><strong>${euro(supplier)}</strong></div>
     <div class="econ-line"><span>Versand → DE</span><strong>${euro(e?.freight?.shippingEur)}</strong></div>
     <div class="econ-line"><span>Landed Cost</span><strong>${euro(e.landedCostEur)}</strong></div>
     <div class="econ-line"><span>Preisvorschlag</span><strong>${euro(e.suggestedSellingPriceEur)}</strong></div>
@@ -48,14 +52,12 @@ function economicsMarkup(product) {
     <div class="econ-line"><span>Payment Reserve</span><strong>${euro(e.paymentFeeReserveEur)}</strong></div>
     <div class="econ-profit"><span>Gewinn vor Ads</span><strong>${euro(e.estimatedProfitBeforeAdsEur)}</strong></div>
     <div class="econ-break"><span>Break-even Ads</span><strong>${euro(e.breakEvenAdSpendEur)}</strong></div>
-    <small>${e?.freight?.logisticsName || 'CJ freight'}${e?.freight?.deliveryDays ? ` · ${e.freight.deliveryDays} Tage` : ''} · Demo DE 10115</small>
+    <small>${e?.freight?.logisticsName || `${supplierName} freight`}${e?.freight?.deliveryDays ? ` · ${e.freight.deliveryDays} Tage` : ''} · Zielmarkt DE</small>
   </div>`;
 }
 
 function decorateCards() {
   document.querySelectorAll('.product-card[data-product]').forEach((card) => {
-    // Never remove/reinsert an existing economics block. Doing so from a MutationObserver
-    // causes a self-triggering DOM mutation loop on Safari/mobile browsers.
     if (card.querySelector('.econ-box, .econ-status')) return;
 
     const id = String(card.dataset.product || '');
