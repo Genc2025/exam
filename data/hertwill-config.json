@@ -1,0 +1,23 @@
+{
+  "market": "DE",
+  "currency": "EUR",
+  "vatReserveRate": 0.19,
+  "paymentFeeReserveRate": 0.03,
+  "targetProfitBeforeAdsEur": 15,
+  "selectedProducts": [
+    {
+      "id": 6302,
+      "marketValidatedCompetitivePrice": false,
+      "adCandidate": false,
+      "sellReady": false,
+      "marketNote": "Target-margin price has not passed external market competitiveness validation."
+    },
+    {
+      "id": 8821,
+      "marketValidatedCompetitivePrice": false,
+      "adCandidate": false,
+      "sellReady": false,
+      "marketNote": "Manufacturer retail pricing is below the price required for the target margin."
+    }
+  ]
+}
