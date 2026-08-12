@@ -218,15 +218,11 @@ console.log(`USD→EUR source: ${fx.source}`);
 const candidateMap = new Map();
 let rawResultCount = 0;
 for (const keyword of config.searchKeywords || []) {
-  console.log(`Searching CJ Germany warehouse candidates: ${keyword}`);
+  console.log(`Searching broad CJ candidates for Germany inventory check: ${keyword}`);
   const payload = await cjGet(token, '/product/listV2', {
     page: 1,
     size: config.searchPageSize || 60,
     keyWord: keyword,
-    countryCode: MARKET,
-    startWarehouseInventory: config.minStock,
-    verifiedWarehouse: 1,
-    isWarehouse: true,
     orderBy: 4,
     sort: 'desc',
     features: ['enable_description', 'enable_category', 'enable_video']
@@ -253,7 +249,7 @@ const candidates = [...candidateMap.values()]
   .sort((a, b) => Number(b.listedNum || 0) - Number(a.listedNum || 0))
   .slice(0, config.maxInventoryVerificationCandidates || 36);
 
-console.log(`CJ listV2 returned ${rawResultCount} rows; second-stage inventory verification: ${candidates.length} candidates.`);
+console.log(`CJ listV2 returned ${rawResultCount} rows; checking Germany inventory for ${candidates.length} candidates.`);
 const verified = [];
 for (const raw of candidates) {
   const inventory = await getVerifiedGermanyStock(token, raw.id);
@@ -278,7 +274,7 @@ const output = {
     minStock: config.minStock,
     maxProducts: config.maxProducts,
     exchangeRate: { usdToEur: Number(fx.rate.toFixed(6)), source: fx.source },
-    note: 'Product List V2 is used only for discovery. Every published product must independently pass the CJ variant inventory endpoint with countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified.'
+    note: 'Product List V2 is used only for broad discovery. Every published product independently passed the CJ variant inventory endpoint with countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified.'
   },
   products
 };
