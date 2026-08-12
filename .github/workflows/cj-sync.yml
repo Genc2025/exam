@@ -41,7 +41,7 @@ jobs:
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
           CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
-          CJ_API_DELAY_MS: 2200
+          CJ_API_DELAY_MS: 5000
           USD_TO_EUR_RATE: ${{ vars.USD_TO_EUR_RATE }}
         run: |
           if [ -z "${CJ_API_KEY:-}" ]; then
