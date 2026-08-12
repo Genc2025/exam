@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'scripts/sync-cj-germany.mjs'
+      - 'scripts/sync-cj-eu.mjs'
       - 'data/catalog-config.json'
       - '.github/workflows/cj-sync.yml'
   schedule:
@@ -34,14 +34,14 @@ jobs:
           node-version: '20'
 
       - name: Validate sync script
-        run: node --check scripts/sync-cj-germany.mjs
+        run: node --check scripts/sync-cj-eu.mjs
 
       - name: Sync verified CJ EU catalog
         id: cj
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
           CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
-          CJ_API_DELAY_MS: 5000
+          CJ_API_DELAY_MS: 2000
           USD_TO_EUR_RATE: ${{ vars.USD_TO_EUR_RATE }}
         run: |
           if [ -z "${CJ_API_KEY:-}" ]; then
@@ -50,7 +50,7 @@ jobs:
             exit 0
           fi
           echo "configured=true" >> "$GITHUB_OUTPUT"
-          node scripts/sync-cj-germany.mjs
+          node scripts/sync-cj-eu.mjs
 
       - name: Validate generated EU catalog
         if: steps.cj.outputs.configured == 'true'
@@ -85,4 +85,5 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add data/products.json
           git commit -m "Sync verified CJ EU catalog"
-          git push
+          git pull --rebase origin main
+          git push origin main
