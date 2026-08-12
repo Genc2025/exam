@@ -1,0 +1,39 @@
+name: Hertwill Non-Pet Scan
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/scan-hertwill-nonpet.mjs'
+      - '.github/workflows/hertwill-nonpet-scan.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: hertwill-nonpet-scan
+  cancel-in-progress: true
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run scan
+        env:
+          HERTWILL_API_KEY: ${{ secrets.HERTWILL_API_KEY }}
+        run: node scripts/scan-hertwill-nonpet.mjs
+      - name: Commit scan
+        run: |
+          git config user.name "virello-hertwill-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/hertwill-nonpet-scan.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Refresh Hertwill non-pet scan"
+          git pull --rebase origin main
+          git push origin main
