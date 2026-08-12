@@ -1,0 +1,391 @@
+{
+  "generatedAt": "2026-08-12T01:33:17.348Z",
+  "globalWarehouseList": [
+    {
+      "countryCode": "US",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Amerika Serikat"
+    },
+    {
+      "countryCode": "CN",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Cina"
+    },
+    {
+      "countryCode": "MX",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Meksiko"
+    },
+    {
+      "countryCode": "CA",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Kanada"
+    },
+    {
+      "countryCode": "GB",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Inggris"
+    },
+    {
+      "countryCode": "DE",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Jerman"
+    },
+    {
+      "countryCode": "FR",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Perancis"
+    },
+    {
+      "countryCode": "AU",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Australia"
+    },
+    {
+      "countryCode": "ES",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Spanyol"
+    },
+    {
+      "countryCode": "JP",
+      "areaEn": null,
+      "disabled": null,
+      "id": "Jepang"
+    }
+  ],
+  "countries": {
+    "DE": {
+      "v2WithoutIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 1,
+        "totalPages": 1,
+        "returnedProducts": 1,
+        "firstProducts": [
+          {
+            "id": "58490D32-D5BB-4EE3-A2DA-12FECD3A60BB",
+            "name": "3D Sports Knee Pad",
+            "sellPrice": "1.65 -- 6.76",
+            "nowPrice": "1.52",
+            "warehouseInventoryNum": 6,
+            "totalVerifiedInventory": 27,
+            "verifiedWarehouse": 1
+          }
+        ]
+      },
+      "v2WithIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 1,
+        "totalPages": 1,
+        "returnedProducts": 1,
+        "firstProducts": [
+          {
+            "id": "58490D32-D5BB-4EE3-A2DA-12FECD3A60BB",
+            "name": "3D Sports Knee Pad",
+            "sellPrice": "1.65 -- 6.76",
+            "nowPrice": "1.52",
+            "warehouseInventoryNum": 6,
+            "totalVerifiedInventory": 27,
+            "verifiedWarehouse": 1
+          }
+        ]
+      },
+      "legacyList": {
+        "pageNum": 1,
+        "pageSize": 200,
+        "total": 380,
+        "returnedProducts": 200,
+        "firstProducts": [
+          {
+            "id": "2082404879683420161",
+            "name": "Table Tennis Racket 2 Rackets & 3 Balls Ping Pong Paddles Set Professional 2 Player Ping Pong Set With Bag For Tournament Play",
+            "sellPrice": "10.29",
+            "productSku": "CJSD3017749"
+          },
+          {
+            "id": "2082407282099408898",
+            "name": "TIRE REPAIR SET 58 PCS MOTORCYCLE/CAR TIRE PATCH KIT EMERGENCY TOOL SET",
+            "sellPrice": "13.75",
+            "productSku": "CJSD3017807"
+          },
+          {
+            "id": "2082409210347012098",
+            "name": "Wall Mount Charging Dock For Dyson V7 V8 Cordless Vacuum Cleaner Models",
+            "sellPrice": "13.20",
+            "productSku": "CJSD3017838"
+          },
+          {
+            "id": "2082406219040702465",
+            "name": "Fishing Bag Rod Bag Fishing Bag With 3 Compartments Fishing Rod Bags Portable",
+            "sellPrice": "16.84",
+            "productSku": "CJSD3017785"
+          },
+          {
+            "id": "2082413710302302209",
+            "name": "Manual Vacuum Pump Kit - Suitable For Brake System Bleeding, Cooling System Degassing, Liquid Transfer, And Vacuum Component Testing",
+            "sellPrice": "25.04",
+            "productSku": "CJSD3017912"
+          }
+        ]
+      }
+    },
+    "ES": {
+      "v2WithoutIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 25,
+        "totalPages": 1,
+        "returnedProducts": 25,
+        "firstProducts": [
+          {
+            "id": "2412050847261618800",
+            "name": "PHOFAY MOUSSE BLUSH CREAM",
+            "sellPrice": "1.59 -- 12.72",
+            "nowPrice": null,
+            "warehouseInventoryNum": 1577,
+            "totalVerifiedInventory": 13220,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "2406270830381607000",
+            "name": "PHOFAY Super Coverage Concealer",
+            "sellPrice": "2.18 -- 13.08",
+            "nowPrice": null,
+            "warehouseInventoryNum": 1201,
+            "totalVerifiedInventory": 4549,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "1791411289785380864",
+            "name": "PHOFAY Luminous Powder Blush",
+            "sellPrice": "3.10 -- 18.60",
+            "nowPrice": null,
+            "warehouseInventoryNum": 974,
+            "totalVerifiedInventory": 29509,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "1795261101102342144",
+            "name": "PHOFAY Double-Take Cream & Powder Blush Duo",
+            "sellPrice": "3.48 -- 17.40",
+            "nowPrice": null,
+            "warehouseInventoryNum": 867,
+            "totalVerifiedInventory": 13542,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "2411270128541621000",
+            "name": "PHOFAY MASHED POTATOES EYESHADOW",
+            "sellPrice": "2.32 -- 18.56",
+            "nowPrice": null,
+            "warehouseInventoryNum": 827,
+            "totalVerifiedInventory": 19299,
+            "verifiedWarehouse": 1
+          }
+        ]
+      },
+      "v2WithIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 25,
+        "totalPages": 1,
+        "returnedProducts": 25,
+        "firstProducts": [
+          {
+            "id": "2412050847261618800",
+            "name": "PHOFAY MOUSSE BLUSH CREAM",
+            "sellPrice": "1.59 -- 12.72",
+            "nowPrice": null,
+            "warehouseInventoryNum": 1577,
+            "totalVerifiedInventory": 13220,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "2406270830381607000",
+            "name": "PHOFAY Super Coverage Concealer",
+            "sellPrice": "2.18 -- 13.08",
+            "nowPrice": null,
+            "warehouseInventoryNum": 1201,
+            "totalVerifiedInventory": 4549,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "1791411289785380864",
+            "name": "PHOFAY Luminous Powder Blush",
+            "sellPrice": "3.10 -- 18.60",
+            "nowPrice": null,
+            "warehouseInventoryNum": 974,
+            "totalVerifiedInventory": 29509,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "1795261101102342144",
+            "name": "PHOFAY Double-Take Cream & Powder Blush Duo",
+            "sellPrice": "3.48 -- 17.40",
+            "nowPrice": null,
+            "warehouseInventoryNum": 867,
+            "totalVerifiedInventory": 13542,
+            "verifiedWarehouse": 1
+          },
+          {
+            "id": "2411270128541621000",
+            "name": "PHOFAY MASHED POTATOES EYESHADOW",
+            "sellPrice": "2.32 -- 18.56",
+            "nowPrice": null,
+            "warehouseInventoryNum": 827,
+            "totalVerifiedInventory": 19299,
+            "verifiedWarehouse": 1
+          }
+        ]
+      },
+      "legacyList": {
+        "pageNum": 1,
+        "pageSize": 200,
+        "total": 34,
+        "returnedProducts": 34,
+        "firstProducts": [
+          {
+            "id": "2509190214261601600",
+            "name": "C-B002 Scented Body Lotion",
+            "sellPrice": "1.90 -- 5.70",
+            "productSku": "CJST2534484"
+          },
+          {
+            "id": "2507240514011610200",
+            "name": "PHOFAY GLYCOLIC ACID AHA EXFOLIATING  BRIGHTENING TONER",
+            "sellPrice": "1.90 -- 5.70",
+            "productSku": "CJJY2438348"
+          },
+          {
+            "id": "2507240510421629700",
+            "name": "PHOFAY GENTLE PEELING SOLUTION PAPAYA ENZYME AHA BHA",
+            "sellPrice": "1.90 -- 7.06",
+            "productSku": "CJJY2438341"
+          },
+          {
+            "id": "2507240507211610400",
+            "name": "Phofay Exfoliating Set",
+            "sellPrice": "1.90",
+            "productSku": "CJJY2438338"
+          },
+          {
+            "id": "2506230706271617600",
+            "name": "C-S003 Acne Removing Lotion",
+            "sellPrice": "5.98",
+            "productSku": "CJJT2409095"
+          }
+        ]
+      }
+    },
+    "PL": {
+      "v2WithoutIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "v2WithIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "legacyList": {
+        "pageNum": 1,
+        "pageSize": 200,
+        "total": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      }
+    },
+    "FR": {
+      "v2WithoutIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "v2WithIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "legacyList": {
+        "pageNum": 1,
+        "pageSize": 200,
+        "total": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      }
+    },
+    "CZ": {
+      "v2WithoutIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "v2WithIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "legacyList": {
+        "pageNum": 1,
+        "pageSize": 200,
+        "total": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      }
+    },
+    "NL": {
+      "v2WithoutIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "v2WithIsWarehouse": {
+        "pageSize": 100,
+        "pageNumber": 1,
+        "totalRecords": 0,
+        "totalPages": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      },
+      "legacyList": {
+        "pageNum": 1,
+        "pageSize": 200,
+        "total": 0,
+        "returnedProducts": 0,
+        "firstProducts": []
+      }
+    }
+  }
+}
