@@ -6,12 +6,24 @@ const CONFIG_PATH = path.join(ROOT, 'data', 'catalog-config.json');
 const OUTPUT_PATH = path.join(ROOT, 'data', 'products.json');
 const API_BASE = (process.env.CJ_API_BASE || 'https://developers.cjdropshipping.com/api2.0/v1').replace(/\/$/, '');
 const API_KEY = process.env.CJ_API_KEY;
-const MARKET = 'DE';
 const API_DELAY_MS = Number(process.env.CJ_API_DELAY_MS || 2200);
 
 if (!API_KEY) throw new Error('CJ_API_KEY is not configured.');
 
 const config = JSON.parse(await fs.readFile(CONFIG_PATH, 'utf8'));
+const MARKET = String(config.market || 'DE').toUpperCase();
+const ALLOWED_WAREHOUSES = (config.warehouseCountries || ['DE']).map((code) => String(code).toUpperCase());
+const WAREHOUSE_PRIORITY = (config.warehousePriority || ALLOWED_WAREHOUSES).map((code) => String(code).toUpperCase());
+const ALLOWED_SET = new Set(ALLOWED_WAREHOUSES);
+const COUNTRY_NAMES = {
+  DE: 'Germany',
+  PL: 'Poland',
+  CZ: 'Czechia',
+  NL: 'Netherlands',
+  FR: 'France',
+  ES: 'Spain'
+};
+
 const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 let lastApiCallAt = 0;
 
@@ -115,48 +127,91 @@ function normalizedText(raw) {
   return `${raw?.nameEn || ''} ${raw?.oneCategoryName || ''} ${raw?.twoCategoryName || ''} ${raw?.threeCategoryName || ''} ${stripHtml(raw?.description)}`.toLowerCase();
 }
 
-async function getVerifiedGermanyStock(token, pid) {
+function warehouseRank(countryCode) {
+  const index = WAREHOUSE_PRIORITY.indexOf(String(countryCode || '').toUpperCase());
+  return index === -1 ? 999 : index;
+}
+
+async function getVerifiedEuStock(token, pid) {
   const payload = await cjGet(token, '/product/stock/getInventoryByPid', { pid });
   const variantInventories = Array.isArray(payload?.data?.variantInventories) ? payload.data.variantInventories : [];
   const variants = [];
+  const byCountry = new Map();
   let total = 0;
 
   for (const variant of variantInventories) {
     const rows = Array.isArray(variant?.inventory) ? variant.inventory : [];
+    const variantByCountry = new Map();
     let variantTotal = 0;
+
     for (const row of rows) {
-      if (String(row?.countryCode || '').toUpperCase() !== MARKET) continue;
+      const countryCode = String(row?.countryCode || '').toUpperCase();
+      if (!ALLOWED_SET.has(countryCode)) continue;
       if (Number(row?.verifiedWarehouse) !== 1) continue;
+
       const subWarehouseRows = Array.isArray(row?.stock) ? row.stock : [];
-      const subWarehouseStock = subWarehouseRows.reduce((sum, item) => sum + Math.max(0, Number(item?.inventory || 0)), 0);
+      const subWarehouseStock = subWarehouseRows.reduce(
+        (sum, item) => sum + Math.max(0, Number(item?.inventory || 0)),
+        0
+      );
       const verifiedStock = subWarehouseStock || Math.max(0, Number(row?.cjInventory ?? row?.totalInventory ?? 0));
+      if (!(verifiedStock > 0)) continue;
+
+      variantByCountry.set(countryCode, (variantByCountry.get(countryCode) || 0) + verifiedStock);
+      byCountry.set(countryCode, (byCountry.get(countryCode) || 0) + verifiedStock);
       variantTotal += verifiedStock;
+      total += verifiedStock;
     }
+
     if (variantTotal > 0) {
-      variants.push({ vid: String(variant?.vid || ''), stock: variantTotal });
-      total += variantTotal;
+      variants.push({
+        vid: String(variant?.vid || ''),
+        stock: variantTotal,
+        warehouses: [...variantByCountry.entries()]
+          .map(([countryCode, stock]) => ({ countryCode, stock }))
+          .sort((a, b) => warehouseRank(a.countryCode) - warehouseRank(b.countryCode))
+      });
     }
   }
 
-  return { total, variants };
+  const warehouses = [...byCountry.entries()]
+    .map(([countryCode, stock]) => ({
+      countryCode,
+      areaEn: `${COUNTRY_NAMES[countryCode] || countryCode} Warehouse`,
+      stock,
+      verified: true
+    }))
+    .sort((a, b) => warehouseRank(a.countryCode) - warehouseRank(b.countryCode));
+
+  return {
+    total,
+    variants,
+    warehouses,
+    primaryWarehouse: warehouses[0]?.countryCode || null
+  };
 }
 
 async function getProductDetails(token, pid) {
-  const payload = await cjGet(token, '/product/query', { pid, countryCode: MARKET });
+  const payload = await cjGet(token, '/product/query', { pid });
   return payload?.data || null;
 }
 
-function scoreProduct(raw, stock, costEur) {
+function scoreProduct(raw, inventory, costEur) {
   let score = 0;
   const text = normalizedText(raw);
   const listed = Number(raw?.listedNum || 0);
   const deliveryMax = parseDeliveryMax(raw?.deliveryCycle);
-  score += Math.min(30, Math.log10(Math.max(1, stock)) * 10);
+  score += Math.min(30, Math.log10(Math.max(1, inventory.total)) * 10);
   score += Math.min(24, Math.log10(Math.max(1, listed) + 1) * 8);
   if (Number(raw?.isVideo) === 1) score += 10;
   if (containsAny(text, config.preferredCategoryKeywords || [])) score += 14;
   if (costEur >= 2 && costEur <= 10) score += 12;
   if (deliveryMax !== null && deliveryMax <= config.maxDeliveryDays) score += 8;
+  const rank = warehouseRank(inventory.primaryWarehouse);
+  if (rank === 0) score += 18;
+  else if (rank === 1) score += 12;
+  else if (rank === 2 || rank === 3) score += 8;
+  else if (rank < 999) score += 4;
   return Number(score.toFixed(2));
 }
 
@@ -190,13 +245,15 @@ function buildProduct(raw, details, verifiedInventory, fxRate) {
     sourceCost: Number(costUsd.toFixed(2)),
     sourceCurrency: 'USD',
     stock: verifiedInventory.total,
-    warehouses: [{ countryCode: MARKET, areaEn: 'Germany Warehouse', stock: verifiedInventory.total, verified: true }],
+    warehouses: verifiedInventory.warehouses,
+    primaryWarehouse: verifiedInventory.primaryWarehouse,
+    warehousePriorityRank: warehouseRank(verifiedInventory.primaryWarehouse),
     verifiedStock: true,
     variantStock: verifiedInventory.variants,
     images: selectImages(raw, details),
     supplier: 'CJdropshipping',
     source: 'cj',
-    market: 'DE',
+    market: MARKET,
     currency: 'EUR',
     listedNum: Number(raw?.listedNum || 0),
     deliveryCycle: raw?.deliveryCycle || null,
@@ -204,9 +261,9 @@ function buildProduct(raw, details, verifiedInventory, fxRate) {
     complianceSignals: { ce: raw?.hasCECertification == null ? null : Number(raw.hasCECertification) === 1 },
     hasVideo: Number(raw?.isVideo) === 1,
     adCandidate: false,
-    score: scoreProduct(raw, verifiedInventory.total, costEur),
+    score: scoreProduct(raw, verifiedInventory, costEur),
     sellReady: false,
-    sellReadyReason: 'Shipping cost, payment gateway, legal details and product-specific compliance must be verified before checkout is enabled.'
+    sellReadyReason: 'EU warehouse stock is verified. Germany freight, payment gateway, legal details and product-specific compliance must still be verified before checkout is enabled.'
   };
 }
 
@@ -214,11 +271,12 @@ console.log('Authenticating with CJ...');
 const token = await getAccessToken();
 const fx = await getUsdToEurRate();
 console.log(`USD→EUR source: ${fx.source}`);
+console.log(`Allowed verified warehouses: ${ALLOWED_WAREHOUSES.join(', ')}`);
 
 const candidateMap = new Map();
 let rawResultCount = 0;
 for (const keyword of config.searchKeywords || []) {
-  console.log(`Searching broad CJ candidates for Germany inventory check: ${keyword}`);
+  console.log(`Searching broad CJ candidates for EU inventory check: ${keyword}`);
   const payload = await cjGet(token, '/product/listV2', {
     page: 1,
     size: config.searchPageSize || 60,
@@ -240,6 +298,7 @@ for (const keyword of config.searchKeywords || []) {
     if (minOrder > 1) continue;
     if (deliveryMax !== null && deliveryMax > config.maxDeliveryDays) continue;
     if (containsAny(text, config.blockedKeywords || [])) continue;
+    if (!containsAny(text, config.preferredCategoryKeywords || [])) continue;
     const existing = candidateMap.get(String(raw.id));
     if (!existing || Number(raw.listedNum || 0) > Number(existing.listedNum || 0)) candidateMap.set(String(raw.id), raw);
   }
@@ -247,19 +306,24 @@ for (const keyword of config.searchKeywords || []) {
 
 const candidates = [...candidateMap.values()]
   .sort((a, b) => Number(b.listedNum || 0) - Number(a.listedNum || 0))
-  .slice(0, config.maxInventoryVerificationCandidates || 36);
+  .slice(0, config.maxInventoryVerificationCandidates || 60);
 
-console.log(`CJ listV2 returned ${rawResultCount} rows; checking Germany inventory for ${candidates.length} candidates.`);
+console.log(`CJ listV2 returned ${rawResultCount} rows; checking EU warehouse inventory for ${candidates.length} candidates.`);
 const verified = [];
 for (const raw of candidates) {
-  const inventory = await getVerifiedGermanyStock(token, raw.id);
-  if (inventory.total < config.minStock) continue;
+  const inventory = await getVerifiedEuStock(token, raw.id);
+  if (inventory.total < config.minStock || !inventory.primaryWarehouse) continue;
   const details = await getProductDetails(token, raw.id);
   const product = buildProduct(raw, details, inventory, fx.rate);
   if (product) verified.push(product);
 }
 
-verified.sort((a, b) => b.score - a.score || b.stock - a.stock || b.listedNum - a.listedNum);
+verified.sort((a, b) =>
+  a.warehousePriorityRank - b.warehousePriorityRank ||
+  b.score - a.score ||
+  b.stock - a.stock ||
+  b.listedNum - a.listedNum
+);
 const products = verified.slice(0, config.maxProducts);
 products.slice(0, config.maxAdCandidates).forEach((product) => { product.adCandidate = true; });
 
@@ -268,16 +332,17 @@ const output = {
   source: 'cj',
   mode: products.length ? 'live-api' : 'live-api-empty',
   selection: {
-    market: 'DE',
-    warehouseCountries: ['DE'],
+    market: MARKET,
+    warehouseCountries: ALLOWED_WAREHOUSES,
+    warehousePriority: WAREHOUSE_PRIORITY,
     verifiedWarehouseOnly: true,
     minStock: config.minStock,
     maxProducts: config.maxProducts,
     exchangeRate: { usdToEur: Number(fx.rate.toFixed(6)), source: fx.source },
-    note: 'Product List V2 is used only for broad discovery. Every published product independently passed the CJ variant inventory endpoint with countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified.'
+    note: 'Product List V2 is used for broad discovery. Every published product independently passed the CJ variant inventory endpoint in an allowed EU warehouse with verifiedWarehouse=1. Germany is ranked first when available. Checkout remains disabled until Germany shipping cost/time and product compliance are verified.'
   },
   products
 };
 
 await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(output, null, 2)}\n`);
-console.log(`Wrote ${products.length} strictly verified CJ Germany products.`);
+console.log(`Wrote ${products.length} verified CJ EU-warehouse products for Germany market.`);
