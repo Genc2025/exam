@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T02:43:56.187Z",
+  "generatedAt": "2026-08-12T03:02:17.956Z",
   "source": "hertwill",
   "mode": "authenticated-api-demo",
   "destination": "DE",
@@ -14,21 +14,21 @@
         "en": "Leash – Travel"
       },
       "description": {
-        "de": "Hertwill EU-Testprodukt aus Polen. Preis, Deutschland-Versand und Lagerbestand wurden über die authentifizierte Hertwill API geprüft. Marktpreisprüfung ist noch nicht bestanden.",
-        "en": "Hertwill EU test product from Poland. Price, Germany shipping and inventory were verified through the authenticated Hertwill API. Market-price validation has not passed yet."
+        "de": "The travel collection is a bull's-eye for all travel lovers. A colorful pattern depicting a plane crossing the most popular places around the world will catch the eye of every globetrotter. Products of the travel collection include, among others, the Eiffel Tower, the Statue of Liberty, the Egyptian Pyramids, the Warsaw's Mermaid, the Sagrada Familia and others! - Durable carabineers from a Polish manufacturer,&nbsp; - Carabineer sizes adapted to the width of the lead - Super-strong stitching – envelope stitching (*except for size 10 mm) - Easy to attach XXS - Width 10mm; Lenght 130cm XS - Width 15mm; Lenght 130cm S - Width 20mm; Lenght 130cm M - Width 25mm; Lenght 130cm L - Width 30mm; Lenght 130cm",
+        "en": "The travel collection is a bull's-eye for all travel lovers. A colorful pattern depicting a plane crossing the most popular places around the world will catch the eye of every globetrotter. Products of the travel collection include, among others, the Eiffel Tower, the Statue of Liberty, the Egyptian Pyramids, the Warsaw's Mermaid, the Sagrada Familia and others! - Durable carabineers from a Polish manufacturer,&nbsp; - Carabineer sizes adapted to the width of the lead - Super-strong stitching – envelope stitching (*except for size 10 mm) - Easy to attach XXS - Width 10mm; Lenght 130cm XS - Width 15mm; Lenght 130cm S - Width 20mm; Lenght 130cm M - Width 25mm; Lenght 130cm L - Width 30mm; Lenght 130cm"
       },
       "category": {
-        "de": "Haustier-Zubehör",
+        "de": "Pet Supplies",
         "en": "Pet Supplies"
       },
-      "price": 32.9,
+      "price": 42.99,
       "compareAt": null,
-      "cost": 4.13,
+      "cost": 12.34,
       "stock": 20,
       "warehouses": [
         {
           "countryCode": "PL",
-          "areaEn": "Poland",
+          "areaEn": "PL",
           "stock": 20,
           "verified": true,
           "euMember": true,
@@ -46,29 +46,31 @@
       "adCandidate": false,
       "score": 0,
       "sellReady": false,
-      "sellReadyReason": "Economics are verified, but the proposed selling price has not passed market competitiveness validation.",
+      "sellReadyReason": "Research/demo only. Market competitiveness and final compliance approval are still required.",
       "marketValidation": {
-        "status": "rejected-for-now",
-        "reason": "Required price for approximately €15 pre-ad contribution is above observed comparable retail pricing."
+        "status": "not-approved",
+        "reason": "Target-margin price has not passed external market competitiveness validation."
       },
       "economics": {
         "status": "freight-verified-demo",
         "destinationCountry": "DE",
         "originCountry": "PL",
         "representativeVariant": {
-          "supplierCostEur": 4.13
+          "strategy": "highest in-stock Hertwill variant price; base price when no variants",
+          "supplierCostEur": 12.34
         },
         "freight": {
           "status": "verified",
           "shippingEur": 7.49,
-          "logisticsName": "Hertwill EU shipping"
+          "logisticsName": "Hertwill EU shipping",
+          "shippingPriceList": "EE flat-rate EU - Matteo April 2026"
         },
-        "landedCostEur": 11.62,
-        "suggestedSellingPriceEur": 32.9,
-        "vatReserveEur": 5.25,
-        "paymentFeeReserveEur": 0.99,
-        "estimatedProfitBeforeAdsEur": 15.04,
-        "breakEvenAdSpendEur": 15.04,
+        "landedCostEur": 19.83,
+        "suggestedSellingPriceEur": 42.99,
+        "vatReserveEur": 6.86,
+        "paymentFeeReserveEur": 1.29,
+        "estimatedProfitBeforeAdsEur": 15.01,
+        "breakEvenAdSpendEur": 15.01,
         "marketValidatedCompetitivePrice": false,
         "assumptions": {
           "vatRate": 0.19,
@@ -87,12 +89,12 @@
         "en": "Classic Car Seat Organizer"
       },
       "description": {
-        "de": "Hertwill EU-Testprodukt aus Finnland. Produktkosten, Versand nach Deutschland und Bestand stammen aus der authentifizierten Hertwill API. Nicht für Verkauf freigegeben, da die Zielmarge aktuell nicht konkurrenzfähig ist.",
-        "en": "Hertwill EU test product from Finland. Product cost, Germany shipping and stock come from the authenticated Hertwill API. Not approved for sale because the target-margin price is currently not competitive."
+        "de": "EZI TRAVEL CLASSIC is a car seat organizer. Allow your child to have everything they need accessible, games, books, water bottles...Easily organize and store what you want and enjoy peace of mind on the go. Easy to install, the EZI TRAVEL CLASSIC attaches to the headrest and backrest of your front seat with its strong straps. The EZI TRAVEL CLASSIC is made from 92% recycled plastic. The organizer and protector is built to last and stand the test of time. seat organizer and protector Storage pocket with mesh Protects the back of the front seat Easy installation with adjustable straps Easy to clean Dimensions: 59.5 x 43.5cm",
+        "en": "EZI TRAVEL CLASSIC is a car seat organizer. Allow your child to have everything they need accessible, games, books, water bottles...Easily organize and store what you want and enjoy peace of mind on the go. Easy to install, the EZI TRAVEL CLASSIC attaches to the headrest and backrest of your front seat with its strong straps. The EZI TRAVEL CLASSIC is made from 92% recycled plastic. The organizer and protector is built to last and stand the test of time. seat organizer and protector Storage pocket with mesh Protects the back of the front seat Easy installation with adjustable straps Easy to clean Dimensions: 59.5 x 43.5cm"
       },
       "category": {
-        "de": "Auto-Organisation",
-        "en": "Car Organization"
+        "de": "Kids & Baby",
+        "en": "Kids & Baby"
       },
       "price": 34.9,
       "compareAt": null,
@@ -101,7 +103,7 @@
       "warehouses": [
         {
           "countryCode": "FI",
-          "areaEn": "Finland",
+          "areaEn": "FI",
           "stock": 20,
           "verified": true,
           "euMember": true,
@@ -119,22 +121,24 @@
       "adCandidate": false,
       "score": 0,
       "sellReady": false,
-      "sellReadyReason": "Verified Hertwill economics, but market validation rejected the €15 target-margin selling price.",
+      "sellReadyReason": "Research/demo only. Market competitiveness and final compliance approval are still required.",
       "marketValidation": {
-        "status": "rejected-for-now",
-        "reason": "Manufacturer retail pricing is materially below the price required for approximately €15 pre-ad contribution."
+        "status": "not-approved",
+        "reason": "Manufacturer retail pricing is below the price required for the target margin."
       },
       "economics": {
         "status": "freight-verified-demo",
         "destinationCountry": "DE",
         "originCountry": "FI",
         "representativeVariant": {
+          "strategy": "highest in-stock Hertwill variant price; base price when no variants",
           "supplierCostEur": 5.76
         },
         "freight": {
           "status": "verified",
           "shippingEur": 6.9,
-          "logisticsName": "Hertwill EU shipping"
+          "logisticsName": "Hertwill EU shipping",
+          "shippingPriceList": "EU · UK"
         },
         "landedCostEur": 12.66,
         "suggestedSellingPriceEur": 34.9,
