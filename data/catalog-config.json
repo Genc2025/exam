@@ -1,7 +1,8 @@
 {
   "market": "DE",
   "currency": "EUR",
-  "warehouseCountries": ["DE"],
+  "warehouseCountries": ["DE", "PL", "CZ", "NL", "FR", "ES"],
+  "warehousePriority": ["DE", "PL", "CZ", "NL", "FR", "ES"],
   "searchKeywords": [
     "pet hair remover",
     "lint remover",
@@ -11,11 +12,14 @@
     "car organizer",
     "travel organizer",
     "packing organizer",
-    "household cleaning tool"
+    "household cleaning tool",
+    "storage organizer",
+    "kitchen organizer",
+    "manual cleaning brush"
   ],
   "searchPageSize": 60,
   "minStock": 25,
-  "maxInventoryVerificationCandidates": 36,
+  "maxInventoryVerificationCandidates": 60,
   "maxProducts": 24,
   "maxAdCandidates": 6,
   "minSupplierUsdPrice": 0.5,
@@ -35,6 +39,7 @@
     "hair remover",
     "lint",
     "clean",
+    "brush",
     "organizer",
     "organiser",
     "storage",
