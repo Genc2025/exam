@@ -33,20 +33,24 @@ jobs:
           test -f index.html
           test -f src/store-cj.js
           test -f src/store-cj.css
-          test -f scripts/sync-cj-germany.mjs
+          test -f src/economics-ui.js
+          test -f src/economics-ui.css
+          test -f scripts/sync-cj-europe-v4.mjs
           test -f data/products.json
           test -f data/catalog-config.json
           node --check src/store-cj.js
-          node --check scripts/sync-cj-germany.mjs
+          node --check src/economics-ui.js
+          node --check scripts/sync-cj-europe-v4.mjs
           node - <<'NODE'
           const fs = require('fs');
           const feed = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
           const config = JSON.parse(fs.readFileSync('data/catalog-config.json', 'utf8'));
           if (feed.source !== 'cj') throw new Error('Catalog source must be cj.');
           if (config.market !== 'DE') throw new Error('Market must be DE.');
-          if (JSON.stringify(config.warehouseCountries) !== JSON.stringify(['DE'])) throw new Error('Only DE warehouse is allowed in initial catalog.');
-          if (!(Number(config.minStock) >= 25)) throw new Error('minStock must be at least 25.');
-          console.log('Static CJ Germany storefront validation passed.');
+          if (config.warehouseRegion !== 'EUROPE') throw new Error('Warehouse region must be EUROPE.');
+          if (!Array.isArray(config.warehouseCountries) || config.warehouseCountries.length < 10) throw new Error('Europe warehouse country set is incomplete.');
+          if (!(Number(config.minStock) >= 1)) throw new Error('minStock must be at least 1.');
+          console.log(`Static CJ Europe storefront validation passed with ${feed.products?.length || 0} products.`);
           NODE
 
       - name: Build isolated storefront
@@ -57,6 +61,8 @@ jobs:
           cp index.html _site/
           cp src/store-cj.js _site/src/
           cp src/store-cj.css _site/src/
+          cp src/economics-ui.js _site/src/
+          cp src/economics-ui.css _site/src/
           cp data/products.json _site/data/
           touch _site/.nojekyll
           printf 'VIRELLO %s\n' "$GITHUB_SHA" > _site/build.txt
