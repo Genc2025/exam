@@ -5,14 +5,25 @@ const euro = (value) => {
 };
 
 let economicsMap = new Map();
+let cardsDecorationScheduled = false;
+
+async function fetchJsonWithTimeout(url, timeoutMs = 8000) {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    const response = await fetch(url, { cache: 'no-store', signal: controller.signal });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    return await response.json();
+  } finally {
+    clearTimeout(timer);
+  }
+}
 
 async function loadEconomics() {
   try {
-    const response = await fetch(`./data/products.json?v=${Date.now()}`, { cache: 'no-store' });
-    if (!response.ok) return;
-    const feed = await response.json();
+    const feed = await fetchJsonWithTimeout(`./data/products.json?v=${Date.now()}`);
     economicsMap = new Map((feed.products || []).map((product) => [String(product.id), product]));
-    decorateCards();
+    scheduleCardDecoration();
   } catch (error) {
     console.warn('Demo economics unavailable:', error);
   }
@@ -43,13 +54,26 @@ function economicsMarkup(product) {
 
 function decorateCards() {
   document.querySelectorAll('.product-card[data-product]').forEach((card) => {
+    // Never remove/reinsert an existing economics block. Doing so from a MutationObserver
+    // causes a self-triggering DOM mutation loop on Safari/mobile browsers.
+    if (card.querySelector('.econ-box, .econ-status')) return;
+
     const id = String(card.dataset.product || '');
     const product = economicsMap.get(id);
     if (!product) return;
+
     const info = card.querySelector('.product-info');
     if (!info) return;
-    info.querySelector('.econ-box, .econ-status')?.remove();
     info.insertAdjacentHTML('beforeend', economicsMarkup(product));
+  });
+}
+
+function scheduleCardDecoration() {
+  if (cardsDecorationScheduled) return;
+  cardsDecorationScheduled = true;
+  requestAnimationFrame(() => {
+    cardsDecorationScheduled = false;
+    decorateCards();
   });
 }
 
@@ -58,8 +82,7 @@ function decorateModal(id) {
   if (!product) return;
   setTimeout(() => {
     const modalCopy = document.querySelector('.product-modal .modal-copy');
-    if (!modalCopy) return;
-    modalCopy.querySelector('.econ-box, .econ-status')?.remove();
+    if (!modalCopy || modalCopy.querySelector('.econ-box, .econ-status')) return;
     const button = modalCopy.querySelector('.modal-add');
     if (button) button.insertAdjacentHTML('beforebegin', economicsMarkup(product));
     else modalCopy.insertAdjacentHTML('beforeend', economicsMarkup(product));
@@ -71,7 +94,10 @@ document.addEventListener('click', (event) => {
   if (productNode?.dataset?.product) decorateModal(productNode.dataset.product);
 });
 
-const observer = new MutationObserver(() => decorateCards());
-observer.observe(document.getElementById('app') || document.body, { childList: true, subtree: true });
+const app = document.getElementById('app');
+if (app) {
+  const observer = new MutationObserver(() => scheduleCardDecoration());
+  observer.observe(app, { childList: true, subtree: true });
+}
 
-await loadEconomics();
+loadEconomics();
