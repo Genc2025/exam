@@ -1,0 +1,160 @@
+name: Audit CJ EU Warehouse API
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cj-api-audit.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cj-api-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Audit CJ warehouse query modes
+        env:
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+        run: |
+          node --input-type=module - <<'NODE'
+          import fs from 'node:fs/promises';
+
+          const base = 'https://developers.cjdropshipping.com/api2.0/v1';
+          const countries = ['DE','ES','PL','FR','CZ','NL'];
+          const wait = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+          let lastDone = 0;
+
+          async function req(url, options = {}) {
+            const elapsed = Date.now() - lastDone;
+            if (lastDone && elapsed < 2500) await wait(2500 - elapsed);
+            try {
+              const response = await fetch(url, options);
+              const text = await response.text();
+              const payload = text ? JSON.parse(text) : {};
+              if (!response.ok || payload?.result === false || payload?.success === false) {
+                throw new Error(payload?.message || `HTTP ${response.status}`);
+              }
+              return payload;
+            } finally {
+              lastDone = Date.now();
+            }
+          }
+
+          function url(path, params = {}) {
+            const u = new URL(`${base}${path}`);
+            for (const [k, v] of Object.entries(params)) {
+              if (v !== undefined && v !== null && v !== '') u.searchParams.set(k, String(v));
+            }
+            return u;
+          }
+
+          function summarizeV2(payload) {
+            const products = (payload?.data?.content || []).flatMap((x) => x?.productList || []);
+            return {
+              pageSize: payload?.data?.pageSize ?? null,
+              pageNumber: payload?.data?.pageNumber ?? null,
+              totalRecords: payload?.data?.totalRecords ?? null,
+              totalPages: payload?.data?.totalPages ?? null,
+              returnedProducts: products.length,
+              firstProducts: products.slice(0, 5).map((p) => ({
+                id: p.id,
+                name: p.nameEn,
+                sellPrice: p.sellPrice,
+                nowPrice: p.nowPrice,
+                warehouseInventoryNum: p.warehouseInventoryNum,
+                totalVerifiedInventory: p.totalVerifiedInventory,
+                verifiedWarehouse: p.verifiedWarehouse
+              }))
+            };
+          }
+
+          function summarizeV1(payload) {
+            const list = payload?.data?.list || [];
+            return {
+              pageNum: payload?.data?.pageNum ?? null,
+              pageSize: payload?.data?.pageSize ?? null,
+              total: payload?.data?.total ?? null,
+              returnedProducts: list.length,
+              firstProducts: list.slice(0, 5).map((p) => ({
+                id: p.pid,
+                name: p.productNameEn,
+                sellPrice: p.sellPrice,
+                productSku: p.productSku
+              }))
+            };
+          }
+
+          const auth = await req(`${base}/authentication/getAccessToken`, {
+            method: 'POST',
+            headers: {'Content-Type':'application/json', Accept:'application/json'},
+            body: JSON.stringify({apiKey: process.env.CJ_API_KEY})
+          });
+          const token = auth.data.accessToken;
+          const headers = {'CJ-Access-Token': token, Accept:'application/json'};
+
+          const warehouseList = await req(`${base}/product/globalWarehouseList`, {headers});
+          const out = {
+            generatedAt: new Date().toISOString(),
+            globalWarehouseList: (warehouseList?.data || []).map((w) => ({
+              countryCode: w.countryCode,
+              areaEn: w.areaEn,
+              disabled: w.disabled,
+              id: w.id
+            })),
+            countries: {}
+          };
+
+          for (const countryCode of countries) {
+            const common = {
+              page: 1,
+              size: 100,
+              countryCode,
+              startWarehouseInventory: 1,
+              verifiedWarehouse: 1,
+              orderBy: 4,
+              sort: 'desc'
+            };
+
+            const v2NoGlobal = await req(url('/product/listV2', common), {headers});
+            const v2Global = await req(url('/product/listV2', {...common, isWarehouse: true}), {headers});
+            const v1 = await req(url('/product/list', {
+              pageNum: 1,
+              pageSize: 200,
+              countryCode,
+              verifiedWarehouse: 1,
+              startInventory: 1
+            }), {headers});
+
+            out.countries[countryCode] = {
+              v2WithoutIsWarehouse: summarizeV2(v2NoGlobal),
+              v2WithIsWarehouse: summarizeV2(v2Global),
+              legacyList: summarizeV1(v1)
+            };
+          }
+
+          await fs.writeFile('data/cj-api-audit.json', JSON.stringify(out, null, 2) + '\n');
+          NODE
+
+      - name: Commit audit result
+        run: |
+          git config user.name "virello-cj-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/cj-api-audit.json
+          git commit -m "Record CJ EU API audit" || exit 0
+          git pull --rebase origin main
+          git push origin main
