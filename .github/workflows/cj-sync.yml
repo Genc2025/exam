@@ -1,6 +1,5 @@
-name: Sync CJ Germany Catalog
+name: Sync CJ EU Catalog
 
-# Re-triggered after CJ_API_KEY configuration.
 on:
   workflow_dispatch:
   push:
@@ -16,7 +15,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: cj-germany-catalog-sync
+  group: cj-eu-catalog-sync
   cancel-in-progress: false
 
 jobs:
@@ -37,7 +36,7 @@ jobs:
       - name: Validate sync script
         run: node --check scripts/sync-cj-germany.mjs
 
-      - name: Sync verified CJ Germany catalog
+      - name: Sync verified CJ EU catalog
         id: cj
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
@@ -53,23 +52,26 @@ jobs:
           echo "configured=true" >> "$GITHUB_OUTPUT"
           node scripts/sync-cj-germany.mjs
 
-      - name: Validate generated Germany catalog
+      - name: Validate generated EU catalog
         if: steps.cj.outputs.configured == 'true'
         run: |
           node - <<'NODE'
           const feed = require('./data/products.json');
+          const config = require('./data/catalog-config.json');
+          const allowed = new Set(config.warehouseCountries || []);
           if (feed.source !== 'cj') throw new Error('Catalog source must be cj.');
           if (!Array.isArray(feed.products)) throw new Error('Catalog products must be an array.');
           for (const product of feed.products) {
             if (product.verifiedStock !== true) throw new Error(`Unverified stock: ${product.sku}`);
-            if (!(Number(product.stock) >= 25)) throw new Error(`Insufficient stock: ${product.sku}`);
+            if (!(Number(product.stock) >= Number(config.minStock || 25))) throw new Error(`Insufficient stock: ${product.sku}`);
             if (!Array.isArray(product.warehouses) || product.warehouses.length === 0) throw new Error(`Missing warehouse: ${product.sku}`);
-            if (product.warehouses.some((warehouse) => warehouse.countryCode !== 'DE' || warehouse.verified !== true)) {
-              throw new Error(`Non-Germany or unverified warehouse: ${product.sku}`);
+            if (product.warehouses.some((warehouse) => !allowed.has(warehouse.countryCode) || warehouse.verified !== true)) {
+              throw new Error(`Disallowed or unverified warehouse: ${product.sku}`);
             }
+            if (!allowed.has(product.primaryWarehouse)) throw new Error(`Invalid primary warehouse: ${product.sku}`);
             if (product.sellReady !== false) throw new Error(`sellReady must stay false before freight/payment/compliance checks: ${product.sku}`);
           }
-          console.log(`Validated ${feed.products.length} CJ Germany products.`);
+          console.log(`Validated ${feed.products.length} CJ EU-warehouse products for Germany market.`);
           NODE
 
       - name: Commit catalog changes
@@ -82,5 +84,5 @@ jobs:
           git config user.name "virello-cj-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/products.json
-          git commit -m "Sync verified CJ Germany catalog"
+          git commit -m "Sync verified CJ EU catalog"
           git push
