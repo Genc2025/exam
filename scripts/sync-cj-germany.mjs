@@ -7,7 +7,7 @@ const OUTPUT_PATH = path.join(ROOT, 'data', 'products.json');
 const API_BASE = (process.env.CJ_API_BASE || 'https://developers.cjdropshipping.com/api2.0/v1').replace(/\/$/, '');
 const API_KEY = process.env.CJ_API_KEY;
 const MARKET = 'DE';
-const API_DELAY_MS = Number(process.env.CJ_API_DELAY_MS || 1150);
+const API_DELAY_MS = Number(process.env.CJ_API_DELAY_MS || 2200);
 
 if (!API_KEY) throw new Error('CJ_API_KEY is not configured.');
 
@@ -216,8 +216,9 @@ const fx = await getUsdToEurRate();
 console.log(`USD→EUR source: ${fx.source}`);
 
 const candidateMap = new Map();
+let rawResultCount = 0;
 for (const keyword of config.searchKeywords || []) {
-  console.log(`Searching verified CJ Germany stock: ${keyword}`);
+  console.log(`Searching CJ Germany warehouse candidates: ${keyword}`);
   const payload = await cjGet(token, '/product/listV2', {
     page: 1,
     size: config.searchPageSize || 60,
@@ -231,19 +232,18 @@ for (const keyword of config.searchKeywords || []) {
     features: ['enable_description', 'enable_category', 'enable_video']
   });
 
-  for (const raw of parseProductsV2(payload)) {
+  const rawProducts = parseProductsV2(payload);
+  rawResultCount += rawProducts.length;
+  for (const raw of rawProducts) {
     const text = normalizedText(raw);
     const costUsd = Number(raw?.nowPrice || raw?.discountPrice || raw?.sellPrice || 0);
     const costEur = costUsd * fx.rate;
     const deliveryMax = parseDeliveryMax(raw?.deliveryCycle);
     const minOrder = raw?.directMinOrderNum == null || raw?.directMinOrderNum === '' ? 1 : Number(raw.directMinOrderNum);
     if (!raw?.id || !(costEur > 0) || costEur > config.maxWholesalePrice) continue;
-    if (Number(raw?.verifiedWarehouse) !== 1) continue;
-    if (Number(raw?.warehouseInventoryNum || raw?.totalVerifiedInventory || 0) < config.minStock) continue;
     if (minOrder > 1) continue;
     if (deliveryMax !== null && deliveryMax > config.maxDeliveryDays) continue;
     if (containsAny(text, config.blockedKeywords || [])) continue;
-    if (!containsAny(text, config.preferredCategoryKeywords || [])) continue;
     const existing = candidateMap.get(String(raw.id));
     if (!existing || Number(raw.listedNum || 0) > Number(existing.listedNum || 0)) candidateMap.set(String(raw.id), raw);
   }
@@ -253,7 +253,7 @@ const candidates = [...candidateMap.values()]
   .sort((a, b) => Number(b.listedNum || 0) - Number(a.listedNum || 0))
   .slice(0, config.maxInventoryVerificationCandidates || 36);
 
-console.log(`Strict inventory verification: ${candidates.length} candidates.`);
+console.log(`CJ listV2 returned ${rawResultCount} rows; second-stage inventory verification: ${candidates.length} candidates.`);
 const verified = [];
 for (const raw of candidates) {
   const inventory = await getVerifiedGermanyStock(token, raw.id);
@@ -278,7 +278,7 @@ const output = {
     minStock: config.minStock,
     maxProducts: config.maxProducts,
     exchangeRate: { usdToEur: Number(fx.rate.toFixed(6)), source: fx.source },
-    note: 'Every published product passed CJ Product List V2 Germany/verified-warehouse filters and a second variant-level inventory check requiring countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified.'
+    note: 'Product List V2 is used only for discovery. Every published product must independently pass the CJ variant inventory endpoint with countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified.'
   },
   products
 };
