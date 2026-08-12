@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-12T01:52:55.301Z",
+  "generatedAt": "2026-08-12T01:57:32.776Z",
   "source": "cj",
-  "mode": "live-api-europe",
+  "mode": "live-api",
   "selection": {
     "market": "DE",
     "warehouseRegion": "EUROPE",
@@ -86,13 +86,13 @@
     ],
     "verifiedWarehouseOnly": true,
     "minStock": 1,
-    "productCount": 121,
+    "productCount": 122,
     "discoveryStats": {
       "GB": {
-        "totalRecords": 95,
+        "totalRecords": 96,
         "totalPages": 1,
         "pagesFetched": 1,
-        "fetched": 95
+        "fetched": 96
       },
       "DE": {
         "totalRecords": 1,
@@ -185,7 +185,31 @@
       "adCandidate": true,
       "score": 70.5,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "ES",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1861236817023356929",
+          "sku": "CJJT203806811KP",
+          "name": "Set2",
+          "supplierCostUsd": 4,
+          "supplierCostEur": 3.47
+        },
+        "cjSuggestedRetailEur": 23.57,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "2409040402051610400",
@@ -252,7 +276,31 @@
       "adCandidate": true,
       "score": 48.65,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "ES",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1974661893137817602",
+          "sku": "CJYS212768708HS",
+          "name": "5Can",
+          "supplierCostUsd": 7.95,
+          "supplierCostEur": 6.89
+        },
+        "cjSuggestedRetailEur": 1058.63,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1813447687078301696",
@@ -319,7 +367,31 @@
       "adCandidate": true,
       "score": 42.66,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1833400267413803024",
+          "sku": "CJJK208602321UF",
+          "name": "Grey-S",
+          "supplierCostUsd": 5.16,
+          "supplierCostEur": 4.47
+        },
+        "cjSuggestedRetailEur": 36.42,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1965624415019192321",
@@ -352,12 +424,12 @@
         "raw": "117.99"
       },
       "sourceCurrency": "USD",
-      "stock": 344,
+      "stock": 338,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 344,
+          "stock": 338,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -384,9 +456,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": true,
-      "score": 42.22,
+      "score": 42.14,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1965624415136632833",
+          "sku": "CJFU252569701AZ",
+          "name": "Black",
+          "supplierCostUsd": 117.99,
+          "supplierCostEur": 102.24
+        },
+        "cjSuggestedRetailEur": 315.94,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1962770575514181634",
@@ -419,12 +515,12 @@
         "raw": "276.47 -- 283.54"
       },
       "sourceCurrency": "USD",
-      "stock": 179,
+      "stock": 169,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 179,
+          "stock": 169,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -451,9 +547,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": true,
-      "score": 41.33,
+      "score": 41.06,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1962770575803588610",
+          "sku": "CJFU247560402BY",
+          "name": "Taupe",
+          "supplierCostUsd": 283.54,
+          "supplierCostEur": 245.7
+        },
+        "cjSuggestedRetailEur": 759.22,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1964986324152655873",
@@ -486,12 +606,12 @@
         "raw": "67.24 -- 108.70"
       },
       "sourceCurrency": "USD",
-      "stock": 110,
+      "stock": 107,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 110,
+          "stock": 107,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -518,9 +638,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": true,
-      "score": 40.79,
+      "score": 40.66,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1964986324303650818",
+          "sku": "CJFU249625001AZ",
+          "name": "Black",
+          "supplierCostUsd": 108.7,
+          "supplierCostEur": 94.19
+        },
+        "cjSuggestedRetailEur": 291.07,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1968958785446502401",
@@ -553,12 +697,12 @@
         "raw": "206.67"
       },
       "sourceCurrency": "USD",
-      "stock": 200,
+      "stock": 196,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 200,
+          "stock": 196,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -585,9 +729,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 39.43,
+      "score": 39.33,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1968958785563942914",
+          "sku": "CJFU253513501AZ",
+          "name": "Gray",
+          "supplierCostUsd": 206.67,
+          "supplierCostEur": 179.09
+        },
+        "cjSuggestedRetailEur": 553.4,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1964932838396305409",
@@ -654,7 +822,31 @@
       "adCandidate": false,
       "score": 38.98,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1964932838534717441",
+          "sku": "CJFU249250601AZ",
+          "name": "White",
+          "supplierCostUsd": 135.84,
+          "supplierCostEur": 117.71
+        },
+        "cjSuggestedRetailEur": 369.09,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1961316771581444097",
@@ -721,7 +913,31 @@
       "adCandidate": false,
       "score": 38.55,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1961316771765993473",
+          "sku": "CJFU247189201AZ",
+          "name": "White",
+          "supplierCostUsd": 276.25,
+          "supplierCostEur": 239.38
+        },
+        "cjSuggestedRetailEur": 739.71,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1962423973202128897",
@@ -754,12 +970,12 @@
         "raw": "314.41"
       },
       "sourceCurrency": "USD",
-      "stock": 194,
+      "stock": 183,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 194,
+          "stock": 183,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -786,9 +1002,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 38.05,
+      "score": 37.77,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1962423973306986498",
+          "sku": "CJFU247484701AZ",
+          "name": "Grey",
+          "supplierCostUsd": 314.41,
+          "supplierCostEur": 272.45
+        },
+        "cjSuggestedRetailEur": 841.88,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1962423551800406017",
@@ -821,12 +1061,12 @@
         "raw": "128.58 -- 131.41"
       },
       "sourceCurrency": "USD",
-      "stock": 163,
+      "stock": 159,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 163,
+          "stock": 159,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -853,9 +1093,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 37.88,
+      "score": 37.76,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1962423551922040835",
+          "sku": "CJFU247485202BY",
+          "name": "Beige",
+          "supplierCostUsd": 131.41,
+          "supplierCostEur": 113.87
+        },
+        "cjSuggestedRetailEur": 351.87,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1962717310236917761",
@@ -888,12 +1152,12 @@
         "raw": "165.10"
       },
       "sourceCurrency": "USD",
-      "stock": 108,
+      "stock": 105,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 108,
+          "stock": 105,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -920,9 +1184,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 37.42,
+      "score": 37.28,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1962717311029641218",
+          "sku": "CJFU247542201AZ",
+          "name": "Cream White",
+          "supplierCostUsd": 165.1,
+          "supplierCostEur": 143.07
+        },
+        "cjSuggestedRetailEur": 442.08,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1962422475067277314",
@@ -989,7 +1277,31 @@
       "adCandidate": false,
       "score": 36.56,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1962422475251826689",
+          "sku": "CJFU247484201AZ",
+          "name": "LIGHT GREY",
+          "supplierCostUsd": 227.92,
+          "supplierCostEur": 197.5
+        },
+        "cjSuggestedRetailEur": 610.29,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1955147318138142722",
@@ -1022,12 +1334,12 @@
         "raw": "104.45"
       },
       "sourceCurrency": "USD",
-      "stock": 135,
+      "stock": 132,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 135,
+          "stock": 132,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1054,9 +1366,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 36.46,
+      "score": 36.35,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1955147318226223106",
+          "sku": "CJFU245388502BY",
+          "name": "Black",
+          "supplierCostUsd": 104.45,
+          "supplierCostEur": 90.51
+        },
+        "cjSuggestedRetailEur": 328.93,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1966378140511748097",
@@ -1089,12 +1425,12 @@
         "raw": "167.59 -- 174.66"
       },
       "sourceCurrency": "USD",
-      "stock": 231,
+      "stock": 228,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 231,
+          "stock": 228,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1121,9 +1457,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 36.31,
+      "score": 36.25,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1966378140620800002",
+          "sku": "CJFU252824802BY",
+          "name": "Pink",
+          "supplierCostUsd": 174.66,
+          "supplierCostEur": 151.35
+        },
+        "cjSuggestedRetailEur": 467.68,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1970035549728452609",
@@ -1156,12 +1516,12 @@
         "raw": "210.02"
       },
       "sourceCurrency": "USD",
-      "stock": 63,
+      "stock": 57,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 63,
+          "stock": 57,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1188,9 +1548,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 36.23,
+      "score": 35.75,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1970035549833310210",
+          "sku": "CJFU253801901AZ",
+          "name": "White",
+          "supplierCostUsd": 210.02,
+          "supplierCostEur": 181.99
+        },
+        "cjSuggestedRetailEur": 562.37,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1961320770167943170",
@@ -1223,12 +1607,12 @@
         "raw": "201.16"
       },
       "sourceCurrency": "USD",
-      "stock": 98,
+      "stock": 97,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 98,
+          "stock": 97,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1255,9 +1639,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 35.07,
+      "score": 35.02,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1961320770356686849",
+          "sku": "CJFU247193001AZ",
+          "name": "Cream White",
+          "supplierCostUsd": 201.16,
+          "supplierCostEur": 174.32
+        },
+        "cjSuggestedRetailEur": 538.64,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1958811289886437377",
@@ -1290,12 +1698,12 @@
         "raw": "446.51"
       },
       "sourceCurrency": "USD",
-      "stock": 100,
+      "stock": 97,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 100,
+          "stock": 97,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1322,9 +1730,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 35.02,
+      "score": 34.88,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1958811290456862721",
+          "sku": "CJFU246520901AZ",
+          "name": "Dark Gray",
+          "supplierCostUsd": 446.51,
+          "supplierCostEur": 386.92
+        },
+        "cjSuggestedRetailEur": 1195.6,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1965236256256204801",
@@ -1391,7 +1823,31 @@
       "adCandidate": false,
       "score": 34.56,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1965236256356868098",
+          "sku": "CJFU251303001AZ",
+          "name": "White",
+          "supplierCostUsd": 108.12,
+          "supplierCostEur": 93.69
+        },
+        "cjSuggestedRetailEur": 289.51,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1961328391184756738",
@@ -1424,12 +1880,12 @@
         "raw": "209.36 -- 223.50"
       },
       "sourceCurrency": "USD",
-      "stock": 97,
+      "stock": 95,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 97,
+          "stock": 95,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1456,9 +1912,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 34.11,
+      "score": 34.01,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1961328391499329538",
+          "sku": "CJFU247198701AZ",
+          "name": "Dark Gray",
+          "supplierCostUsd": 209.36,
+          "supplierCostEur": 181.42
+        },
+        "cjSuggestedRetailEur": 598.46,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1971149675232264193",
@@ -1525,74 +2005,31 @@
       "adCandidate": false,
       "score": 34.01,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
-      "id": "1961325348211703809",
-      "sku": "CJFU2471957",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Upholstered Bed, 135x190 4ft6, Double Bed, Hydraulic Bed, 2-in-1 Storage Drawers At The End Of The Bed, Recessed LED Light Strips On Both Sides Of The Bed, Slatted Frame, Velvet,Beige",
-        "en": "Upholstered Bed, 135x190 4ft6, Double Bed, Hydraulic Bed, 2-in-1 Storage Drawers At The End Of The Bed, Recessed LED Light Strips On Both Sides Of The Bed, Slatted Frame, Velvet,Beige"
-      },
-      "description": {
-        "de": "Specification Product Information Item Code:N606P2300802B Product Type :Combo Item Product Name:Upholstered bed, 135*190(4ft6), Double Bed, hydraulic bed, 2-in-1 storage drawers at the end of the bed, recessed LED light strips on both sides of the bed, slatted frame, Velvet,Beige Main Color:Beige Main Material:Velvet Bed Size:135cm*190cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N606P230082BPackage Quantity: 1187.96 * 29.21 * 18.42 cm 27.96 kg Sub-item 2: N606P230080BPackage Quantity: 1139.07 * 53.34 * 18.42 cm 28.87 kg Product Features MULTIFUNCTIONAL STORAGE: This bed features a variety of storage functions, including a hydraulic storage bed, end-of-bed 2-in-1 storage drawers, and an overhead shelf. These storage spaces provide you with conv",
-        "en": "Specification Product Information Item Code:N606P2300802B Product Type :Combo Item Product Name:Upholstered bed, 135*190(4ft6), Double Bed, hydraulic bed, 2-in-1 storage drawers at the end of the bed, recessed LED light strips on both sides of the bed, slatted frame, Velvet,Beige Main Color:Beige Main Material:Velvet Bed Size:135cm*190cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N606P230082BPackage Quantity: 1187.96 * 29.21 * 18.42 cm 27.96 kg Sub-item 2: N606P230080BPackage Quantity: 1139.07 * 53.34 * 18.42 cm 28.87 kg Product Features MULTIFUNCTIONAL STORAGE: This bed features a variety of storage functions, including a hydraulic storage bed, end-of-bed 2-in-1 storage drawers, and an overhead shelf. These storage spaces provide you with conv"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 428.99,
-      "compareAt": null,
-      "cost": 186.46,
-      "costRange": {
-        "min": 186.46,
-        "max": 186.46,
-        "currency": "EUR"
-      },
-      "sourceCost": 215.17,
-      "sourceCostRange": {
-        "min": 215.17,
-        "max": 215.17,
-        "raw": "215.17"
-      },
-      "sourceCurrency": "USD",
-      "stock": 56,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 56,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1971149675349704707",
+          "sku": "CJFU254185402BY",
+          "name": "Gray",
+          "supplierCostUsd": 620.91,
+          "supplierCostEur": 538.05
+        },
+        "cjSuggestedRetailEur": 1662.58,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
         }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/ca2aad77-e77e-4233-8055-e69c73a4344c.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 38,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 33.55,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      }
     },
     {
       "id": "2019327477523062785",
@@ -1625,12 +2062,12 @@
         "raw": "127.51"
       },
       "sourceCurrency": "USD",
-      "stock": 128,
+      "stock": 126,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 128,
+          "stock": 126,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1657,47 +2094,71 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 33.49,
+      "score": 33.42,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "2019327477669863426",
+          "sku": "CJFU27551140001",
+          "name": "Black",
+          "supplierCostUsd": 127.51,
+          "supplierCostEur": 110.49
+        },
+        "cjSuggestedRetailEur": 341.43,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
-      "id": "1955165335187451905",
-      "sku": "CJFU2454015",
+      "id": "1961325348211703809",
+      "sku": "CJFU2471957",
       "brand": "Virello Select",
       "name": {
-        "de": "Rocking Chairs For Adults, Tteddy Rocking Chair Relaxing Recliner Chair With Solid Wood Legs High Back Lounge Chairs For Balcony Living Room Bedroom",
-        "en": "Rocking Chairs For Adults, Tteddy Rocking Chair Relaxing Recliner Chair With Solid Wood Legs High Back Lounge Chairs For Balcony Living Room Bedroom"
+        "de": "Upholstered Bed, 135x190 4ft6, Double Bed, Hydraulic Bed, 2-in-1 Storage Drawers At The End Of The Bed, Recessed LED Light Strips On Both Sides Of The Bed, Slatted Frame, Velvet,Beige",
+        "en": "Upholstered Bed, 135x190 4ft6, Double Bed, Hydraulic Bed, 2-in-1 Storage Drawers At The End Of The Bed, Recessed LED Light Strips On Both Sides Of The Bed, Slatted Frame, Velvet,Beige"
       },
       "description": {
-        "de": "Specification Product Information Item Code:N605P240572Z Product Type :Single Box Product Product Name:Rocking Chairs for Adults, fabric Rocking Chair Relaxing Recliner Chair with Solid Wood Legs High Back Lounge Chairs for Balcony Living Room Bedroom Main Color:Colorful Main Material:Fabric Product Dimensions Assembled Length (cm):85.00 Assembled Width (cm):65.00 Assembled Height (cm):96.00 Product Weight (kg):Not Applicable Package Size Length (cm):65.41 Width (cm):64.77 Height (cm):38.74 Weight (kg):15.64 Product Features Comfortable & Sturdy: Crafted with an iron frame, solid wood feet, and high-strength sponge, this rocking chair is reinforced with sturdy stitching. It offers long-lasting comfort and stability, supporting a maximum weight capacity of 150kg, making it a safe and reliable choice for years to come. Modern Design：Our rocking chair decorative chair has clean lines and an",
-        "en": "Specification Product Information Item Code:N605P240572Z Product Type :Single Box Product Product Name:Rocking Chairs for Adults, fabric Rocking Chair Relaxing Recliner Chair with Solid Wood Legs High Back Lounge Chairs for Balcony Living Room Bedroom Main Color:Colorful Main Material:Fabric Product Dimensions Assembled Length (cm):85.00 Assembled Width (cm):65.00 Assembled Height (cm):96.00 Product Weight (kg):Not Applicable Package Size Length (cm):65.41 Width (cm):64.77 Height (cm):38.74 Weight (kg):15.64 Product Features Comfortable & Sturdy: Crafted with an iron frame, solid wood feet, and high-strength sponge, this rocking chair is reinforced with sturdy stitching. It offers long-lasting comfort and stability, supporting a maximum weight capacity of 150kg, making it a safe and reliable choice for years to come. Modern Design：Our rocking chair decorative chair has clean lines and an"
+        "de": "Specification Product Information Item Code:N606P2300802B Product Type :Combo Item Product Name:Upholstered bed, 135*190(4ft6), Double Bed, hydraulic bed, 2-in-1 storage drawers at the end of the bed, recessed LED light strips on both sides of the bed, slatted frame, Velvet,Beige Main Color:Beige Main Material:Velvet Bed Size:135cm*190cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N606P230082BPackage Quantity: 1187.96 * 29.21 * 18.42 cm 27.96 kg Sub-item 2: N606P230080BPackage Quantity: 1139.07 * 53.34 * 18.42 cm 28.87 kg Product Features MULTIFUNCTIONAL STORAGE: This bed features a variety of storage functions, including a hydraulic storage bed, end-of-bed 2-in-1 storage drawers, and an overhead shelf. These storage spaces provide you with conv",
+        "en": "Specification Product Information Item Code:N606P2300802B Product Type :Combo Item Product Name:Upholstered bed, 135*190(4ft6), Double Bed, hydraulic bed, 2-in-1 storage drawers at the end of the bed, recessed LED light strips on both sides of the bed, slatted frame, Velvet,Beige Main Color:Beige Main Material:Velvet Bed Size:135cm*190cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N606P230082BPackage Quantity: 1187.96 * 29.21 * 18.42 cm 27.96 kg Sub-item 2: N606P230080BPackage Quantity: 1139.07 * 53.34 * 18.42 cm 28.87 kg Product Features MULTIFUNCTIONAL STORAGE: This bed features a variety of storage functions, including a hydraulic storage bed, end-of-bed 2-in-1 storage drawers, and an overhead shelf. These storage spaces provide you with conv"
       },
       "category": {
         "de": "Furniture",
         "en": "Furniture"
       },
-      "price": 261.99,
+      "price": 428.99,
       "compareAt": null,
-      "cost": 113.48,
+      "cost": 186.46,
       "costRange": {
-        "min": 113.48,
-        "max": 113.48,
+        "min": 186.46,
+        "max": 186.46,
         "currency": "EUR"
       },
-      "sourceCost": 130.96,
+      "sourceCost": 215.17,
       "sourceCostRange": {
-        "min": 130.96,
-        "max": 130.96,
-        "raw": "130.96"
+        "min": 215.17,
+        "max": 215.17,
+        "raw": "215.17"
       },
       "sourceCurrency": "USD",
-      "stock": 50,
+      "stock": 52,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 50,
+          "stock": 52,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1708,13 +2169,13 @@
       "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
       "variantStock": [],
       "images": [
-        "https://cf.cjdropshipping.com/d715fad3-2532-45ca-b5fd-15e929e7e848.jpg"
+        "https://cf.cjdropshipping.com/ca2aad77-e77e-4233-8055-e69c73a4344c.jpg"
       ],
       "supplier": "CJdropshipping",
       "source": "cj",
       "market": "DE",
       "currency": "EUR",
-      "listedNum": 41,
+      "listedNum": 38,
       "deliveryCycle": null,
       "directMinOrderNum": null,
       "complianceSignals": {
@@ -1724,9 +2185,33 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 33.3,
+      "score": 33.2,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1961325348350115841",
+          "sku": "CJFU247195701AZ",
+          "name": "Beige",
+          "supplierCostUsd": 215.17,
+          "supplierCostEur": 186.46
+        },
+        "cjSuggestedRetailEur": 576.15,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
       "id": "1966383208938061825",
@@ -1759,12 +2244,12 @@
         "raw": "236.01"
       },
       "sourceCurrency": "USD",
-      "stock": 65,
+      "stock": 63,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 65,
+          "stock": 63,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1791,47 +2276,71 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 32.82,
+      "score": 32.68,
       "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout.",
+      "economics": {
+        "status": "partial",
+        "destinationCountry": "DE",
+        "destinationZip": "10115",
+        "originCountry": "GB",
+        "representativeVariant": {
+          "strategy": "highest supplier price among variants returned for the warehouse country",
+          "vid": "1966383209034530817",
+          "sku": "CJFU252830501AZ",
+          "name": "Cream",
+          "supplierCostUsd": 236.01,
+          "supplierCostEur": 204.51
+        },
+        "cjSuggestedRetailEur": 631.96,
+        "freight": {
+          "status": "unavailable",
+          "reason": "CJ returned no priced logistics option."
+        },
+        "assumptions": {
+          "vatRate": 0.19,
+          "paymentFeeRate": 0.03,
+          "targetPreAdMargin": 0.3
+        }
+      }
     },
     {
-      "id": "1962454518982500354",
-      "sku": "CJFU2475031",
+      "id": "1955165335187451905",
+      "sku": "CJFU2454015",
       "brand": "Virello Select",
       "name": {
-        "de": "Upholstered Bed, With Hydraulic Lever, Functional Bed From Storage, 150 X 200 Cm, Without Mattress, Velvet, Beige",
-        "en": "Upholstered Bed, With Hydraulic Lever, Functional Bed From Storage, 150 X 200 Cm, Without Mattress, Velvet, Beige"
+        "de": "Rocking Chairs For Adults, Tteddy Rocking Chair Relaxing Recliner Chair With Solid Wood Legs High Back Lounge Chairs For Balcony Living Room Bedroom",
+        "en": "Rocking Chairs For Adults, Tteddy Rocking Chair Relaxing Recliner Chair With Solid Wood Legs High Back Lounge Chairs For Balcony Living Room Bedroom"
       },
       "description": {
-        "de": "Specification Product Information Item Code:30375960AAB Product Type :Combo Item Product Name:Upholstered bed, with hydraulic lever, functional bed from storage, 150 x 200 cm, without mattress, velvet, Beige Main Color:Beige Main Material:Velvet 1:150*200 cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: WF303760AABPackage Quantity: 1156 * 56 * 10.5 cm 20 kg Sub-item 2: WF303759AABPackage Quantity: 1198 * 26.5 * 22.5 cm 28 kg Product Features Timeless design: The upholstered bed has a classic yet modern design thanks to the upholstered look; The thick headboard gives you stable and comfortable back support while reading or watching TV. Stable structure: The bed frame of the upholstered bed is stable, easy to assemble and the lying surface of the be",
-        "en": "Specification Product Information Item Code:30375960AAB Product Type :Combo Item Product Name:Upholstered bed, with hydraulic lever, functional bed from storage, 150 x 200 cm, without mattress, velvet, Beige Main Color:Beige Main Material:Velvet 1:150*200 cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: WF303760AABPackage Quantity: 1156 * 56 * 10.5 cm 20 kg Sub-item 2: WF303759AABPackage Quantity: 1198 * 26.5 * 22.5 cm 28 kg Product Features Timeless design: The upholstered bed has a classic yet modern design thanks to the upholstered look; The thick headboard gives you stable and comfortable back support while reading or watching TV. Stable structure: The bed frame of the upholstered bed is stable, easy to assemble and the lying surface of the be"
+        "de": "Specification Product Information Item Code:N605P240572Z Product Type :Single Box Product Product Name:Rocking Chairs for Adults, fabric Rocking Chair Relaxing Recliner Chair with Solid Wood Legs High Back Lounge Chairs for Balcony Living Room Bedroom Main Color:Colorful Main Material:Fabric Product Dimensions Assembled Length (cm):85.00 Assembled Width (cm):65.00 Assembled Height (cm):96.00 Product Weight (kg):Not Applicable Package Size Length (cm):65.41 Width (cm):64.77 Height (cm):38.74 Weight (kg):15.64 Product Features Comfortable & Sturdy: Crafted with an iron frame, solid wood feet, and high-strength sponge, this rocking chair is reinforced with sturdy stitching. It offers long-lasting comfort and stability, supporting a maximum weight capacity of 150kg, making it a safe and reliable choice for years to come. Modern Design：Our rocking chair decorative chair has clean lines and an",
+        "en": "Specification Product Information Item Code:N605P240572Z Product Type :Single Box Product Product Name:Rocking Chairs for Adults, fabric Rocking Chair Relaxing Recliner Chair with Solid Wood Legs High Back Lounge Chairs for Balcony Living Room Bedroom Main Color:Colorful Main Material:Fabric Product Dimensions Assembled Length (cm):85.00 Assembled Width (cm):65.00 Assembled Height (cm):96.00 Product Weight (kg):Not Applicable Package Size Length (cm):65.41 Width (cm):64.77 Height (cm):38.74 Weight (kg):15.64 Product Features Comfortable & Sturdy: Crafted with an iron frame, solid wood feet, and high-strength sponge, this rocking chair is reinforced with sturdy stitching. It offers long-lasting comfort and stability, supporting a maximum weight capacity of 150kg, making it a safe and reliable choice for years to come. Modern Design：Our rocking chair decorative chair has clean lines and an"
       },
       "category": {
         "de": "Furniture",
         "en": "Furniture"
       },
-      "price": 398.99,
+      "price": 261.99,
       "compareAt": null,
-      "cost": 173.21,
+      "cost": 113.48,
       "costRange": {
-        "min": 173.21,
-        "max": 173.21,
+        "min": 113.48,
+        "max": 113.48,
         "currency": "EUR"
       },
-      "sourceCost": 199.88,
+      "sourceCost": 130.96,
       "sourceCostRange": {
-        "min": 199.88,
-        "max": 199.88,
-        "raw": "199.88"
+        "min": 130.96,
+        "max": 130.96,
+        "raw": "130.96"
       },
       "sourceCurrency": "USD",
-      "stock": 55,
+      "stock": 40,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 55,
+          "stock": 40,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1842,13 +2351,13 @@
       "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
       "variantStock": [],
       "images": [
-        "https://cf.cjdropshipping.com/61b301c1-72ab-408b-906d-b33daf74c0a7.jpg"
+        "https://cf.cjdropshipping.com/d715fad3-2532-45ca-b5fd-15e929e7e848.jpg"
       ],
       "supplier": "CJdropshipping",
       "source": "cj",
       "market": "DE",
       "currency": "EUR",
-      "listedNum": 27,
+      "listedNum": 41,
       "deliveryCycle": null,
       "directMinOrderNum": null,
       "complianceSignals": {
@@ -1858,7 +2367,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 32.17,
+      "score": 32.23,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -1893,12 +2402,12 @@
         "raw": "71.92"
       },
       "sourceCurrency": "USD",
-      "stock": 48,
+      "stock": 45,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 48,
+          "stock": 45,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1925,7 +2434,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 32.16,
+      "score": 31.85,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -1960,12 +2469,12 @@
         "raw": "187.69"
       },
       "sourceCurrency": "USD",
-      "stock": 130,
+      "stock": 129,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 130,
+          "stock": 129,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -1992,7 +2501,74 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 31.84,
+      "score": 31.8,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "1962454518982500354",
+      "sku": "CJFU2475031",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Upholstered Bed, With Hydraulic Lever, Functional Bed From Storage, 150 X 200 Cm, Without Mattress, Velvet, Beige",
+        "en": "Upholstered Bed, With Hydraulic Lever, Functional Bed From Storage, 150 X 200 Cm, Without Mattress, Velvet, Beige"
+      },
+      "description": {
+        "de": "Specification Product Information Item Code:30375960AAB Product Type :Combo Item Product Name:Upholstered bed, with hydraulic lever, functional bed from storage, 150 x 200 cm, without mattress, velvet, Beige Main Color:Beige Main Material:Velvet 1:150*200 cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: WF303760AABPackage Quantity: 1156 * 56 * 10.5 cm 20 kg Sub-item 2: WF303759AABPackage Quantity: 1198 * 26.5 * 22.5 cm 28 kg Product Features Timeless design: The upholstered bed has a classic yet modern design thanks to the upholstered look; The thick headboard gives you stable and comfortable back support while reading or watching TV. Stable structure: The bed frame of the upholstered bed is stable, easy to assemble and the lying surface of the be",
+        "en": "Specification Product Information Item Code:30375960AAB Product Type :Combo Item Product Name:Upholstered bed, with hydraulic lever, functional bed from storage, 150 x 200 cm, without mattress, velvet, Beige Main Color:Beige Main Material:Velvet 1:150*200 cm Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: WF303760AABPackage Quantity: 1156 * 56 * 10.5 cm 20 kg Sub-item 2: WF303759AABPackage Quantity: 1198 * 26.5 * 22.5 cm 28 kg Product Features Timeless design: The upholstered bed has a classic yet modern design thanks to the upholstered look; The thick headboard gives you stable and comfortable back support while reading or watching TV. Stable structure: The bed frame of the upholstered bed is stable, easy to assemble and the lying surface of the be"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 398.99,
+      "compareAt": null,
+      "cost": 173.21,
+      "costRange": {
+        "min": 173.21,
+        "max": 173.21,
+        "currency": "EUR"
+      },
+      "sourceCost": 199.88,
+      "sourceCostRange": {
+        "min": 199.88,
+        "max": 199.88,
+        "raw": "199.88"
+      },
+      "sourceCurrency": "USD",
+      "stock": 50,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 50,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/61b301c1-72ab-408b-906d-b33daf74c0a7.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 27,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 31.71,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2094,12 +2670,12 @@
         "raw": "165.48"
       },
       "sourceCurrency": "USD",
-      "stock": 50,
+      "stock": 49,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 50,
+          "stock": 49,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2126,7 +2702,74 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 30.59,
+      "score": 30.49,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "1968977695697047554",
+      "sku": "CJFU2535359",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Wooden Bed, Storage Bed , Children S Bed, 3ft Single Bed 90x190cm, Safety Guardrail, Two Drawers With Slides, Two Storage Compartments, Pine Wood Particle Board, White",
+        "en": "Wooden Bed, Storage Bed , Children S Bed, 3ft Single Bed 90x190cm, Safety Guardrail, Two Drawers With Slides, Two Storage Compartments, Pine Wood Particle Board, White"
+      },
+      "description": {
+        "de": "Specification Product Information Item Code:N604D373738W Product Type :Combo Item Product Name:Wooden bed, Storage Bed , Children's bed, 3ft single bed 90x190cm, Safety guardrail, Two drawers with slides, Two storage compartments, Pine wood + particle board, White Place of Origin:China Main Color:White Main Material:Wood Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):194.00 Assembled Width (cm):94.50 Assembled Height (cm):95.00 Product Weight (kg):54.50 Package Size Sub-item 1: N604P263738WPackage Quantity: 1196.22 * 39.37 * 13.34 cm 29.9 kg Sub-item 2: N604P263737WPackage Quantity: 196.52 * 48.9 * 16.51 cm 29.7 kg Product Features Practical design: This single bed (90x190 cm, 3 ft) has a bed frame made of solid pine, storage cabinets made of particleboard and bed slats made of multilayerboard. Convenient storage space: Two practical drawers with slides on the right side ca",
+        "en": "Specification Product Information Item Code:N604D373738W Product Type :Combo Item Product Name:Wooden bed, Storage Bed , Children's bed, 3ft single bed 90x190cm, Safety guardrail, Two drawers with slides, Two storage compartments, Pine wood + particle board, White Place of Origin:China Main Color:White Main Material:Wood Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):194.00 Assembled Width (cm):94.50 Assembled Height (cm):95.00 Product Weight (kg):54.50 Package Size Sub-item 1: N604P263738WPackage Quantity: 1196.22 * 39.37 * 13.34 cm 29.9 kg Sub-item 2: N604P263737WPackage Quantity: 196.52 * 48.9 * 16.51 cm 29.7 kg Product Features Practical design: This single bed (90x190 cm, 3 ft) has a bed frame made of solid pine, storage cabinets made of particleboard and bed slats made of multilayerboard. Convenient storage space: Two practical drawers with slides on the right side ca"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 528.99,
+      "compareAt": null,
+      "cost": 229.99,
+      "costRange": {
+        "min": 229.99,
+        "max": 229.99,
+        "currency": "EUR"
+      },
+      "sourceCost": 265.41,
+      "sourceCostRange": {
+        "min": 265.41,
+        "max": 265.41,
+        "raw": "265.41"
+      },
+      "sourceCurrency": "USD",
+      "stock": 118,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 118,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/8245ecc0-276b-473d-bf29-d54b985ff900.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 6,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 30.4,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2161,12 +2804,12 @@
         "raw": "114.78"
       },
       "sourceCurrency": "USD",
-      "stock": 37,
+      "stock": 36,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 37,
+          "stock": 36,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2193,7 +2836,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 30.41,
+      "score": 30.28,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2228,12 +2871,12 @@
         "raw": "136.15"
       },
       "sourceCurrency": "USD",
-      "stock": 54,
+      "stock": 52,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 54,
+          "stock": 52,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2260,7 +2903,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 30.35,
+      "score": 30.17,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2295,12 +2938,12 @@
         "raw": "146.15"
       },
       "sourceCurrency": "USD",
-      "stock": 123,
+      "stock": 118,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 123,
+          "stock": 118,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2327,208 +2970,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 29.99,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
-      "id": "2019323270540447745",
-      "sku": "CJFU2755082",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Lift Up Oval Coffee Table With Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table For Living Room Bedroom, Reception, Tea Table, 120 X 50 X 39.5cm, Natural Wood",
-        "en": "Lift Up Oval Coffee Table With Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table For Living Room Bedroom, Reception, Tea Table, 120 X 50 X 39.5cm, Natural Wood"
-      },
-      "description": {
-        "de": "Specification Product Information Product Type :Single Box Product Product Name:Lift Up Oval Coffee Table with Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table for Living Room Bedroom, Reception, Tea Table, 120 x 50 x 39.5cm, Natural wood Main Color:Wood Main Material:MDF Product Dimensions Assembled Length (cm):120.00 Assembled Width (cm):50.00 Assembled Height (cm):39.50 Product Weight (kg):Not Applicable Package Size Length (cm):134.01 Width (cm):59.31 Height (cm):13.00 Weight (kg):23.90 Product Features Adaptable to Multiple Scenarios: This adjustable coffee table measures 120 x 50 x 39.5 cm, perfectly fitting various living room layouts. Its maximum height is 53.5 cm, allowing for flexible height adjustment to meet different needs, whether for leisure or work. Hidden Storage Space for Clever Organization: The coffee table features hidden storage space fo",
-        "en": "Specification Product Information Product Type :Single Box Product Product Name:Lift Up Oval Coffee Table with Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table for Living Room Bedroom, Reception, Tea Table, 120 x 50 x 39.5cm, Natural wood Main Color:Wood Main Material:MDF Product Dimensions Assembled Length (cm):120.00 Assembled Width (cm):50.00 Assembled Height (cm):39.50 Product Weight (kg):Not Applicable Package Size Length (cm):134.01 Width (cm):59.31 Height (cm):13.00 Weight (kg):23.90 Product Features Adaptable to Multiple Scenarios: This adjustable coffee table measures 120 x 50 x 39.5 cm, perfectly fitting various living room layouts. Its maximum height is 53.5 cm, allowing for flexible height adjustment to meet different needs, whether for leisure or work. Hidden Storage Space for Clever Organization: The coffee table features hidden storage space fo"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 220.99,
-      "compareAt": null,
-      "cost": 95.68,
-      "costRange": {
-        "min": 95.68,
-        "max": 95.68,
-        "currency": "EUR"
-      },
-      "sourceCost": 110.41,
-      "sourceCostRange": {
-        "min": 110.41,
-        "max": 110.41,
-        "raw": "110.41"
-      },
-      "sourceCurrency": "USD",
-      "stock": 100,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 100,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/17702496/3a95ae94-d142-47de-addb-09c335a139a4.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 6,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 29.61,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
-      "id": "2019327203093946369",
-      "sku": "CJFU2755111",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Modern Kitchen Island, Sideboard, Kitchen Cabinet With Drawers And Shelves, Sideboard For Kitchen & Dining Room, Black",
-        "en": "Modern Kitchen Island, Sideboard, Kitchen Cabinet With Drawers And Shelves, Sideboard For Kitchen & Dining Room, Black"
-      },
-      "description": {
-        "de": "Specification Product Information Product Type :Combo Item Product Name:Modern kitchen island, sideboard, kitchen cabinet with drawers and shelves, sideboard for kitchen & dining room, black Main Color:Black Main Material:MDF Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N639P362263SPackage Quantity: 1103.99 * 51.49 * 17.98 cm 28.85 kg Sub-item 2: N639P362264SPackage Quantity: 1154.99 * 50.98 * 13.49 cm 28.2 kg Product Features Product size: Kitchen island length 140 cm, width 40 cm, height 90 cm. This kitchen island has a fold-out tabletop that can be used as a dining table when unfolded and has a total length of 70 cm on the unfolded side. Modern and elegant design: It fits perfectly into various kitchen decors, be it modern, country or classic ",
-        "en": "Specification Product Information Product Type :Combo Item Product Name:Modern kitchen island, sideboard, kitchen cabinet with drawers and shelves, sideboard for kitchen & dining room, black Main Color:Black Main Material:MDF Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N639P362263SPackage Quantity: 1103.99 * 51.49 * 17.98 cm 28.85 kg Sub-item 2: N639P362264SPackage Quantity: 1154.99 * 50.98 * 13.49 cm 28.2 kg Product Features Product size: Kitchen island length 140 cm, width 40 cm, height 90 cm. This kitchen island has a fold-out tabletop that can be used as a dining table when unfolded and has a total length of 70 cm on the unfolded side. Modern and elegant design: It fits perfectly into various kitchen decors, be it modern, country or classic "
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 330.99,
-      "compareAt": null,
-      "cost": 143.73,
-      "costRange": {
-        "min": 143.73,
-        "max": 143.73,
-        "currency": "EUR"
-      },
-      "sourceCost": 165.87,
-      "sourceCostRange": {
-        "min": 165.87,
-        "max": 165.87,
-        "raw": "165.87"
-      },
-      "sourceCurrency": "USD",
-      "stock": 20,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 20,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/17702496/8adfa92b-4532-4909-8952-963219824048.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 48,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 29.52,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
-      "id": "1955143080632811522",
-      "sku": "CJFU2453859",
-      "brand": "Virello Select",
-      "name": {
-        "de": "White TV Stand For 75-inch Televisions, Lowboards, TV Boards, TV Cabinet, Entertainment Center, TV Console Table, Modern Entertainment Center, Media Console White",
-        "en": "White TV Stand For 75-inch Televisions, Lowboards, TV Boards, TV Cabinet, Entertainment Center, TV Console Table, Modern Entertainment Center, Media Console White"
-      },
-      "description": {
-        "de": "Specification Product Information Item Code:N605P197242243W Product Type :Combo Item Product Name:White TV stand for 75-inch televisions, lowboards, TV boards, TV cabinet, entertainment center, TV console table, modern entertainment center, media console (white) Main Color:White Main Material:Particle Board TV Size Ranges:70-79 inches Product Dimensions Assembled Length (cm):180.00 Assembled Width (cm):35.00 Assembled Height (cm):41.00 Product Weight (kg):Not Applicable Package Size Sub-item 1: N605P197243WPackage Quantity: 1100 * 44 * 12.5 cm 15.55 kg Sub-item 2: N605P197242WPackage Quantity: 173.5 * 44 * 17.5 cm 16.65 kg Product Features [Extra large TV stand ] Overall dimensions: 180 x 35 x 41 cm (L x W x H). The TV table offers space for TVs up to 80 inches, of course it is also suitable for 65-inch, 70-inch, 75-inch and 80-inch flat screens. [Stable structure with additional leg] Ma",
-        "en": "Specification Product Information Item Code:N605P197242243W Product Type :Combo Item Product Name:White TV stand for 75-inch televisions, lowboards, TV boards, TV cabinet, entertainment center, TV console table, modern entertainment center, media console (white) Main Color:White Main Material:Particle Board TV Size Ranges:70-79 inches Product Dimensions Assembled Length (cm):180.00 Assembled Width (cm):35.00 Assembled Height (cm):41.00 Product Weight (kg):Not Applicable Package Size Sub-item 1: N605P197243WPackage Quantity: 1100 * 44 * 12.5 cm 15.55 kg Sub-item 2: N605P197242WPackage Quantity: 173.5 * 44 * 17.5 cm 16.65 kg Product Features [Extra large TV stand ] Overall dimensions: 180 x 35 x 41 cm (L x W x H). The TV table offers space for TVs up to 80 inches, of course it is also suitable for 65-inch, 70-inch, 75-inch and 80-inch flat screens. [Stable structure with additional leg] Ma"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 282.99,
-      "compareAt": null,
-      "cost": 122.68,
-      "costRange": {
-        "min": 122.68,
-        "max": 122.68,
-        "currency": "EUR"
-      },
-      "sourceCost": 141.57,
-      "sourceCostRange": {
-        "min": 141.57,
-        "max": 141.57,
-        "raw": "141.57"
-      },
-      "sourceCurrency": "USD",
-      "stock": 11,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 11,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/cd225880-ed54-4be9-be7d-5a7cfaa8a4b3.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 99,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 29.46,
+      "score": 29.79,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2600,6 +3042,207 @@
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
     {
+      "id": "2019323270540447745",
+      "sku": "CJFU2755082",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Lift Up Oval Coffee Table With Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table For Living Room Bedroom, Reception, Tea Table, 120 X 50 X 39.5cm, Natural Wood",
+        "en": "Lift Up Oval Coffee Table With Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table For Living Room Bedroom, Reception, Tea Table, 120 X 50 X 39.5cm, Natural Wood"
+      },
+      "description": {
+        "de": "Specification Product Information Product Type :Single Box Product Product Name:Lift Up Oval Coffee Table with Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table for Living Room Bedroom, Reception, Tea Table, 120 x 50 x 39.5cm, Natural wood Main Color:Wood Main Material:MDF Product Dimensions Assembled Length (cm):120.00 Assembled Width (cm):50.00 Assembled Height (cm):39.50 Product Weight (kg):Not Applicable Package Size Length (cm):134.01 Width (cm):59.31 Height (cm):13.00 Weight (kg):23.90 Product Features Adaptable to Multiple Scenarios: This adjustable coffee table measures 120 x 50 x 39.5 cm, perfectly fitting various living room layouts. Its maximum height is 53.5 cm, allowing for flexible height adjustment to meet different needs, whether for leisure or work. Hidden Storage Space for Clever Organization: The coffee table features hidden storage space fo",
+        "en": "Specification Product Information Product Type :Single Box Product Product Name:Lift Up Oval Coffee Table with Hidden Storage, Centre Table, Lifting Sofa Side Table, Space-saving End Table for Living Room Bedroom, Reception, Tea Table, 120 x 50 x 39.5cm, Natural wood Main Color:Wood Main Material:MDF Product Dimensions Assembled Length (cm):120.00 Assembled Width (cm):50.00 Assembled Height (cm):39.50 Product Weight (kg):Not Applicable Package Size Length (cm):134.01 Width (cm):59.31 Height (cm):13.00 Weight (kg):23.90 Product Features Adaptable to Multiple Scenarios: This adjustable coffee table measures 120 x 50 x 39.5 cm, perfectly fitting various living room layouts. Its maximum height is 53.5 cm, allowing for flexible height adjustment to meet different needs, whether for leisure or work. Hidden Storage Space for Clever Organization: The coffee table features hidden storage space fo"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 220.99,
+      "compareAt": null,
+      "cost": 95.68,
+      "costRange": {
+        "min": 95.68,
+        "max": 95.68,
+        "currency": "EUR"
+      },
+      "sourceCost": 110.41,
+      "sourceCostRange": {
+        "min": 110.41,
+        "max": 110.41,
+        "raw": "110.41"
+      },
+      "sourceCurrency": "USD",
+      "stock": 95,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 95,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/17702496/3a95ae94-d142-47de-addb-09c335a139a4.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 6,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 29.36,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "2019327203093946369",
+      "sku": "CJFU2755111",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Modern Kitchen Island, Sideboard, Kitchen Cabinet With Drawers And Shelves, Sideboard For Kitchen & Dining Room, Black",
+        "en": "Modern Kitchen Island, Sideboard, Kitchen Cabinet With Drawers And Shelves, Sideboard For Kitchen & Dining Room, Black"
+      },
+      "description": {
+        "de": "Specification Product Information Product Type :Combo Item Product Name:Modern kitchen island, sideboard, kitchen cabinet with drawers and shelves, sideboard for kitchen & dining room, black Main Color:Black Main Material:MDF Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N639P362263SPackage Quantity: 1103.99 * 51.49 * 17.98 cm 28.85 kg Sub-item 2: N639P362264SPackage Quantity: 1154.99 * 50.98 * 13.49 cm 28.2 kg Product Features Product size: Kitchen island length 140 cm, width 40 cm, height 90 cm. This kitchen island has a fold-out tabletop that can be used as a dining table when unfolded and has a total length of 70 cm on the unfolded side. Modern and elegant design: It fits perfectly into various kitchen decors, be it modern, country or classic ",
+        "en": "Specification Product Information Product Type :Combo Item Product Name:Modern kitchen island, sideboard, kitchen cabinet with drawers and shelves, sideboard for kitchen & dining room, black Main Color:Black Main Material:MDF Product Dimensions Assembled Length (cm):Not Applicable Assembled Width (cm):Not Applicable Assembled Height (cm):Not Applicable Product Weight (kg):Not Applicable Package Size Sub-item 1: N639P362263SPackage Quantity: 1103.99 * 51.49 * 17.98 cm 28.85 kg Sub-item 2: N639P362264SPackage Quantity: 1154.99 * 50.98 * 13.49 cm 28.2 kg Product Features Product size: Kitchen island length 140 cm, width 40 cm, height 90 cm. This kitchen island has a fold-out tabletop that can be used as a dining table when unfolded and has a total length of 70 cm on the unfolded side. Modern and elegant design: It fits perfectly into various kitchen decors, be it modern, country or classic "
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 330.99,
+      "compareAt": null,
+      "cost": 143.73,
+      "costRange": {
+        "min": 143.73,
+        "max": 143.73,
+        "currency": "EUR"
+      },
+      "sourceCost": 165.87,
+      "sourceCostRange": {
+        "min": 165.87,
+        "max": 165.87,
+        "raw": "165.87"
+      },
+      "sourceCurrency": "USD",
+      "stock": 19,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 19,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/17702496/8adfa92b-4532-4909-8952-963219824048.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 48,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 29.28,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "1955143080632811522",
+      "sku": "CJFU2453859",
+      "brand": "Virello Select",
+      "name": {
+        "de": "White TV Stand For 75-inch Televisions, Lowboards, TV Boards, TV Cabinet, Entertainment Center, TV Console Table, Modern Entertainment Center, Media Console White",
+        "en": "White TV Stand For 75-inch Televisions, Lowboards, TV Boards, TV Cabinet, Entertainment Center, TV Console Table, Modern Entertainment Center, Media Console White"
+      },
+      "description": {
+        "de": "Specification Product Information Item Code:N605P197242243W Product Type :Combo Item Product Name:White TV stand for 75-inch televisions, lowboards, TV boards, TV cabinet, entertainment center, TV console table, modern entertainment center, media console (white) Main Color:White Main Material:Particle Board TV Size Ranges:70-79 inches Product Dimensions Assembled Length (cm):180.00 Assembled Width (cm):35.00 Assembled Height (cm):41.00 Product Weight (kg):Not Applicable Package Size Sub-item 1: N605P197243WPackage Quantity: 1100 * 44 * 12.5 cm 15.55 kg Sub-item 2: N605P197242WPackage Quantity: 173.5 * 44 * 17.5 cm 16.65 kg Product Features [Extra large TV stand ] Overall dimensions: 180 x 35 x 41 cm (L x W x H). The TV table offers space for TVs up to 80 inches, of course it is also suitable for 65-inch, 70-inch, 75-inch and 80-inch flat screens. [Stable structure with additional leg] Ma",
+        "en": "Specification Product Information Item Code:N605P197242243W Product Type :Combo Item Product Name:White TV stand for 75-inch televisions, lowboards, TV boards, TV cabinet, entertainment center, TV console table, modern entertainment center, media console (white) Main Color:White Main Material:Particle Board TV Size Ranges:70-79 inches Product Dimensions Assembled Length (cm):180.00 Assembled Width (cm):35.00 Assembled Height (cm):41.00 Product Weight (kg):Not Applicable Package Size Sub-item 1: N605P197243WPackage Quantity: 1100 * 44 * 12.5 cm 15.55 kg Sub-item 2: N605P197242WPackage Quantity: 173.5 * 44 * 17.5 cm 16.65 kg Product Features [Extra large TV stand ] Overall dimensions: 180 x 35 x 41 cm (L x W x H). The TV table offers space for TVs up to 80 inches, of course it is also suitable for 65-inch, 70-inch, 75-inch and 80-inch flat screens. [Stable structure with additional leg] Ma"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 282.99,
+      "compareAt": null,
+      "cost": 122.68,
+      "costRange": {
+        "min": 122.68,
+        "max": 122.68,
+        "currency": "EUR"
+      },
+      "sourceCost": 141.57,
+      "sourceCostRange": {
+        "min": 141.57,
+        "max": 141.57,
+        "raw": "141.57"
+      },
+      "sourceCurrency": "USD",
+      "stock": 10,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 10,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/cd225880-ed54-4be9-be7d-5a7cfaa8a4b3.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 99,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 29,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
       "id": "1968973183336292354",
       "sku": "CJFU2535308",
       "brand": "Virello Select",
@@ -2630,12 +3273,12 @@
         "raw": "371.24"
       },
       "sourceCurrency": "USD",
-      "stock": 22,
+      "stock": 19,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 22,
+          "stock": 19,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2662,7 +3305,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 29.19,
+      "score": 28.48,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2697,12 +3340,12 @@
         "raw": "465.88"
       },
       "sourceCurrency": "USD",
-      "stock": 57,
+      "stock": 53,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 57,
+          "stock": 53,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2729,74 +3372,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 27.44,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
-      "id": "1969240870825508866",
-      "sku": "CJFU2535847",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Upholstered Bed, Storage Bed, 3FT Single Bed 90x190cm, With 4 Drawers And Lamp, 3 USB Port 1 Type C, Durable And Sturdy, Youth Bed, For Adults Teenagers, Velvet, Grey",
-        "en": "Upholstered Bed, Storage Bed, 3FT Single Bed 90x190cm, With 4 Drawers And Lamp, 3 USB Port 1 Type C, Durable And Sturdy, Youth Bed, For Adults Teenagers, Velvet, Grey"
-      },
-      "description": {
-        "de": "Specification Product Information Item Code:N604D204445G Product Type :Combo Item Product Name:Upholstered Bed, Storage Bed, 3FT single bed 90x190cm, With 4 drawers and Lamp, 3 USB port+1 Type C, Durable and Sturdy, Youth bed, for adults & teenagers, Velvet, Grey Place of Origin:China Main Color:Gray Main Material:Velvet Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):206.50 Assembled Width (cm):96.50 Assembled Height (cm):109.00 Product Weight (kg):39.00 Package Size Sub-item 1: N604P192045GPackage Quantity: 1114 * 31.5 * 17 cm 16.4 kg Sub-item 2: N604P192044GPackage Quantity: 1102 * 54.5 * 16 cm 27.3 kg Product Features High-quality materials: Crafted with meticulous attention to detail, this bed boasts a robust metal frame that promises steadfast durability, ensuring it stands the test of time. Designed with 4 drawers: Underbed drawers are fitted with castors for effortle",
-        "en": "Specification Product Information Item Code:N604D204445G Product Type :Combo Item Product Name:Upholstered Bed, Storage Bed, 3FT single bed 90x190cm, With 4 drawers and Lamp, 3 USB port+1 Type C, Durable and Sturdy, Youth bed, for adults & teenagers, Velvet, Grey Place of Origin:China Main Color:Gray Main Material:Velvet Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):206.50 Assembled Width (cm):96.50 Assembled Height (cm):109.00 Product Weight (kg):39.00 Package Size Sub-item 1: N604P192045GPackage Quantity: 1114 * 31.5 * 17 cm 16.4 kg Sub-item 2: N604P192044GPackage Quantity: 1102 * 54.5 * 16 cm 27.3 kg Product Features High-quality materials: Crafted with meticulous attention to detail, this bed boasts a robust metal frame that promises steadfast durability, ensuring it stands the test of time. Designed with 4 drawers: Underbed drawers are fitted with castors for effortle"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 327.99,
-      "compareAt": null,
-      "cost": 142.61,
-      "costRange": {
-        "min": 142.61,
-        "max": 142.61,
-        "currency": "EUR"
-      },
-      "sourceCost": 164.57,
-      "sourceCostRange": {
-        "min": 164.57,
-        "max": 164.57,
-        "raw": "164.57"
-      },
-      "sourceCurrency": "USD",
-      "stock": 18,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 18,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/b2605fbd-ff04-4f40-9c6d-b208c1064b0b.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 27,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 26.83,
+      "score": 27.09,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2831,12 +3407,12 @@
         "raw": "387.62"
       },
       "sourceCurrency": "USD",
-      "stock": 48,
+      "stock": 46,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 48,
+          "stock": 46,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2863,7 +3439,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 26.62,
+      "score": 26.42,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -2898,12 +3474,12 @@
         "raw": "346.19"
       },
       "sourceCurrency": "USD",
-      "stock": 43,
+      "stock": 42,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 43,
+          "stock": 42,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -2930,7 +3506,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 26.1,
+      "score": 25.98,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -3032,12 +3608,12 @@
         "raw": "134.51"
       },
       "sourceCurrency": "USD",
-      "stock": 36,
+      "stock": 33,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 36,
+          "stock": 33,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -3064,7 +3640,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 25.25,
+      "score": 24.83,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -3099,12 +3675,12 @@
         "raw": "143.76"
       },
       "sourceCurrency": "USD",
-      "stock": 103,
+      "stock": 100,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 103,
+          "stock": 100,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -3131,7 +3707,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 24.85,
+      "score": 24.71,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -3233,12 +3809,12 @@
         "raw": "248.79"
       },
       "sourceCurrency": "USD",
-      "stock": 53,
+      "stock": 49,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 53,
+          "stock": 49,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -3265,7 +3841,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 24.39,
+      "score": 24.01,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -3333,6 +3909,73 @@
       "videoList": [],
       "adCandidate": false,
       "score": 23.79,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "2019331313482506242",
+      "sku": "CJFU2755158",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Set Of 4, Metal Chairs, Dining Chairs, Suitable For Homes, Restaurants, Living Rooms, And Cafes, Boucle, Natural Wood Color",
+        "en": "Set Of 4, Metal Chairs, Dining Chairs, Suitable For Homes, Restaurants, Living Rooms, And Cafes, Boucle, Natural Wood Color"
+      },
+      "description": {
+        "de": "Specification Product Information Product Type :Combo Item Product Name:Set of 4, metal chairs, dining chairs, suitable for homes, restaurants, living rooms, and cafes, boucle, natural wood color Main Color:Natural Main Material:Boucle Quantity:4pc Product Dimensions Assembled Length (cm):50.00 Assembled Width (cm):53.00 Assembled Height (cm):84.00 Product Weight (kg):12.30 Package Size Sub-item 1: N606P379264BPackage Quantity: 284.2 * 57 * 33.71 cm 15.15 kg Product Features Heat-Transfer Wood Grain Finish — Stylish and Durable, the chair features a sturdy metal frame with a heat-transfer wood grain finish, offering the timeless look of real wood while providing the durability and strength of metal, ensuring both visual appeal and long-lasting performance. Beige Boucle Upholstery — Soft and Comfortable, the seat and backrest are upholstered in high-quality beige boucle fabric, which is s",
+        "en": "Specification Product Information Product Type :Combo Item Product Name:Set of 4, metal chairs, dining chairs, suitable for homes, restaurants, living rooms, and cafes, boucle, natural wood color Main Color:Natural Main Material:Boucle Quantity:4pc Product Dimensions Assembled Length (cm):50.00 Assembled Width (cm):53.00 Assembled Height (cm):84.00 Product Weight (kg):12.30 Package Size Sub-item 1: N606P379264BPackage Quantity: 284.2 * 57 * 33.71 cm 15.15 kg Product Features Heat-Transfer Wood Grain Finish — Stylish and Durable, the chair features a sturdy metal frame with a heat-transfer wood grain finish, offering the timeless look of real wood while providing the durability and strength of metal, ensuring both visual appeal and long-lasting performance. Beige Boucle Upholstery — Soft and Comfortable, the seat and backrest are upholstered in high-quality beige boucle fabric, which is s"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 493.99,
+      "compareAt": null,
+      "cost": 214.71,
+      "costRange": {
+        "min": 214.71,
+        "max": 214.71,
+        "currency": "EUR"
+      },
+      "sourceCost": 247.77,
+      "sourceCostRange": {
+        "min": 247.77,
+        "max": 247.77,
+        "raw": "247.77"
+      },
+      "sourceCurrency": "USD",
+      "stock": 45,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 45,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/17702496/c86cf74a-46a2-4bd3-a91b-4e154c7daa76.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 3,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 23.6,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -3471,6 +4114,73 @@
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
     {
+      "id": "1969240870825508866",
+      "sku": "CJFU2535847",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Upholstered Bed, Storage Bed, 3FT Single Bed 90x190cm, With 4 Drawers And Lamp, 3 USB Port 1 Type C, Durable And Sturdy, Youth Bed, For Adults Teenagers, Velvet, Grey",
+        "en": "Upholstered Bed, Storage Bed, 3FT Single Bed 90x190cm, With 4 Drawers And Lamp, 3 USB Port 1 Type C, Durable And Sturdy, Youth Bed, For Adults Teenagers, Velvet, Grey"
+      },
+      "description": {
+        "de": "Specification Product Information Item Code:N604D204445G Product Type :Combo Item Product Name:Upholstered Bed, Storage Bed, 3FT single bed 90x190cm, With 4 drawers and Lamp, 3 USB port+1 Type C, Durable and Sturdy, Youth bed, for adults & teenagers, Velvet, Grey Place of Origin:China Main Color:Gray Main Material:Velvet Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):206.50 Assembled Width (cm):96.50 Assembled Height (cm):109.00 Product Weight (kg):39.00 Package Size Sub-item 1: N604P192045GPackage Quantity: 1114 * 31.5 * 17 cm 16.4 kg Sub-item 2: N604P192044GPackage Quantity: 1102 * 54.5 * 16 cm 27.3 kg Product Features High-quality materials: Crafted with meticulous attention to detail, this bed boasts a robust metal frame that promises steadfast durability, ensuring it stands the test of time. Designed with 4 drawers: Underbed drawers are fitted with castors for effortle",
+        "en": "Specification Product Information Item Code:N604D204445G Product Type :Combo Item Product Name:Upholstered Bed, Storage Bed, 3FT single bed 90x190cm, With 4 drawers and Lamp, 3 USB port+1 Type C, Durable and Sturdy, Youth bed, for adults & teenagers, Velvet, Grey Place of Origin:China Main Color:Gray Main Material:Velvet Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):206.50 Assembled Width (cm):96.50 Assembled Height (cm):109.00 Product Weight (kg):39.00 Package Size Sub-item 1: N604P192045GPackage Quantity: 1114 * 31.5 * 17 cm 16.4 kg Sub-item 2: N604P192044GPackage Quantity: 1102 * 54.5 * 16 cm 27.3 kg Product Features High-quality materials: Crafted with meticulous attention to detail, this bed boasts a robust metal frame that promises steadfast durability, ensuring it stands the test of time. Designed with 4 drawers: Underbed drawers are fitted with castors for effortle"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 327.99,
+      "compareAt": null,
+      "cost": 142.61,
+      "costRange": {
+        "min": 142.61,
+        "max": 142.61,
+        "currency": "EUR"
+      },
+      "sourceCost": 164.57,
+      "sourceCostRange": {
+        "min": 164.57,
+        "max": 164.57,
+        "raw": "164.57"
+      },
+      "sourceCurrency": "USD",
+      "stock": 8,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 8,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/b2605fbd-ff04-4f40-9c6d-b208c1064b0b.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 27,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 22.96,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
       "id": "2019325006444666882",
       "sku": "CJFU2755093",
       "brand": "Virello Select",
@@ -3568,12 +4278,12 @@
         "raw": "279.91"
       },
       "sourceCurrency": "USD",
-      "stock": 59,
+      "stock": 56,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 59,
+          "stock": 56,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -3600,74 +4310,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 22.19,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
-      "id": "1968977695697047554",
-      "sku": "CJFU2535359",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Wooden Bed, Storage Bed , Children S Bed, 3ft Single Bed 90x190cm, Safety Guardrail, Two Drawers With Slides, Two Storage Compartments, Pine Wood Particle Board, White",
-        "en": "Wooden Bed, Storage Bed , Children S Bed, 3ft Single Bed 90x190cm, Safety Guardrail, Two Drawers With Slides, Two Storage Compartments, Pine Wood Particle Board, White"
-      },
-      "description": {
-        "de": "Specification Product Information Item Code:N604D373738W Product Type :Combo Item Product Name:Wooden bed, Storage Bed , Children's bed, 3ft single bed 90x190cm, Safety guardrail, Two drawers with slides, Two storage compartments, Pine wood + particle board, White Place of Origin:China Main Color:White Main Material:Wood Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):194.00 Assembled Width (cm):94.50 Assembled Height (cm):95.00 Product Weight (kg):54.50 Package Size Sub-item 1: N604P263738WPackage Quantity: 1196.22 * 39.37 * 13.34 cm 29.9 kg Sub-item 2: N604P263737WPackage Quantity: 196.52 * 48.9 * 16.51 cm 29.7 kg Product Features Practical design: This single bed (90x190 cm, 3 ft) has a bed frame made of solid pine, storage cabinets made of particleboard and bed slats made of multilayerboard. Convenient storage space: Two practical drawers with slides on the right side ca",
-        "en": "Specification Product Information Item Code:N604D373738W Product Type :Combo Item Product Name:Wooden bed, Storage Bed , Children's bed, 3ft single bed 90x190cm, Safety guardrail, Two drawers with slides, Two storage compartments, Pine wood + particle board, White Place of Origin:China Main Color:White Main Material:Wood Bed Size:90cm*190cm Product Dimensions Assembled Length (cm):194.00 Assembled Width (cm):94.50 Assembled Height (cm):95.00 Product Weight (kg):54.50 Package Size Sub-item 1: N604P263738WPackage Quantity: 1196.22 * 39.37 * 13.34 cm 29.9 kg Sub-item 2: N604P263737WPackage Quantity: 196.52 * 48.9 * 16.51 cm 29.7 kg Product Features Practical design: This single bed (90x190 cm, 3 ft) has a bed frame made of solid pine, storage cabinets made of particleboard and bed slats made of multilayerboard. Convenient storage space: Two practical drawers with slides on the right side ca"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 528.99,
-      "compareAt": null,
-      "cost": 229.99,
-      "costRange": {
-        "min": 229.99,
-        "max": 229.99,
-        "currency": "EUR"
-      },
-      "sourceCost": 265.41,
-      "sourceCostRange": {
-        "min": 265.41,
-        "max": 265.41,
-        "raw": "265.41"
-      },
-      "sourceCurrency": "USD",
-      "stock": 11,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 11,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/8245ecc0-276b-473d-bf29-d54b985ff900.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 6,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 19.06,
+      "score": 21.94,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -3873,73 +4516,6 @@
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
     {
-      "id": "2031926816055087106",
-      "sku": "CJFU2784386",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown",
-        "en": "Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown"
-      },
-      "description": {
-        "de": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):25.00 Assembled Width (cm):30.00 Assembled Height (cm):25.00 Product Weight (kg):5.00 Package Size Length (cm):40.00 Width (cm):35.00 Height (cm):35.00 Weight (kg):6.20 Product Features Crafted from 100% solid mango wood, this piece offers exceptional durability and a unique grain pattern for a one-of-a-kind look that lasts. Handcrafted: Each piece is hand-finished, ensuring no two are exactly alike.From sanding to staining, every step is done with care for a flawless feel. Our patent-secured knockdown design allows for easy, tool-free assembly without compromising on structural stability. A stain-based finish penetrates deep into the wood, enhancing the grain and",
-        "en": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):25.00 Assembled Width (cm):30.00 Assembled Height (cm):25.00 Product Weight (kg):5.00 Package Size Length (cm):40.00 Width (cm):35.00 Height (cm):35.00 Weight (kg):6.20 Product Features Crafted from 100% solid mango wood, this piece offers exceptional durability and a unique grain pattern for a one-of-a-kind look that lasts. Handcrafted: Each piece is hand-finished, ensuring no two are exactly alike.From sanding to staining, every step is done with care for a flawless feel. Our patent-secured knockdown design allows for easy, tool-free assembly without compromising on structural stability. A stain-based finish penetrates deep into the wood, enhancing the grain and"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 334.99,
-      "compareAt": null,
-      "cost": 145.49,
-      "costRange": {
-        "min": 145.49,
-        "max": 145.49,
-        "currency": "EUR"
-      },
-      "sourceCost": 167.89,
-      "sourceCostRange": {
-        "min": 167.89,
-        "max": 167.89,
-        "raw": "167.89"
-      },
-      "sourceCurrency": "USD",
-      "stock": 18,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 18,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/17732736/ac0f897b-3289-4d05-ae17-336f1825b53b.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 2,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 18.1,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
       "id": "2031924544741490689",
       "sku": "CJFU2784345",
       "brand": "Virello Select",
@@ -4003,6 +4579,73 @@
       "videoList": [],
       "adCandidate": false,
       "score": 17.54,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "2031926816055087106",
+      "sku": "CJFU2784386",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown",
+        "en": "Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown"
+      },
+      "description": {
+        "de": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):25.00 Assembled Width (cm):30.00 Assembled Height (cm):25.00 Product Weight (kg):5.00 Package Size Length (cm):40.00 Width (cm):35.00 Height (cm):35.00 Weight (kg):6.20 Product Features Crafted from 100% solid mango wood, this piece offers exceptional durability and a unique grain pattern for a one-of-a-kind look that lasts. Handcrafted: Each piece is hand-finished, ensuring no two are exactly alike.From sanding to staining, every step is done with care for a flawless feel. Our patent-secured knockdown design allows for easy, tool-free assembly without compromising on structural stability. A stain-based finish penetrates deep into the wood, enhancing the grain and",
+        "en": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Floating Mini Chestnut Bedside, 2 Drawers, Dark Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):25.00 Assembled Width (cm):30.00 Assembled Height (cm):25.00 Product Weight (kg):5.00 Package Size Length (cm):40.00 Width (cm):35.00 Height (cm):35.00 Weight (kg):6.20 Product Features Crafted from 100% solid mango wood, this piece offers exceptional durability and a unique grain pattern for a one-of-a-kind look that lasts. Handcrafted: Each piece is hand-finished, ensuring no two are exactly alike.From sanding to staining, every step is done with care for a flawless feel. Our patent-secured knockdown design allows for easy, tool-free assembly without compromising on structural stability. A stain-based finish penetrates deep into the wood, enhancing the grain and"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 334.99,
+      "compareAt": null,
+      "cost": 145.49,
+      "costRange": {
+        "min": 145.49,
+        "max": 145.49,
+        "currency": "EUR"
+      },
+      "sourceCost": 167.89,
+      "sourceCostRange": {
+        "min": 167.89,
+        "max": 167.89,
+        "raw": "167.89"
+      },
+      "sourceCurrency": "USD",
+      "stock": 14,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 14,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/17732736/ac0f897b-3289-4d05-ae17-336f1825b53b.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 2,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 16.9,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -4409,73 +5052,6 @@
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
     {
-      "id": "2031924262496268290",
-      "sku": "CJFU2784341",
-      "brand": "Virello Select",
-      "name": {
-        "de": "Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown",
-        "en": "Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown"
-      },
-      "description": {
-        "de": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):32.00 Assembled Width (cm):45.00 Assembled Height (cm):15.00 Product Weight (kg):6.00 Package Size Length (cm):55.00 Width (cm):42.00 Height (cm):25.00 Weight (kg):7.20 Product Features 100% Solid Mango Wood: Distinctive, Sustainable, and Durable. Delivered fully assembled for your convenience, ready to be enjoyed in your home right out of the box. A clear natural finish protects the wood while showcasing its raw, untouched beauty and authentic grain pattern. Meticulously crafted by hand, this piece celebrates traditional techniques and possesses a unique soul. Eco-Conscious Design, Built to Last —— This furniture isn’t just a temporary addition to your home. Your",
-        "en": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):32.00 Assembled Width (cm):45.00 Assembled Height (cm):15.00 Product Weight (kg):6.00 Package Size Length (cm):55.00 Width (cm):42.00 Height (cm):25.00 Weight (kg):7.20 Product Features 100% Solid Mango Wood: Distinctive, Sustainable, and Durable. Delivered fully assembled for your convenience, ready to be enjoyed in your home right out of the box. A clear natural finish protects the wood while showcasing its raw, untouched beauty and authentic grain pattern. Meticulously crafted by hand, this piece celebrates traditional techniques and possesses a unique soul. Eco-Conscious Design, Built to Last —— This furniture isn’t just a temporary addition to your home. Your"
-      },
-      "category": {
-        "de": "Furniture",
-        "en": "Furniture"
-      },
-      "price": 327.99,
-      "compareAt": null,
-      "cost": 142.3,
-      "costRange": {
-        "min": 142.3,
-        "max": 142.3,
-        "currency": "EUR"
-      },
-      "sourceCost": 164.21,
-      "sourceCostRange": {
-        "min": 164.21,
-        "max": 164.21,
-        "raw": "164.21"
-      },
-      "sourceCurrency": "USD",
-      "stock": 10,
-      "warehouses": [
-        {
-          "countryCode": "GB",
-          "areaEn": "United Kingdom",
-          "stock": 10,
-          "verified": true,
-          "euMember": false,
-          "customsRiskToGermany": true
-        }
-      ],
-      "primaryWarehouse": "GB",
-      "verifiedStock": true,
-      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
-      "variantStock": [],
-      "images": [
-        "https://cf.cjdropshipping.com/17732736/a721371e-2653-440f-a43c-36ea4d1c95a1.jpg"
-      ],
-      "supplier": "CJdropshipping",
-      "source": "cj",
-      "market": "DE",
-      "currency": "EUR",
-      "listedNum": 2,
-      "deliveryCycle": null,
-      "directMinOrderNum": null,
-      "complianceSignals": {
-        "ce": false,
-        "riskFlags": []
-      },
-      "hasVideo": false,
-      "videoList": [],
-      "adCandidate": false,
-      "score": 15.29,
-      "sellReady": false,
-      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
-    },
-    {
       "id": "2031926272306081794",
       "sku": "CJFU2784377",
       "brand": "Virello Select",
@@ -4673,6 +5249,73 @@
       "videoList": [],
       "adCandidate": false,
       "score": 13.11,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
+    },
+    {
+      "id": "2031924262496268290",
+      "sku": "CJFU2784341",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown",
+        "en": "Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown"
+      },
+      "description": {
+        "de": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):32.00 Assembled Width (cm):45.00 Assembled Height (cm):15.00 Product Weight (kg):6.00 Package Size Length (cm):55.00 Width (cm):42.00 Height (cm):25.00 Weight (kg):7.20 Product Features 100% Solid Mango Wood: Distinctive, Sustainable, and Durable. Delivered fully assembled for your convenience, ready to be enjoyed in your home right out of the box. A clear natural finish protects the wood while showcasing its raw, untouched beauty and authentic grain pattern. Meticulously crafted by hand, this piece celebrates traditional techniques and possesses a unique soul. Eco-Conscious Design, Built to Last —— This furniture isn’t just a temporary addition to your home. Your",
+        "en": "Specification Product Information Product Type :Single Box Product Product Name:Solid Wood Avora Wall-Mounted Oak-ish 1 Drawer Nightstand, Brown Main Color:Brown Main Material:Solid Wood Product Dimensions Assembled Length (cm):32.00 Assembled Width (cm):45.00 Assembled Height (cm):15.00 Product Weight (kg):6.00 Package Size Length (cm):55.00 Width (cm):42.00 Height (cm):25.00 Weight (kg):7.20 Product Features 100% Solid Mango Wood: Distinctive, Sustainable, and Durable. Delivered fully assembled for your convenience, ready to be enjoyed in your home right out of the box. A clear natural finish protects the wood while showcasing its raw, untouched beauty and authentic grain pattern. Meticulously crafted by hand, this piece celebrates traditional techniques and possesses a unique soul. Eco-Conscious Design, Built to Last —— This furniture isn’t just a temporary addition to your home. Your"
+      },
+      "category": {
+        "de": "Furniture",
+        "en": "Furniture"
+      },
+      "price": 327.99,
+      "compareAt": null,
+      "cost": 142.3,
+      "costRange": {
+        "min": 142.3,
+        "max": 142.3,
+        "currency": "EUR"
+      },
+      "sourceCost": 164.21,
+      "sourceCostRange": {
+        "min": 164.21,
+        "max": 164.21,
+        "raw": "164.21"
+      },
+      "sourceCurrency": "USD",
+      "stock": 6,
+      "warehouses": [
+        {
+          "countryCode": "GB",
+          "areaEn": "United Kingdom",
+          "stock": 6,
+          "verified": true,
+          "euMember": false,
+          "customsRiskToGermany": true
+        }
+      ],
+      "primaryWarehouse": "GB",
+      "verifiedStock": true,
+      "stockVerificationMethod": "CJ Product List V2: countryCode + verifiedWarehouse=1 + warehouseInventoryNum",
+      "variantStock": [],
+      "images": [
+        "https://cf.cjdropshipping.com/17732736/a721371e-2653-440f-a43c-36ea4d1c95a1.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 2,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false,
+        "riskFlags": []
+      },
+      "hasVideo": false,
+      "videoList": [],
+      "adCandidate": false,
+      "score": 12.85,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -6692,12 +7335,12 @@
         "raw": "82.86"
       },
       "sourceCurrency": "USD",
-      "stock": 152,
+      "stock": 150,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 152,
+          "stock": 150,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -6726,7 +7369,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 24.44,
+      "score": 24.38,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -6968,12 +7611,12 @@
         "raw": "76.04"
       },
       "sourceCurrency": "USD",
-      "stock": 80,
+      "stock": 79,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 80,
+          "stock": 79,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7002,7 +7645,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 21.96,
+      "score": 21.9,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7037,12 +7680,12 @@
         "raw": "104.45"
       },
       "sourceCurrency": "USD",
-      "stock": 68,
+      "stock": 67,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 68,
+          "stock": 67,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7071,7 +7714,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 20.97,
+      "score": 20.9,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7175,12 +7818,12 @@
         "raw": "118.99"
       },
       "sourceCurrency": "USD",
-      "stock": 85,
+      "stock": 83,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 85,
+          "stock": 83,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7209,7 +7852,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 19.36,
+      "score": 19.24,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7313,12 +7956,12 @@
         "raw": "135.39"
       },
       "sourceCurrency": "USD",
-      "stock": 125,
+      "stock": 124,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 125,
+          "stock": 124,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7347,7 +7990,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 18.23,
+      "score": 18.19,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7451,12 +8094,12 @@
         "raw": "328.20"
       },
       "sourceCurrency": "USD",
-      "stock": 82,
+      "stock": 79,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 82,
+          "stock": 79,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7485,7 +8128,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 16.84,
+      "score": 16.66,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7520,12 +8163,12 @@
         "raw": "242.44"
       },
       "sourceCurrency": "USD",
-      "stock": 113,
+      "stock": 111,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 113,
+          "stock": 111,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7554,7 +8197,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 16.29,
+      "score": 16.21,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7589,12 +8232,12 @@
         "raw": "94.41"
       },
       "sourceCurrency": "USD",
-      "stock": 25,
+      "stock": 22,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 25,
+          "stock": 22,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7623,7 +8266,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 15.53,
+      "score": 14.92,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7658,12 +8301,12 @@
         "raw": "113.79"
       },
       "sourceCurrency": "USD",
-      "stock": 41,
+      "stock": 40,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 41,
+          "stock": 40,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7692,7 +8335,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 13.75,
+      "score": 13.63,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7727,12 +8370,12 @@
         "raw": "250.02"
       },
       "sourceCurrency": "USD",
-      "stock": 42,
+      "stock": 39,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 42,
+          "stock": 39,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7761,7 +8404,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 13.02,
+      "score": 12.66,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7796,12 +8439,12 @@
         "raw": "313.26"
       },
       "sourceCurrency": "USD",
-      "stock": 115,
+      "stock": 109,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 115,
+          "stock": 109,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7830,7 +8473,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 12.8,
+      "score": 12.54,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7865,12 +8508,12 @@
         "raw": "174.69"
       },
       "sourceCurrency": "USD",
-      "stock": 203,
+      "stock": 187,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 203,
+          "stock": 187,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7899,7 +8542,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 10.09,
+      "score": 9.7,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -7934,12 +8577,12 @@
         "raw": "96.43"
       },
       "sourceCurrency": "USD",
-      "stock": 28,
+      "stock": 27,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 28,
+          "stock": 27,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -7968,7 +8611,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 8.99,
+      "score": 8.82,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -8003,12 +8646,12 @@
         "raw": "90.47"
       },
       "sourceCurrency": "USD",
-      "stock": 11,
+      "stock": 9,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 11,
+          "stock": 9,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -8037,7 +8680,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 4.29,
+      "score": 3.33,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -8141,12 +8784,12 @@
         "raw": "162.37"
       },
       "sourceCurrency": "USD",
-      "stock": 15,
+      "stock": 11,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 15,
+          "stock": 11,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -8175,7 +8818,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 0.36,
+      "score": -1.13,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
@@ -8279,12 +8922,12 @@
         "raw": "197.31"
       },
       "sourceCurrency": "USD",
-      "stock": 19,
+      "stock": 16,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 19,
+          "stock": 16,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -8314,9 +8957,21 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": -17.64,
+      "score": -18.46,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     }
-  ]
+  ],
+  "economicsGeneratedAt": "2026-08-12T01:59:55.417Z",
+  "economicsSummary": {
+    "processed": 24,
+    "freightVerified": 0,
+    "destinationCountry": "DE",
+    "destinationZip": "10115",
+    "vatRate": 0.19,
+    "paymentFeeRate": 0.03,
+    "targetPreAdMargin": 0.3,
+    "note": "Demo economics. Freight is sourced from CJ freightCalculate for one representative in-country variant. Suggested retail is a cost-based target, not a market-validated competitive price. Profit is before advertising and returns."
+  },
+  "feedScope": "europe"
 }
