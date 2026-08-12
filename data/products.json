@@ -1,214 +1,62 @@
 {
-  "generatedAt": "2026-08-12T00:56:13.784Z",
+  "generatedAt": "2026-08-12T01:42:35.401Z",
   "source": "cj",
   "mode": "live-api",
   "selection": {
     "market": "DE",
     "warehouseCountries": [
-      "DE",
-      "AT",
-      "BE",
-      "BG",
-      "HR",
-      "CY",
-      "CZ",
-      "DK",
-      "EE",
-      "FI",
-      "FR",
-      "GR",
-      "HU",
-      "IE",
-      "IT",
-      "LV",
-      "LT",
-      "LU",
-      "MT",
-      "NL",
-      "PL",
-      "PT",
-      "RO",
-      "SK",
-      "SI",
-      "ES",
-      "SE"
+      "DE"
     ],
     "warehousePriority": [
-      "DE",
-      "AT",
-      "NL",
-      "BE",
-      "PL",
-      "CZ",
-      "FR",
-      "DK",
-      "IT",
-      "ES",
-      "SE",
-      "FI",
-      "IE",
-      "PT",
-      "SK",
-      "SI",
-      "HU",
-      "HR",
-      "RO",
-      "BG",
-      "EE",
-      "LV",
-      "LT",
-      "LU",
-      "GR",
-      "CY",
-      "MT"
+      "DE"
     ],
+    "discoveryEndpoint": "/product/list",
+    "inventoryVerificationEndpoint": "/product/stock/getInventoryByPid",
     "verifiedWarehouseOnly": true,
-    "minStock": 1,
+    "minStock": 5,
     "maxProducts": 24,
     "discoveryStats": {
       "DE": {
-        "returned": 1,
-        "eligible": 1
-      },
-      "AT": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "NL": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "BE": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "PL": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "CZ": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "FR": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "DK": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "IT": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "ES": {
-        "returned": 25,
-        "eligible": 1
-      },
-      "SE": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "FI": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "IE": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "PT": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "SK": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "SI": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "HU": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "HR": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "RO": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "BG": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "EE": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "LV": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "LT": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "LU": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "GR": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "CY": {
-        "returned": 0,
-        "eligible": 0
-      },
-      "MT": {
-        "returned": 0,
-        "eligible": 0
+        "totalRecords": 378,
+        "pagesFetched": 2,
+        "fetched": 378,
+        "eligibleBeforeInventoryCheck": 181
       }
     },
     "exchangeRate": {
       "usdToEur": 0.866551,
       "source": "ecb"
     },
-    "note": "CJ Product List V2 is queried directly per EU warehouse using countryCode, verifiedWarehouse=1 and minimum warehouse inventory. Every published product also passes a second variant-level real-time inventory check. Germany remains first priority. Checkout stays disabled until shipping and compliance are verified."
+    "note": "Legacy CJ product list is used for warehouse discovery because the current List V2 index materially under-reports Germany warehouse products for this account. Every published item is independently verified through getInventoryByPid. Checkout remains disabled pending freight and compliance checks."
   },
   "products": [
     {
-      "id": "58490D32-D5BB-4EE3-A2DA-12FECD3A60BB",
-      "sku": "CJNSFJST00001",
+      "id": "1863782253256921088",
+      "sku": "CJLY2230925",
       "brand": "Virello Select",
       "name": {
-        "de": "3D Sports Knee Pad",
-        "en": "3D Sports Knee Pad"
+        "de": "Textured Zipper Half-Buttoned Dress With Patch Pockets",
+        "en": "Textured Zipper Half-Buttoned Dress With Patch Pockets"
       },
       "description": {
-        "de": "Describe: 1. Prevent injuries and make sports safer 2. Adhesive tape: sticky and easy to tear 3. Double beams: firmly protect the meniscus Features: Three-dimensional weaving technology, high elasticity, good air permeability, more comfortable and fit to wear; Pressure belt design, adjustable, more suitable for the location; Suitable for all kinds of fitness exercises. Prevention or rehabilitation after injury, various fitness exercises. The all-around flexibility provides a better fit and more comfortable support for the knee. Keep the knee warm and proper, used to relieve chronic arthritis pain. High elasticity provides a better fit and more comfortable support for the knee. Keep your knee",
-        "en": "Describe: 1. Prevent injuries and make sports safer 2. Adhesive tape: sticky and easy to tear 3. Double beams: firmly protect the meniscus Features: Three-dimensional weaving technology, high elasticity, good air permeability, more comfortable and fit to wear; Pressure belt design, adjustable, more suitable for the location; Suitable for all kinds of fitness exercises. Prevention or rehabilitation after injury, various fitness exercises. The all-around flexibility provides a better fit and more comfortable support for the knee. Keep the knee warm and proper, used to relieve chronic arthritis pain. High elasticity provides a better fit and more comfortable support for the knee. Keep your knee"
+        "de": "Material: Woven Fabric Composition: 98% Polyester, 2% Elastane Care Instructions: Machine wash or professional dry clean Size Information: S,M,L,XL,2XL,3XL",
+        "en": "Material: Woven Fabric Composition: 98% Polyester, 2% Elastane Care Instructions: Machine wash or professional dry clean Size Information: S,M,L,XL,2XL,3XL"
       },
       "category": {
-        "de": "Sports Accessories",
-        "en": "Sports Accessories"
+        "de": "Women's Clothing/Tops & Sets/Lady Dresses",
+        "en": "Women's Clothing/Tops & Sets/Lady Dresses"
       },
-      "price": 9.99,
+      "price": 14.9,
       "compareAt": null,
-      "cost": 1.32,
-      "sourceCost": 1.52,
+      "cost": 3.26,
+      "sourceCost": 3.76,
       "sourceCurrency": "USD",
-      "stock": 6,
+      "stock": 253,
       "warehouses": [
         {
           "countryCode": "DE",
           "areaEn": "Germany Warehouse",
-          "stock": 6,
+          "stock": 253,
           "verified": true
         }
       ],
@@ -217,7 +65,519 @@
       "verifiedStock": true,
       "variantStock": [
         {
-          "vid": "0928B3D5-D0D1-435B-AD96-FE6BFFA45CD3",
+          "vid": "1863782255345684495",
+          "stock": 20,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 20
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684484",
+          "stock": 17,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 17
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684494",
+          "stock": 23,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 23
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684483",
+          "stock": 21,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 21
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684486",
+          "stock": 14,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 14
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684496",
+          "stock": 20,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 20
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684480",
+          "stock": 12,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 12
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684490",
+          "stock": 16,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 16
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684482",
+          "stock": 15,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 15
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684493",
+          "stock": 15,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 15
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684492",
+          "stock": 16,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 16
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684481",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684488",
+          "stock": 25,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 25
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684487",
+          "stock": 14,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 14
+            }
+          ]
+        },
+        {
+          "vid": "1863782255345684489",
+          "stock": 17,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 17
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/778a356b-07f6-4582-9eb1-16a4fd44cca2.png",
+        "https://cf.cjdropshipping.com/cfa0509a-1ece-44ce-bcdd-eb4b0782e484.png",
+        "https://cf.cjdropshipping.com/034443c5-56d4-4c46-8849-f1c9e9795b6e.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 140,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 89.37,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1871793615107821570",
+      "sku": "CJTZ2253040",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Ladies' Ribbed Crop Top And Bodycon Skirt Set",
+        "en": "Ladies' Ribbed Crop Top And Bodycon Skirt Set"
+      },
+      "description": {
+        "de": "Tops & Skirts Material: Polyester Tops & Skirts Composition: 97.0% Polyester, 3.0% Elastane Care Instructions: Machine wash or professional dry clean",
+        "en": "Tops & Skirts Material: Polyester Tops & Skirts Composition: 97.0% Polyester, 3.0% Elastane Care Instructions: Machine wash or professional dry clean"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Suits & Sets",
+        "en": "Women's Clothing/Tops & Sets/Suits & Sets"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.41,
+      "sourceCost": 2.78,
+      "sourceCurrency": "USD",
+      "stock": 145,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 145,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1875097061325574147",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574148",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574145",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574146",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1871793615153958915",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574154",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574155",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871793615153958916",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574152",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871793615153958913",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871793615153958914",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574153",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871793615153958917",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574149",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875097061325574151",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/4338da99-b5db-4776-b9f0-2a08e43635b2.png",
+        "https://cf.cjdropshipping.com/7efa7529-3b82-40e2-b670-1c066dc30509.jpg",
+        "https://cf.cjdropshipping.com/9ee61faa-6eb4-4bb1-a13f-b29cf74996de.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 141,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 86.98,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1866657086307192832",
+      "sku": "CJWC2239780",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Vibrant Solid Color Cami Top - Sleek Sleeveless Design, Breathable Fabric, Perfect For Spring & Summer, Women's Casual Clothing, Ideal For Outdoor Activities, Daily Wear, And Vacation",
+        "en": "Vibrant Solid Color Cami Top - Sleek Sleeveless Design, Breathable Fabric, Perfect For Spring & Summer, Women's Casual Clothing, Ideal For Outdoor Activities, Daily Wear, And Vacation"
+      },
+      "description": {
+        "de": "Composition: 95% Polyester,5% Elastane Material: Polyester",
+        "en": "Composition: 95% Polyester,5% Elastane Material: Polyester"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Women's Camis",
+        "en": "Women's Clothing/Tops & Sets/Women's Camis"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.62,
+      "sourceCost": 3.02,
+      "sourceCurrency": "USD",
+      "stock": 101,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 101,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1866657087758422023",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422022",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422025",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422024",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422016",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422026",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422018",
+          "stock": 3,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 3
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422029",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422028",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422017",
+          "stock": 4,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 4
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422030",
           "stock": 5,
           "warehouses": [
             {
@@ -227,7 +587,2402 @@
           ]
         },
         {
-          "vid": "{B18F6C69-D299-4037-9593-C2FB3A52070C}",
+          "vid": "1866657087758422032",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422031",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422020",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "vid": "1866657087758422019",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/6384648b-e386-49de-b00e-881d1213fedd.png",
+        "https://cf.cjdropshipping.com/232a219f-9583-4ee9-b938-0979223f8b19.jpg",
+        "https://cf.cjdropshipping.com/9fa12088-bb84-44ae-82e5-76e55303cbe0.png",
+        "https://cf.cjdropshipping.com/a81c721f-e487-46dc-8e80-c0aaa299fa29.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 196,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 86.69,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1871795271153659906",
+      "sku": "CJLT2253056",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Ladies' Plain And Simple Strapless Jumpsuit For Daily Wear",
+        "en": "Ladies' Plain And Simple Strapless Jumpsuit For Daily Wear"
+      },
+      "description": {
+        "de": "Material: Polyester Composition: 92% Polyester, 8% Elastane Care Instructions: Machine wash, do not dry clean",
+        "en": "Material: Polyester Composition: 92% Polyester, 8% Elastane Care Instructions: Machine wash, do not dry clean"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Rompers",
+        "en": "Women's Clothing/Tops & Sets/Rompers"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.71,
+      "sourceCost": 3.13,
+      "sourceCurrency": "USD",
+      "stock": 150,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 150,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1871795271208185864",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185865",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185866",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185867",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185868",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185858",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185859",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185870",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185871",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185860",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185861",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185872",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185862",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185873",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871795271208185874",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/83badefb-a4fb-4277-8690-7d8efa6bd102.png",
+        "https://cf.cjdropshipping.com/1ff0c4e9-1bf7-4e10-b77f-c1358f1ff40e.png",
+        "https://cf.cjdropshipping.com/bbcce349-2335-4b94-87dd-6f4ec4e2cdca.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 95,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 85.6,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1871767243912155137",
+      "sku": "CJTZ2252966",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Women's 2pcs Set Casual All-Match Ribbed Tank Top And Tight-Fitting Shorts Set For Home And Daily Wear -Z",
+        "en": "Women's 2pcs Set Casual All-Match Ribbed Tank Top And Tight-Fitting Shorts Set For Home And Daily Wear -Z"
+      },
+      "description": {
+        "de": "Tops & Pants Material: Knitted Fabric Tops & Pants Composition: 93% Polyester, 7% Elastane Fabric: Medium Stretch Care Instructions: Machine wash or professional dry clean",
+        "en": "Tops & Pants Material: Knitted Fabric Tops & Pants Composition: 93% Polyester, 7% Elastane Fabric: Medium Stretch Care Instructions: Machine wash or professional dry clean"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Suits & Sets",
+        "en": "Women's Clothing/Tops & Sets/Suits & Sets"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.2,
+      "sourceCost": 2.54,
+      "sourceCurrency": "USD",
+      "stock": 148,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 148,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1875093538079952898",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875093538079952899",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875093538075758593",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292490",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292491",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292492",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292482",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292483",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292484",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292485",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292486",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292488",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1871767243958292489",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1875093538079952900",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1875093538079952901",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/b232bc46-c294-4a10-a5ed-0c8093fe97d8.png",
+        "https://cf.cjdropshipping.com/75e249fe-993b-477a-a2b0-d36b0244f564.jpg",
+        "https://cf.cjdropshipping.com/cb64f211-d5c7-41bc-b0f3-1e1d66bfe115.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 73,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 84.53,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1871766232124395521",
+      "sku": "CJLY2252958",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Summer New Elegant Party Daily Date Oblique Shoulder One-Shoulder Off-Shoulder Front Pleated Slim Long Skirt Wavy Texture White Women's Dress",
+        "en": "Summer New Elegant Party Daily Date Oblique Shoulder One-Shoulder Off-Shoulder Front Pleated Slim Long Skirt Wavy Texture White Women's Dress"
+      },
+      "description": {
+        "de": "Material: Knitted Fabric Composition: 96% Polyester, 4% Elastane Care Instructions: Hand wash or professional dry clean",
+        "en": "Material: Knitted Fabric Composition: 96% Polyester, 4% Elastane Care Instructions: Hand wash or professional dry clean"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Lady Dresses",
+        "en": "Women's Clothing/Tops & Sets/Lady Dresses"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.55,
+      "sourceCost": 2.94,
+      "sourceCurrency": "USD",
+      "stock": 75,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 75,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1871766232174727169",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1871766232174727173",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1871766232174727170",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "vid": "1871766232174727171",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1871766232174727172",
+          "stock": 4,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 4
+            }
+          ]
+        },
+        {
+          "vid": "1875099710514188290",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1875099710514188292",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1875099710514188291",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1875099710514188289",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1875099710514188293",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/eae16f41-2e66-4baa-984e-e4ed29ff74e3.png",
+        "https://cf.cjdropshipping.com/28727591-338c-466a-801c-ecc7a425ca41.png",
+        "https://oss-cf.cjdropshipping.com/product/2025/01/03/08/0e1a3196-6e2e-49f7-9ef8-0c9539aad4d3.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2025/01/03/08/87b04ce6-74d7-4e03-9e16-347dedb41c2b.jpg",
+        "https://cf.cjdropshipping.com/94edee06-e727-44fc-a453-dacbbd713baa.png",
+        "https://cf.cjdropshipping.com/b1031c3d-ffb4-49ab-8701-39b3901c2e58.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 142,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 84.15,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1861286857423081472",
+      "sku": "CJLY2224537",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Supnier Women's Summer Maxi Dress Casual V-Neck Sleeveless Bohemian Spaghetti Strap Floral Long Maxi Dress",
+        "en": "Supnier Women's Summer Maxi Dress Casual V-Neck Sleeveless Bohemian Spaghetti Strap Floral Long Maxi Dress"
+      },
+      "description": {
+        "de": "Fabric type: 95% Polyester, 5% Spandex Care instructions :Machine Wash Size Information : Size: S,M,L,XL,2XL Packing list: Dress*1",
+        "en": "Fabric type: 95% Polyester, 5% Spandex Care instructions :Machine Wash Size Information : Size: S,M,L,XL,2XL Packing list: Dress*1"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Lady Dresses",
+        "en": "Women's Clothing/Tops & Sets/Lady Dresses"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 3.54,
+      "sourceCost": 4.09,
+      "sourceCurrency": "USD",
+      "stock": 90,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 90,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1861286858631041027",
+          "stock": 19,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 19
+            }
+          ]
+        },
+        {
+          "vid": "1861286858631041026",
+          "stock": 20,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 20
+            }
+          ]
+        },
+        {
+          "vid": "1861286858631041025",
+          "stock": 15,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 15
+            }
+          ]
+        },
+        {
+          "vid": "1861286858631041024",
+          "stock": 16,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 16
+            }
+          ]
+        },
+        {
+          "vid": "1861286858631041028",
+          "stock": 20,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 20
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/9ea6a68e-717a-487c-af06-4e0ea6005663.png",
+        "https://cf.cjdropshipping.com/ba93010f-82a6-41c2-9c27-39c7727e0bec.png",
+        "https://cf.cjdropshipping.com/15b7443d-23f4-4987-a97d-fb69b277c21b.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 113,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 84.05,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1869634031202488320",
+      "sku": "CJFU2248218",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Garden Yard Garbage Bag",
+        "en": "Garden Yard Garbage Bag"
+      },
+      "description": {
+        "de": "",
+        "en": ""
+      },
+      "category": {
+        "de": "Home, Garden & Furniture/Home Storage/Furniture",
+        "en": "Home, Garden & Furniture/Home Storage/Furniture"
+      },
+      "price": 23.9,
+      "compareAt": null,
+      "cost": 10.18,
+      "sourceCost": 11.75,
+      "sourceCurrency": "USD",
+      "stock": 120,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 120,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1869634031584169984",
+          "stock": 54,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 54
+            }
+          ]
+        },
+        {
+          "vid": "1869634031584169985",
+          "stock": 66,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 66
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/bd79172b-6f73-4ee6-a139-72d7673ab7c7.png",
+        "https://cf.cjdropshipping.com/d866e42f-f503-4b0b-a341-6df2e77f5b3e.jpg",
+        "https://cf.cjdropshipping.com/e565cb22-3a95-47ed-a7df-13e88064a4cb.jpg",
+        "https://cf.cjdropshipping.com/a5a80c17-4d5d-422b-9b1e-b05f88de4fb9.jpg",
+        "https://cf.cjdropshipping.com/fe39dfb7-2cab-42f5-bd54-c33bf41f2512.jpg",
+        "https://cf.cjdropshipping.com/1ee5c81b-90e0-4217-a3b2-8e7505f4063f.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 65,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 83.17,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1861302803260919808",
+      "sku": "CJLY2224675",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Women's Leopard Print Batwing Sleeve Holiday Beach Casual Dress",
+        "en": "Women's Leopard Print Batwing Sleeve Holiday Beach Casual Dress"
+      },
+      "description": {
+        "de": "Material: Knitted Fabric Composition: 95% Polyester, 5% Elastane Care Instructions: Machine wash, do not dry clean,wash with the soft detergent Size Information:Size: S,M,L,XL,2XL,3XL Packing list: Dress*1",
+        "en": "Material: Knitted Fabric Composition: 95% Polyester, 5% Elastane Care Instructions: Machine wash, do not dry clean,wash with the soft detergent Size Information:Size: S,M,L,XL,2XL,3XL Packing list: Dress*1"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Lady Dresses",
+        "en": "Women's Clothing/Tops & Sets/Lady Dresses"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.46,
+      "sourceCost": 2.84,
+      "sourceCurrency": "USD",
+      "stock": 99,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 99,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1861302806821883904",
+          "stock": 20,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 20
+            }
+          ]
+        },
+        {
+          "vid": "1861302806821883905",
+          "stock": 18,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 18
+            }
+          ]
+        },
+        {
+          "vid": "1861302806821883911",
+          "stock": 1,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "vid": "1861302806821883910",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1861302806821883908",
+          "stock": 16,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 16
+            }
+          ]
+        },
+        {
+          "vid": "1861302806821883906",
+          "stock": 18,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 18
+            }
+          ]
+        },
+        {
+          "vid": "1861302806821883907",
+          "stock": 18,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 18
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/c518ae7e-f322-4cad-9f9a-e50ff6c3e1eb.png",
+        "https://cf.cjdropshipping.com/15bc44f6-066d-49f9-8785-c48f7daa8058.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 71,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 82.67,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "2001553924054032385",
+      "sku": "CJCF2657548",
+      "brand": "Virello Select",
+      "name": {
+        "de": "1 PCS High Borosilicate Stripe Sealed Jar, Kitchen Storage Jar, Coffee Can, Coffee Storage Container",
+        "en": "1 PCS High Borosilicate Stripe Sealed Jar, Kitchen Storage Jar, Coffee Can, Coffee Storage Container"
+      },
+      "description": {
+        "de": "Highlights Novel shape Specification Shipping Limitations:Unlimited Available Ship to:Germany Details undefined",
+        "en": "Highlights Novel shape Specification Shipping Limitations:Unlimited Available Ship to:Germany Details undefined"
+      },
+      "category": {
+        "de": "Home, Garden & Furniture / Home Storage / Kitchen Storage",
+        "en": "Home, Garden & Furniture / Home Storage / Kitchen Storage"
+      },
+      "price": 18.9,
+      "compareAt": null,
+      "cost": 8.16,
+      "sourceCost": 9.42,
+      "sourceCurrency": "USD",
+      "stock": 230,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 230,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2001553924142112770",
+          "stock": 230,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 230
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/17660160/1f531436-ed78-4e8c-a726-328dface48a7.jpg",
+        "https://cf.cjdropshipping.com/17660160/c1dbb06d-4107-45a6-845f-1102f13713b0.jpg",
+        "https://cf.cjdropshipping.com/17660160/5f27863f-2859-47db-8916-af84e2780325.jpg",
+        "https://cf.cjdropshipping.com/17660160/b216ffb4-0bc2-4489-ae16-0a0812bae07c.jpg",
+        "https://cf.cjdropshipping.com/17660160/b5d383e5-795d-4d45-8ae2-2f30bb43dc9b.jpg",
+        "https://cf.cjdropshipping.com/17660160/bedd2b2d-e404-424f-ba6f-0c774a120d86.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 24,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 82.2,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "24C9BF3E-9407-431C-A8CB-DF29845BCFAC",
+      "sku": "CJYDQXDS00006",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Ankle Support Brace Safety Running Basketball Sports Ankle Sleeves",
+        "en": "Ankle Support Brace Safety Running Basketball Sports Ankle Sleeves"
+      },
+      "description": {
+        "de": "Overview: Breathable and Comfortable Helps reduce stress and tension on the ankle through an adjustable ankle shape. Use a lint-free composite diving material, durable and won't iritate the skin. It is ideal for outdoor and indoor sports,such as basketball, rugby, football, badminton, tennis and more. Size comparison: Size Shoe size S 35-38 cm M 39-41 cm L 42-45 cm XL 45-48 cm Specifications: Net weight:29 (g) Size:13*10*1 cm Color:black Material:Composite SBR material Package Content: 1 x Ankle Support",
+        "en": "Overview: Breathable and Comfortable Helps reduce stress and tension on the ankle through an adjustable ankle shape. Use a lint-free composite diving material, durable and won't iritate the skin. It is ideal for outdoor and indoor sports,such as basketball, rugby, football, badminton, tennis and more. Size comparison: Size Shoe size S 35-38 cm M 39-41 cm L 42-45 cm XL 45-48 cm Specifications: Net weight:29 (g) Size:13*10*1 cm Color:black Material:Composite SBR material Package Content: 1 x Ankle Support"
+      },
+      "category": {
+        "de": "Sports & Outdoors / Sneakers / Hiking Shoes",
+        "en": "Sports & Outdoors / Sneakers / Hiking Shoes"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 1.72,
+      "sourceCost": 1.98,
+      "sourceCurrency": "USD",
+      "stock": 16,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 16,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "DC9E308B-DB4E-411F-8BE6-FA160DB63B75",
+          "stock": 2,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 2
+            }
+          ]
+        },
+        {
+          "vid": "6795084A-1EE9-426D-BC05-6A90F0C1BD6E",
+          "stock": 14,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 14
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/20200410/52378486042570.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2024/01/02/02/fb2e7ee0-1ab0-431d-9704-23bec04f36b5.jpg",
+        "https://cf.cjdropshipping.com/20190107/1630630960708.png",
+        "https://cf.cjdropshipping.com/20200410/3538364186094.jpg",
+        "https://cf.cjdropshipping.com/20200529/6418432143174.png",
+        "https://oss-cf.cjdropshipping.com/product/2023/10/10/05/12edbd6f-a0f7-4715-8564-68d0bdc94427.png",
+        "https://cf.cjdropshipping.com/20190107/3457219204198.png",
+        "https://cf.cjdropshipping.com/20200410/835542078871.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 4621,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": true,
+      "adCandidate": false,
+      "score": 82.04,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "2001554380406890498",
+      "sku": "CJCJ2657559",
+      "brand": "Virello Select",
+      "name": {
+        "de": "1 Pcs 180ml Mini Coffee Cup, Glass Milk Cup, Italian Coffee Cup With Wooden Handle, Coffee Measuring Cup",
+        "en": "1 Pcs 180ml Mini Coffee Cup, Glass Milk Cup, Italian Coffee Cup With Wooden Handle, Coffee Measuring Cup"
+      },
+      "description": {
+        "de": "Highlights undefined Specification Shipping Limitations:Unlimited Available Ship to:Germany Details 1. Do not put it in the microwave oven 2. Material: High borosilicate heat-resistant glass, with an instantaneous temperature difference of 120 degrees and no explosion 3. Materials are safer and healthier 4. Grilled flower technique: not easily faded 5. Packaging safety: pearl cotton+five layer corrugated cardboard box",
+        "en": "Highlights undefined Specification Shipping Limitations:Unlimited Available Ship to:Germany Details 1. Do not put it in the microwave oven 2. Material: High borosilicate heat-resistant glass, with an instantaneous temperature difference of 120 degrees and no explosion 3. Materials are safer and healthier 4. Grilled flower technique: not easily faded 5. Packaging safety: pearl cotton+five layer corrugated cardboard box"
+      },
+      "category": {
+        "de": "Home, Garden & Furniture / Kitchen, Dining & Bar / Dinnerware",
+        "en": "Home, Garden & Furniture / Kitchen, Dining & Bar / Dinnerware"
+      },
+      "price": 17.9,
+      "compareAt": null,
+      "cost": 7.79,
+      "sourceCost": 8.99,
+      "sourceCurrency": "USD",
+      "stock": 230,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 230,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2001554380490776578",
+          "stock": 230,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 230
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/17660160/4eb65893-d786-4904-bfd3-f3851ed44706.jpg",
+        "https://cf.cjdropshipping.com/17660160/45321ac7-449d-4339-a0fc-07e007dd5ae0.jpg",
+        "https://cf.cjdropshipping.com/17660160/97f5446d-982b-4045-98f1-befc7aba9d9e.jpg",
+        "https://cf.cjdropshipping.com/17660160/88c93421-262a-4f05-a727-dbb8f03360bd.jpg",
+        "https://cf.cjdropshipping.com/17660160/a0d5a108-e047-45ea-bc49-9cac7f74401a.jpg",
+        "https://cf.cjdropshipping.com/17660160/601adaa8-5420-44af-ae4d-bf746511b78c.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 22,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 81.87,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1865221920326045696",
+      "sku": "CJTZ2235784",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Women's Plain Loose Fit Suit With Buttons Down The Front For Spring Summer Vacation",
+        "en": "Women's Plain Loose Fit Suit With Buttons Down The Front For Spring Summer Vacation"
+      },
+      "description": {
+        "de": "Pants & Shirts Material: Woven Fabric Pants & Shirts Composition: 100% Cotton Fabric: Non-Stretch Care Instructions: Machine wash or professional dry clean",
+        "en": "Pants & Shirts Material: Woven Fabric Pants & Shirts Composition: 100% Cotton Fabric: Non-Stretch Care Instructions: Machine wash or professional dry clean"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Suits & Sets",
+        "en": "Women's Clothing/Tops & Sets/Suits & Sets"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 4.46,
+      "sourceCost": 5.15,
+      "sourceCurrency": "USD",
+      "stock": 85,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 85,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1865221921127157769",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157770",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157760",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157763",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157764",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157761",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157762",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157767",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157768",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1865221921127157766",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/8dddc120-0e7b-4a7e-b3f4-06f35f505b2d.png",
+        "https://cf.cjdropshipping.com/96f7411a-a41a-41d8-88c0-d63493056c94.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 62,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 81.49,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1865217623634890752",
+      "sku": "CJTZ2235737",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Women's Printed Round Neck Sleeveless Top And Long Pants Set",
+        "en": "Women's Printed Round Neck Sleeveless Top And Long Pants Set"
+      },
+      "description": {
+        "de": "Material: Woven Fabric Tank Tops & Camis & Pants Composition: 100% Polyester Fabric: Non-Stretch Care Instructions: Machine wash or professional dry clean Size Information: S,M,L,XL,2XL,3XL",
+        "en": "Material: Woven Fabric Tank Tops & Camis & Pants Composition: 100% Polyester Fabric: Non-Stretch Care Instructions: Machine wash or professional dry clean Size Information: S,M,L,XL,2XL,3XL"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Suits & Sets",
+        "en": "Women's Clothing/Tops & Sets/Suits & Sets"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 4.53,
+      "sourceCost": 5.23,
+      "sourceCurrency": "USD",
+      "stock": 51,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 51,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1865217624574414850",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414851",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414852",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414854",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414855",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414857",
+          "stock": 1,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414858",
+          "stock": 3,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 3
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414848",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1865217624574414849",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/bff0c240-bda6-4791-b367-4dbb6ebc3481.png",
+        "https://cf.cjdropshipping.com/cf340886-05dc-4d70-94a4-c5f6dc072db2.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 87,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 80.58,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1771139847214866432",
+      "sku": "CJYD1993866",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Summer Solid Color Non-slip Suit Summer Mat",
+        "en": "Summer Solid Color Non-slip Suit Summer Mat"
+      },
+      "description": {
+        "de": "Product information: Size specification: 120 x200cm two-piece sheets (one pillowcase in summer mattress),150x200cm bed sheet three-piece set (two pillowcases in summer mattress),180x200cm bed sheet three-piece set (two pillowcases in summer mattress),200x220cm bed sheet three-piece set (summer mattress two pillowcases) Color: Summer mattress Lake Blue, summer mattress pink emerald, summer mattress khaki, summer mattress beige, summer mattress graceful gray, summer mattress dark blue, summer mattress water Green, summer mattress army green Weaving process: Printing Bed Size: 1.5 m (5 feet) bed Material: viscose fiber (viscose, Ice Silk) Details of bedding: viscose felt Style: Folding Style: m",
+        "en": "Product information: Size specification: 120 x200cm two-piece sheets (one pillowcase in summer mattress),150x200cm bed sheet three-piece set (two pillowcases in summer mattress),180x200cm bed sheet three-piece set (two pillowcases in summer mattress),200x220cm bed sheet three-piece set (summer mattress two pillowcases) Color: Summer mattress Lake Blue, summer mattress pink emerald, summer mattress khaki, summer mattress beige, summer mattress graceful gray, summer mattress dark blue, summer mattress water Green, summer mattress army green Weaving process: Printing Bed Size: 1.5 m (5 feet) bed Material: viscose fiber (viscose, Ice Silk) Details of bedding: viscose felt Style: Folding Style: m"
+      },
+      "category": {
+        "de": "Home, Garden & Furniture > Home Storage > Home Office Storage",
+        "en": "Home, Garden & Furniture > Home Storage > Home Office Storage"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 6.2,
+      "sourceCost": 7.16,
+      "sourceCurrency": "USD",
+      "stock": 200,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 200,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2606110301541605300",
+          "stock": 4,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 4
+            }
+          ]
+        },
+        {
+          "vid": "2606110301531607400",
+          "stock": 4,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 4
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541603200",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541602700",
+          "stock": 3,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 3
+            }
+          ]
+        },
+        {
+          "vid": "2606110301531609600",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541603600",
+          "stock": 22,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 22
+            }
+          ]
+        },
+        {
+          "vid": "2606110301551601000",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "2606110301531608200",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541600900",
+          "stock": 2,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 2
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541604700",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "2606110301551600100",
+          "stock": 22,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 22
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541600000",
+          "stock": 23,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 23
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541609200",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "2606110301531609100",
+          "stock": 3,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 3
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541609600",
+          "stock": 16,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 16
+            }
+          ]
+        },
+        {
+          "vid": "2606110301551601900",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541601800",
+          "stock": 19,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 19
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541605800",
+          "stock": 4,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 4
+            }
+          ]
+        },
+        {
+          "vid": "2606110301551601500",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "2606110301531607800",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "2606110301541601400",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/quick/product/317dc8f7-ff01-423d-a0ea-c822a5d73e4b.jpg",
+        "https://cf.cjdropshipping.com/quick/product/b962f30d-9ca9-4993-b5d3-08661f90124a.jpg",
+        "https://cf.cjdropshipping.com/quick/product/3ded9c72-8207-4ab2-a593-acc94891c9f6.jpg",
+        "https://cf.cjdropshipping.com/17110656/2403221140220321200.jpg",
+        "https://cf.cjdropshipping.com/quick/product/f44aab01-a6b2-41e0-bd13-2bc80513d10c.jpg",
+        "https://cf.cjdropshipping.com/quick/product/582c8054-00f2-491a-96df-61bfea754363.jpg",
+        "https://cf.cjdropshipping.com/quick/product/9c214f94-8260-434f-a70c-51f406667654.jpg",
+        "https://cf.cjdropshipping.com/quick/product/e178f6ac-bdf9-4e5b-81db-dae30338e39d.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 16,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 80.08,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1865220878427377664",
+      "sku": "CJTZ2235771",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Clasi Batwing Sleeve Tee & Allover Print Wide Leg Pants",
+        "en": "Clasi Batwing Sleeve Tee & Allover Print Wide Leg Pants"
+      },
+      "description": {
+        "de": "Pants Material: Woven Fabric Tops Material: Knitted Fabric Pants Composition: 100% Polyester Tops Composition: 93% Polyester, 7% Elastane Fabric: Non-Stretch Care Instructions: Hand wash,do not dry clean Size Information: S,M,L,XL,2XL,3XL",
+        "en": "Pants Material: Woven Fabric Tops Material: Knitted Fabric Pants Composition: 100% Polyester Tops Composition: 93% Polyester, 7% Elastane Fabric: Non-Stretch Care Instructions: Hand wash,do not dry clean Size Information: S,M,L,XL,2XL,3XL"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Suits & Sets",
+        "en": "Women's Clothing/Tops & Sets/Suits & Sets"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 3.88,
+      "sourceCost": 4.48,
+      "sourceCurrency": "USD",
+      "stock": 28,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 28,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1865220879312375814",
+          "stock": 1,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 1
+            }
+          ]
+        },
+        {
+          "vid": "1865220879312375812",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1865220879312375810",
+          "stock": 2,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 2
+            }
+          ]
+        },
+        {
+          "vid": "1865220879312375811",
+          "stock": 2,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 2
+            }
+          ]
+        },
+        {
+          "vid": "1865220879312375809",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1865220879312375808",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/a21a8f2f-720d-47b8-be44-eb761bde19a7.png",
+        "https://cf.cjdropshipping.com/6d504574-b8c5-4d0d-b3ef-0dbff68e0b21.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 74,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 77.35,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "2001554415341248514",
+      "sku": "CJCF2657561",
+      "brand": "Virello Select",
+      "name": {
+        "de": "3 Pcs Glass Coffee Jars With Spoons, Candy Jars, Biscuit Jars, Storage Jars, Tea Jars, Snack Jars, Seasoning Jars, Salt Jars, Pepper Jars",
+        "en": "3 Pcs Glass Coffee Jars With Spoons, Candy Jars, Biscuit Jars, Storage Jars, Tea Jars, Snack Jars, Seasoning Jars, Salt Jars, Pepper Jars"
+      },
+      "description": {
+        "de": "Highlights undefined Specification Available Ship to:Germany Details 1. Do not put it in the microwave oven 2. Material: High borosilicate heat-resistant glass, with an instantaneous temperature difference of 120 degrees and no explosion 3. Materials are safer and healthier 4. Grilled flower technique: not easily faded 5. Packaging safety: pearl cotton+five layer corrugated cardboard box",
+        "en": "Highlights undefined Specification Available Ship to:Germany Details 1. Do not put it in the microwave oven 2. Material: High borosilicate heat-resistant glass, with an instantaneous temperature difference of 120 degrees and no explosion 3. Materials are safer and healthier 4. Grilled flower technique: not easily faded 5. Packaging safety: pearl cotton+five layer corrugated cardboard box"
+      },
+      "category": {
+        "de": "Home, Garden & Furniture / Home Storage / Kitchen Storage",
+        "en": "Home, Garden & Furniture / Home Storage / Kitchen Storage"
+      },
+      "price": 42.99,
+      "compareAt": null,
+      "cost": 18.5,
+      "sourceCost": 21.35,
+      "sourceCurrency": "USD",
+      "stock": 229,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 229,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2001554415425134593",
+          "stock": 229,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 229
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/17660160/d32be561-6be5-49c4-8a6c-19958688d13a.jpg",
+        "https://cf.cjdropshipping.com/17660160/4870f184-4e45-4c48-becb-4a1184ff278f.jpg",
+        "https://cf.cjdropshipping.com/17660160/2ce6cbc7-2959-4bc2-9b43-08c3c12c33d7.jpg",
+        "https://cf.cjdropshipping.com/17660160/653d0dbb-22be-4dcf-90e1-711ed8669d50.jpg",
+        "https://cf.cjdropshipping.com/17660160/816a9819-1d4f-4d43-9aa7-e6f724844484.jpg",
+        "https://cf.cjdropshipping.com/17660160/77f55949-327d-4b34-9566-0e1e6e8427fd.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 61,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 73.73,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1866422045027225600",
+      "sku": "CJCS2239581",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Swiss Dot V Neck Shirt - Soft, Breathable, Casual Solid Shirt For Spring And Fall Season, Women's Clothing With Relaxed Fit And Classic Style",
+        "en": "Swiss Dot V Neck Shirt - Soft, Breathable, Casual Solid Shirt For Spring And Fall Season, Women's Clothing With Relaxed Fit And Classic Style"
+      },
+      "description": {
+        "de": "Composition: 100% Polyester Material: Polyester",
+        "en": "Composition: 100% Polyester Material: Polyester"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Blouses & Shirts",
+        "en": "Women's Clothing/Tops & Sets/Blouses & Shirts"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 3.4,
+      "sourceCost": 3.92,
+      "sourceCurrency": "USD",
+      "stock": 137,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 137,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1866422047178903560",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903558",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903559",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903554",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903565",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903555",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903566",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903567",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903556",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903568",
+          "stock": 7,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 7
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903561",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903562",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903552",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903553",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866422047178903564",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/a39a601b-2958-4e40-924b-10e3a4c1ae4c.png",
+        "https://cf.cjdropshipping.com/ec4c8dab-24a5-412f-b00f-b683281aedf6.png",
+        "https://cf.cjdropshipping.com/6d8922c2-1806-4272-89f2-72257be00d11.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 167,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 73.39,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1866424496694382592",
+      "sku": "CJLS2239592",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Women's Chic Geometric Aztec Print T-Shirt - Casual Crew Neck, Durable Non-Stretch Fabric, Ideal For Summer Wear",
+        "en": "Women's Chic Geometric Aztec Print T-Shirt - Casual Crew Neck, Durable Non-Stretch Fabric, Ideal For Summer Wear"
+      },
+      "description": {
+        "de": "Composition: 100% Polyester Material: Polyester",
+        "en": "Composition: 100% Polyester Material: Polyester"
+      },
+      "category": {
+        "de": "Women's Clothing > Tops & Sets > Women's Short-Sleeved Shirts",
+        "en": "Women's Clothing > Tops & Sets > Women's Short-Sleeved Shirts"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 2.55,
+      "sourceCost": 2.94,
+      "sourceCurrency": "USD",
+      "stock": 145,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 145,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1866424499005444110",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444099",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444100",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444111",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444112",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444102",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444096",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444097",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444098",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444108",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444109",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444103",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444104",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444105",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866424499005444106",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://oss-cf.cjdropshipping.com/product/2025/06/18/07/ebc41f33-d911-4f13-a650-30e51368761c.jpg",
+        "https://cf.cjdropshipping.com/72c9df2b-b62e-45f7-aafc-b6c60f1d68ff.png",
+        "https://cf.cjdropshipping.com/aae9fc62-33cd-49b2-9d4b-be34105c5ee4.png",
+        "https://cf.cjdropshipping.com/eea60f93-329d-4be8-8354-720b91f548b3.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 149,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 73.2,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1865218683896221696",
+      "sku": "CJTZ2235750",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Solid Colored Asymmetric Hem Short Sleeve Top And All-Over Print Long Pants Two-Piece Set",
+        "en": "Solid Colored Asymmetric Hem Short Sleeve Top And All-Over Print Long Pants Two-Piece Set"
+      },
+      "description": {
+        "de": "Shirts Material: Woven Fabric Shirts Composition: 100% Polyester Fabric: Non-Stretch Care Instructions: Machine wash, do not dry clean,wash with the soft detergent Size Information: S,M,L,XL,2XL,3XL",
+        "en": "Shirts Material: Woven Fabric Shirts Composition: 100% Polyester Fabric: Non-Stretch Care Instructions: Machine wash, do not dry clean,wash with the soft detergent Size Information: S,M,L,XL,2XL,3XL"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Suits & Sets",
+        "en": "Women's Clothing/Tops & Sets/Suits & Sets"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 3.54,
+      "sourceCost": 4.09,
+      "sourceCurrency": "USD",
+      "stock": 15,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 15,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1865218685947236352",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1865218685947236358",
+          "stock": 2,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 2
+            }
+          ]
+        },
+        {
+          "vid": "1865218685947236353",
+          "stock": 4,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 4
+            }
+          ]
+        },
+        {
+          "vid": "1865218685947236354",
           "stock": 1,
           "warehouses": [
             {
@@ -238,101 +2993,566 @@
         }
       ],
       "images": [
-        "https://cf.cjdropshipping.com/a5f88bdc-eeff-4950-8ca9-b083c8416da1.jpg",
-        "https://cf.cjdropshipping.com/15299424/2446530744816.png",
-        "https://cf.cjdropshipping.com/83289095-b27f-480b-881f-f028a6b666c7.png",
-        "https://cf.cjdropshipping.com/15276960/126387957961.png",
-        "https://cf.cjdropshipping.com/203104/17939400193.png",
-        "https://cf.cjdropshipping.com/be51b2c0-e88b-433b-823b-37bc4c70132b.jpg",
-        "https://cf.cjdropshipping.com/bc2a04f2-e1b9-49c7-a7cd-b9f646c74add.png",
-        "https://cf.cjdropshipping.com/70896b3d-a1a8-438a-abfe-5ace1952387f.png"
+        "https://cf.cjdropshipping.com/3e027865-4cc5-4eb8-8e29-f87324338f3b.png",
+        "https://cf.cjdropshipping.com/78e37833-6150-409d-b1ec-7ac964f0f8b5.png"
       ],
       "supplier": "CJdropshipping",
       "source": "cj",
       "market": "DE",
       "currency": "EUR",
-      "listedNum": 2232,
+      "listedNum": 50,
       "deliveryCycle": null,
       "directMinOrderNum": null,
       "complianceSignals": {
-        "ce": false
+        "ce": null
       },
       "hasVideo": false,
-      "adCandidate": true,
-      "score": 65.78,
+      "adCandidate": false,
+      "score": 73.13,
       "sellReady": false,
-      "sellReadyReason": "Verified CJ EU warehouse stock. Germany freight cost/time and product-specific compliance still require verification before checkout is enabled."
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
     },
     {
-      "id": "2411110403251628700",
-      "sku": "CJKH2190642",
+      "id": "1863528115487002624",
+      "sku": "CJLS2230577",
       "brand": "Virello Select",
       "name": {
-        "de": "PHOFAY Ultra-Glossy Lip Gloss Nude Lipliner Kit",
-        "en": "PHOFAY Ultra-Glossy Lip Gloss Nude Lipliner Kit"
+        "de": "Eyelet Solid Tank Top, Casual Sleeveless Tank Top For Summer, Women's Clothing",
+        "en": "Eyelet Solid Tank Top, Casual Sleeveless Tank Top For Summer, Women's Clothing"
       },
       "description": {
-        "de": "Net Weight: 0.8g x 12pcs Functions: Long-lasting, Matte finish Suggested Usage: Starting at the outer corners, glide along lips to line and define. Net Weight: 6 ML Functions: Ultra-glossy, High-shine SUGGESTED USAGE: Apply directly to clean and dry lips, moving back and forth to evenly distribute the gloss for charming lips!",
-        "en": "Net Weight: 0.8g x 12pcs Functions: Long-lasting, Matte finish Suggested Usage: Starting at the outer corners, glide along lips to line and define. Net Weight: 6 ML Functions: Ultra-glossy, High-shine SUGGESTED USAGE: Apply directly to clean and dry lips, moving back and forth to evenly distribute the gloss for charming lips!"
+        "de": "Composition: 95% Polyester,5% Spandex Material: Polyester Length: Regular Belt: No Chest Pad: No Details: Hollow Pattern: Solid color Sheer: Semi-Sheer Fabric: Slight Stretch Placket Type: Pullovers Contour: H Season: Summer Operation Instruction: Machine wash or professional dry clean Style: Elegant Fit Type: Regular Fabric Elasticity: Micro Elasticity Printing Type: No Printing Weaving Method: Knit Fabric",
+        "en": "Composition: 95% Polyester,5% Spandex Material: Polyester Length: Regular Belt: No Chest Pad: No Details: Hollow Pattern: Solid color Sheer: Semi-Sheer Fabric: Slight Stretch Placket Type: Pullovers Contour: H Season: Summer Operation Instruction: Machine wash or professional dry clean Style: Elegant Fit Type: Regular Fabric Elasticity: Micro Elasticity Printing Type: No Printing Weaving Method: Knit Fabric"
       },
       "category": {
-        "de": "Lipstick",
-        "en": "Lipstick"
+        "de": "Women's Clothing > Tops & Sets > Women's Short-Sleeved Shirts",
+        "en": "Women's Clothing > Tops & Sets > Women's Short-Sleeved Shirts"
       },
-      "price": 18.9,
+      "price": 14.9,
       "compareAt": null,
-      "cost": 8.41,
-      "sourceCost": 9.7,
+      "cost": 2.12,
+      "sourceCost": 2.45,
       "sourceCurrency": "USD",
-      "stock": 10,
+      "stock": 133,
       "warehouses": [
         {
-          "countryCode": "ES",
-          "areaEn": "Spain Warehouse",
-          "stock": 10,
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 133,
           "verified": true
         }
       ],
-      "primaryWarehouse": "ES",
-      "warehousePriorityRank": 9,
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
       "verifiedStock": true,
       "variantStock": [
         {
-          "vid": "2411110403251628900",
+          "vid": "1863528116434915334",
           "stock": 10,
           "warehouses": [
             {
-              "countryCode": "ES",
+              "countryCode": "DE",
               "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915335",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915336",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915330",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915331",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915332",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915337",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915338",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1867479354935496704",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1867479354935496706",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1867479354935496705",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1867479354935496708",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1867479354935496707",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915328",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1863528116434915329",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
             }
           ]
         }
       ],
       "images": [
-        "https://cf.cjdropshipping.com/17312832/1855823807252795392.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823822729777152.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823821383405568.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823793000550400.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823818455781376.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823819726655488.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823826550788096.jpg",
-        "https://cf.cjdropshipping.com/17312832/1855823829738459136.jpg"
+        "https://cf.cjdropshipping.com/18e3c43c-cc12-469b-b28a-ba5c15e1f418.png",
+        "https://cf.cjdropshipping.com/a9805550-c3c2-4add-8f02-250cc08840a6.jpg",
+        "https://cf.cjdropshipping.com/73accfc0-b4e3-4a44-a9a1-7b162e05431a.jpg",
+        "https://cf.cjdropshipping.com/55c18188-54df-4141-b583-6c1bafae6a8d.png",
+        "https://cf.cjdropshipping.com/a1a2e53f-80b8-417e-8471-bcddaf6f7e43.png"
       ],
       "supplier": "CJdropshipping",
       "source": "cj",
       "market": "DE",
       "currency": "EUR",
-      "listedNum": 98,
+      "listedNum": 116,
       "deliveryCycle": null,
       "directMinOrderNum": null,
       "complianceSignals": {
-        "ce": false
+        "ce": null
       },
       "hasVideo": false,
-      "adCandidate": true,
-      "score": 56.97,
+      "adCandidate": false,
+      "score": 71.85,
       "sellReady": false,
-      "sellReadyReason": "Verified CJ EU warehouse stock. Germany freight cost/time and product-specific compliance still require verification before checkout is enabled."
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "2032005804709036033",
+      "sku": "CJSD2785148",
+      "brand": "Virello Select",
+      "name": {
+        "de": "1000W Foldable Garment Steamer, Handheld Fabric Steam Brush, Portable Iron",
+        "en": "1000W Foldable Garment Steamer, Handheld Fabric Steam Brush, Portable Iron"
+      },
+      "description": {
+        "de": "Specification Shipping Limitations:Unlimited Dimensions:9.85 in. * 5.52 in. * 4.73 in. Weight:1.55 lbs Available Ship to:France,Germany Details Product Name: Portable Quick-Heating Steam Garment Steamer Product Features: Blitz-Muster-Schnelles Aufheizen: In just 20 seconds, the heating system generates powerful steam to remove annoying wrinkles and creases from clothing. Kompakt und praktisch: The lightweight design and small size of the steamer make it easy to store and perfect for use at home, in the office, or while traveling. Kraftvolle Faltenentfernung: Whether you are dealing with cotton, wool, silk, or other fabrics, the powerful steam of this steamer will make your clothes look neat ",
+        "en": "Specification Shipping Limitations:Unlimited Dimensions:9.85 in. * 5.52 in. * 4.73 in. Weight:1.55 lbs Available Ship to:France,Germany Details Product Name: Portable Quick-Heating Steam Garment Steamer Product Features: Blitz-Muster-Schnelles Aufheizen: In just 20 seconds, the heating system generates powerful steam to remove annoying wrinkles and creases from clothing. Kompakt und praktisch: The lightweight design and small size of the steamer make it easy to store and perfect for use at home, in the office, or while traveling. Kraftvolle Faltenentfernung: Whether you are dealing with cotton, wool, silk, or other fabrics, the powerful steam of this steamer will make your clothes look neat "
+      },
+      "category": {
+        "de": "Home Improvement / Tools / Hand Tools",
+        "en": "Home Improvement / Tools / Hand Tools"
+      },
+      "price": 38.99,
+      "compareAt": null,
+      "cost": 16.88,
+      "sourceCost": 19.48,
+      "sourceCurrency": "USD",
+      "stock": 230,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 230,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2032005804839059458",
+          "stock": 230,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 230
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/17732736/f48813c0-4f8a-4758-93fb-e6e08f5678c6.jpg",
+        "https://cf.cjdropshipping.com/17732736/24defeaf-5a1c-41bb-a901-29997d7ba5e8.jpg",
+        "https://cf.cjdropshipping.com/17732736/a63869cd-f289-4547-9a34-bf9d44b6be25.jpg",
+        "https://cf.cjdropshipping.com/17732736/cf82536b-3b3c-4788-a23f-12327220a177.jpg",
+        "https://cf.cjdropshipping.com/17732736/782e229a-f669-42b8-bee0-cd42d9640a19.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 37,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 71.84,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "1866420756230852608",
+      "sku": "CJCS2239574",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Women's Elegant Sleeveless V-Neck Blouse - Breezy Chic Top Ideal For Spring & Summer, Versatile Fashion For Casual Or Formal Wear",
+        "en": "Women's Elegant Sleeveless V-Neck Blouse - Breezy Chic Top Ideal For Spring & Summer, Versatile Fashion For Casual Or Formal Wear"
+      },
+      "description": {
+        "de": "Composition: 95% Polyester,5% Cotton Material: Polyester",
+        "en": "Composition: 95% Polyester,5% Cotton Material: Polyester"
+      },
+      "category": {
+        "de": "Women's Clothing/Tops & Sets/Blouses & Shirts",
+        "en": "Women's Clothing/Tops & Sets/Blouses & Shirts"
+      },
+      "price": 14.9,
+      "compareAt": null,
+      "cost": 3.2,
+      "sourceCost": 3.69,
+      "sourceCurrency": "USD",
+      "stock": 94,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 94,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "1866420757950517249",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517258",
+          "stock": 3,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 3
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517248",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517260",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517263",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 10
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517252",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517264",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517261",
+          "stock": 9,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 9
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517250",
+          "stock": 6,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 6
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517262",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517251",
+          "stock": 8,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 8
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517256",
+          "stock": 3,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 3
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517254",
+          "stock": 2,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 2
+            }
+          ]
+        },
+        {
+          "vid": "1866420757950517255",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/9b9ba003-432f-48c4-8e5c-a531f3c29eea.png",
+        "https://cf.cjdropshipping.com/0ee02b31-b0e7-40b4-9ee8-e5d0683b001d.png",
+        "https://cf.cjdropshipping.com/a36abd24-4f1a-435b-8402-cef557d739fe.png",
+        "https://cf.cjdropshipping.com/17441568/1909784299436249088.jpg",
+        "https://oss-cf.cjdropshipping.com/product/2025/03/06/02/2e4bc109-2352-4fa7-8b28-ac4cbf4b5f06.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 142,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 71.13,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "2032004371563008002",
+      "sku": "CJSD2785115",
+      "brand": "Virello Select",
+      "name": {
+        "de": "Calibrated Digital Tire Pressure Gauge, Air Inflator With Manometer, For Car Auto",
+        "en": "Calibrated Digital Tire Pressure Gauge, Air Inflator With Manometer, For Car Auto"
+      },
+      "description": {
+        "de": "Specification Shipping Limitations:Unlimited Dimensions:6.30 in. * 3.94 in. * 1.97 in. Weight:0.53 lbs Available Ship to:France,Germany Details Product Features RUGGED & RELIABLE: Our tire pressure gauge is constructed from heavy-duty steel and brass, ensuring long-term durability. The brass head swivels with an extended 6mm chuck tip, making it easy to connect regardless of the valve stem's position. ACCURACY: Our digital tire pressure gauge is meticulously calibrated to provide tire pressure readings within a (±1%) margin of error. It measures a range from 3-255 PSI. SWITCHABLE DESIGN: The tire pressure gauge offers the flexibility to switch between four units of measurement at will: PSI, ",
+        "en": "Specification Shipping Limitations:Unlimited Dimensions:6.30 in. * 3.94 in. * 1.97 in. Weight:0.53 lbs Available Ship to:France,Germany Details Product Features RUGGED & RELIABLE: Our tire pressure gauge is constructed from heavy-duty steel and brass, ensuring long-term durability. The brass head swivels with an extended 6mm chuck tip, making it easy to connect regardless of the valve stem's position. ACCURACY: Our digital tire pressure gauge is meticulously calibrated to provide tire pressure readings within a (±1%) margin of error. It measures a range from 3-255 PSI. SWITCHABLE DESIGN: The tire pressure gauge offers the flexibility to switch between four units of measurement at will: PSI, "
+      },
+      "category": {
+        "de": "Home Improvement / Tools / Hand Tools",
+        "en": "Home Improvement / Tools / Hand Tools"
+      },
+      "price": 30.99,
+      "compareAt": null,
+      "cost": 13.21,
+      "sourceCost": 15.24,
+      "sourceCurrency": "USD",
+      "stock": 230,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 230,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2032004371667865601",
+          "stock": 230,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 230
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/17732736/78aabc54-81a5-447d-a90f-c82b788f9881.jpg",
+        "https://cf.cjdropshipping.com/17732736/2114787e-1fa6-4fb3-816a-fa905575a4b2.jpg",
+        "https://cf.cjdropshipping.com/17732736/d22b27e8-4553-4ecd-b177-013ab2e3fddc.jpg",
+        "https://cf.cjdropshipping.com/17732736/75f464ca-68f5-4935-a479-2a601af1a5bf.jpg",
+        "https://cf.cjdropshipping.com/17732736/2a2d2389-e1c1-49c1-8348-46fe68222cf5.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 14,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": null
+      },
+      "hasVideo": false,
+      "adCandidate": false,
+      "score": 68.2,
+      "sellReady": false,
+      "sellReadyReason": "CJ verified warehouse stock confirmed. Germany freight, payment, legal and product-specific compliance still require verification before checkout is enabled."
     }
   ]
 }
