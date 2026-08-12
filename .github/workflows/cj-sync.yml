@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/sync-cj-europe-v4.mjs'
+      - 'scripts/enrich-cj-economics.mjs'
       - 'data/catalog-config.json'
       - '.github/workflows/cj-sync.yml'
   schedule:
@@ -21,7 +22,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -33,8 +34,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Validate sync script
-        run: node --check scripts/sync-cj-europe-v4.mjs
+      - name: Validate scripts
+        run: |
+          node --check scripts/sync-cj-europe-v4.mjs
+          node --check scripts/enrich-cj-economics.mjs
 
       - name: Sync verified CJ Europe catalog
         id: cj
@@ -52,6 +55,14 @@ jobs:
           echo "configured=true" >> "$GITHUB_OUTPUT"
           node scripts/sync-cj-europe-v4.mjs
 
+      - name: Enrich demo economics with CJ freight
+        if: steps.cj.outputs.configured == 'true'
+        env:
+          CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
+          CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
+          CJ_API_DELAY_MS: 2600
+        run: node scripts/enrich-cj-economics.mjs
+
       - name: Validate generated Europe catalog
         if: steps.cj.outputs.configured == 'true'
         run: |
@@ -62,6 +73,7 @@ jobs:
           if (feed.source !== 'cj') throw new Error('Catalog source must be cj.');
           if (!Array.isArray(feed.products)) throw new Error('Catalog products must be an array.');
           if (feed.selection?.warehouseRegion !== 'EUROPE') throw new Error('Catalog must be Europe-wide.');
+          if (!feed.economicsSummary) throw new Error('Economics summary missing.');
           for (const product of feed.products) {
             if (product.verifiedStock !== true) throw new Error(`Unverified stock: ${product.sku}`);
             if (!(Number(product.stock) >= Number(config.minStock || 1))) throw new Error(`Insufficient stock: ${product.sku}`);
@@ -70,9 +82,9 @@ jobs:
               throw new Error(`Disallowed or unverified warehouse: ${product.sku}`);
             }
             if (!allowed.has(String(product.primaryWarehouse).toUpperCase())) throw new Error(`Invalid primary warehouse: ${product.sku}`);
-            if (product.sellReady !== false) throw new Error(`sellReady must stay false before freight/payment/compliance checks: ${product.sku}`);
+            if (product.sellReady !== false) throw new Error(`sellReady must stay false before final compliance checks: ${product.sku}`);
           }
-          console.log(`Validated ${feed.products.length} CJ verified European-warehouse products.`);
+          console.log(`Validated ${feed.products.length} CJ verified European-warehouse products; freight economics ${feed.economicsSummary.freightVerified}/${feed.economicsSummary.processed}.`);
           NODE
 
       - name: Commit catalog changes
@@ -85,6 +97,6 @@ jobs:
           git config user.name "virello-cj-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/products.json
-          git commit -m "Sync verified CJ Europe catalog"
+          git commit -m "Sync CJ Europe catalog with demo economics"
           git pull --rebase origin main
           git push origin main
