@@ -1,30 +1,84 @@
 {
-  "generatedAt": "2026-08-12T00:52:12.894Z",
+  "generatedAt": "2026-08-12T00:56:13.784Z",
   "source": "cj",
-  "mode": "live-api-empty",
+  "mode": "live-api",
   "selection": {
     "market": "DE",
     "warehouseCountries": [
       "DE",
-      "PL",
+      "AT",
+      "BE",
+      "BG",
+      "HR",
+      "CY",
       "CZ",
-      "NL",
+      "DK",
+      "EE",
+      "FI",
       "FR",
-      "ES"
+      "GR",
+      "HU",
+      "IE",
+      "IT",
+      "LV",
+      "LT",
+      "LU",
+      "MT",
+      "NL",
+      "PL",
+      "PT",
+      "RO",
+      "SK",
+      "SI",
+      "ES",
+      "SE"
     ],
     "warehousePriority": [
       "DE",
+      "AT",
+      "NL",
+      "BE",
       "PL",
       "CZ",
-      "NL",
       "FR",
-      "ES"
+      "DK",
+      "IT",
+      "ES",
+      "SE",
+      "FI",
+      "IE",
+      "PT",
+      "SK",
+      "SI",
+      "HU",
+      "HR",
+      "RO",
+      "BG",
+      "EE",
+      "LV",
+      "LT",
+      "LU",
+      "GR",
+      "CY",
+      "MT"
     ],
     "verifiedWarehouseOnly": true,
-    "minStock": 25,
+    "minStock": 1,
     "maxProducts": 24,
     "discoveryStats": {
       "DE": {
+        "returned": 1,
+        "eligible": 1
+      },
+      "AT": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "NL": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "BE": {
         "returned": 0,
         "eligible": 0
       },
@@ -36,16 +90,88 @@
         "returned": 0,
         "eligible": 0
       },
-      "NL": {
-        "returned": 0,
-        "eligible": 0
-      },
       "FR": {
         "returned": 0,
         "eligible": 0
       },
+      "DK": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "IT": {
+        "returned": 0,
+        "eligible": 0
+      },
       "ES": {
-        "returned": 23,
+        "returned": 25,
+        "eligible": 1
+      },
+      "SE": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "FI": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "IE": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "PT": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "SK": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "SI": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "HU": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "HR": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "RO": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "BG": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "EE": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "LV": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "LT": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "LU": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "GR": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "CY": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "MT": {
+        "returned": 0,
         "eligible": 0
       }
     },
@@ -55,5 +181,158 @@
     },
     "note": "CJ Product List V2 is queried directly per EU warehouse using countryCode, verifiedWarehouse=1 and minimum warehouse inventory. Every published product also passes a second variant-level real-time inventory check. Germany remains first priority. Checkout stays disabled until shipping and compliance are verified."
   },
-  "products": []
+  "products": [
+    {
+      "id": "58490D32-D5BB-4EE3-A2DA-12FECD3A60BB",
+      "sku": "CJNSFJST00001",
+      "brand": "Virello Select",
+      "name": {
+        "de": "3D Sports Knee Pad",
+        "en": "3D Sports Knee Pad"
+      },
+      "description": {
+        "de": "Describe: 1. Prevent injuries and make sports safer 2. Adhesive tape: sticky and easy to tear 3. Double beams: firmly protect the meniscus Features: Three-dimensional weaving technology, high elasticity, good air permeability, more comfortable and fit to wear; Pressure belt design, adjustable, more suitable for the location; Suitable for all kinds of fitness exercises. Prevention or rehabilitation after injury, various fitness exercises. The all-around flexibility provides a better fit and more comfortable support for the knee. Keep the knee warm and proper, used to relieve chronic arthritis pain. High elasticity provides a better fit and more comfortable support for the knee. Keep your knee",
+        "en": "Describe: 1. Prevent injuries and make sports safer 2. Adhesive tape: sticky and easy to tear 3. Double beams: firmly protect the meniscus Features: Three-dimensional weaving technology, high elasticity, good air permeability, more comfortable and fit to wear; Pressure belt design, adjustable, more suitable for the location; Suitable for all kinds of fitness exercises. Prevention or rehabilitation after injury, various fitness exercises. The all-around flexibility provides a better fit and more comfortable support for the knee. Keep the knee warm and proper, used to relieve chronic arthritis pain. High elasticity provides a better fit and more comfortable support for the knee. Keep your knee"
+      },
+      "category": {
+        "de": "Sports Accessories",
+        "en": "Sports Accessories"
+      },
+      "price": 9.99,
+      "compareAt": null,
+      "cost": 1.32,
+      "sourceCost": 1.52,
+      "sourceCurrency": "USD",
+      "stock": 6,
+      "warehouses": [
+        {
+          "countryCode": "DE",
+          "areaEn": "Germany Warehouse",
+          "stock": 6,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "DE",
+      "warehousePriorityRank": 0,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "0928B3D5-D0D1-435B-AD96-FE6BFFA45CD3",
+          "stock": 5,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 5
+            }
+          ]
+        },
+        {
+          "vid": "{B18F6C69-D299-4037-9593-C2FB3A52070C}",
+          "stock": 1,
+          "warehouses": [
+            {
+              "countryCode": "DE",
+              "stock": 1
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/a5f88bdc-eeff-4950-8ca9-b083c8416da1.jpg",
+        "https://cf.cjdropshipping.com/15299424/2446530744816.png",
+        "https://cf.cjdropshipping.com/83289095-b27f-480b-881f-f028a6b666c7.png",
+        "https://cf.cjdropshipping.com/15276960/126387957961.png",
+        "https://cf.cjdropshipping.com/203104/17939400193.png",
+        "https://cf.cjdropshipping.com/be51b2c0-e88b-433b-823b-37bc4c70132b.jpg",
+        "https://cf.cjdropshipping.com/bc2a04f2-e1b9-49c7-a7cd-b9f646c74add.png",
+        "https://cf.cjdropshipping.com/70896b3d-a1a8-438a-abfe-5ace1952387f.png"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 2232,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 65.78,
+      "sellReady": false,
+      "sellReadyReason": "Verified CJ EU warehouse stock. Germany freight cost/time and product-specific compliance still require verification before checkout is enabled."
+    },
+    {
+      "id": "2411110403251628700",
+      "sku": "CJKH2190642",
+      "brand": "Virello Select",
+      "name": {
+        "de": "PHOFAY Ultra-Glossy Lip Gloss Nude Lipliner Kit",
+        "en": "PHOFAY Ultra-Glossy Lip Gloss Nude Lipliner Kit"
+      },
+      "description": {
+        "de": "Net Weight: 0.8g x 12pcs Functions: Long-lasting, Matte finish Suggested Usage: Starting at the outer corners, glide along lips to line and define. Net Weight: 6 ML Functions: Ultra-glossy, High-shine SUGGESTED USAGE: Apply directly to clean and dry lips, moving back and forth to evenly distribute the gloss for charming lips!",
+        "en": "Net Weight: 0.8g x 12pcs Functions: Long-lasting, Matte finish Suggested Usage: Starting at the outer corners, glide along lips to line and define. Net Weight: 6 ML Functions: Ultra-glossy, High-shine SUGGESTED USAGE: Apply directly to clean and dry lips, moving back and forth to evenly distribute the gloss for charming lips!"
+      },
+      "category": {
+        "de": "Lipstick",
+        "en": "Lipstick"
+      },
+      "price": 18.9,
+      "compareAt": null,
+      "cost": 8.41,
+      "sourceCost": 9.7,
+      "sourceCurrency": "USD",
+      "stock": 10,
+      "warehouses": [
+        {
+          "countryCode": "ES",
+          "areaEn": "Spain Warehouse",
+          "stock": 10,
+          "verified": true
+        }
+      ],
+      "primaryWarehouse": "ES",
+      "warehousePriorityRank": 9,
+      "verifiedStock": true,
+      "variantStock": [
+        {
+          "vid": "2411110403251628900",
+          "stock": 10,
+          "warehouses": [
+            {
+              "countryCode": "ES",
+              "stock": 10
+            }
+          ]
+        }
+      ],
+      "images": [
+        "https://cf.cjdropshipping.com/17312832/1855823807252795392.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823822729777152.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823821383405568.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823793000550400.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823818455781376.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823819726655488.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823826550788096.jpg",
+        "https://cf.cjdropshipping.com/17312832/1855823829738459136.jpg"
+      ],
+      "supplier": "CJdropshipping",
+      "source": "cj",
+      "market": "DE",
+      "currency": "EUR",
+      "listedNum": 98,
+      "deliveryCycle": null,
+      "directMinOrderNum": null,
+      "complianceSignals": {
+        "ce": false
+      },
+      "hasVideo": false,
+      "adCandidate": true,
+      "score": 56.97,
+      "sellReady": false,
+      "sellReadyReason": "Verified CJ EU warehouse stock. Germany freight cost/time and product-specific compliance still require verification before checkout is enabled."
+    }
+  ]
 }
