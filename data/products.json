@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T00:49:41.903Z",
+  "generatedAt": "2026-08-12T00:52:12.894Z",
   "source": "cj",
   "mode": "live-api-empty",
   "selection": {
@@ -23,11 +23,37 @@
     "verifiedWarehouseOnly": true,
     "minStock": 25,
     "maxProducts": 24,
+    "discoveryStats": {
+      "DE": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "PL": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "CZ": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "NL": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "FR": {
+        "returned": 0,
+        "eligible": 0
+      },
+      "ES": {
+        "returned": 23,
+        "eligible": 0
+      }
+    },
     "exchangeRate": {
       "usdToEur": 0.866551,
       "source": "ecb"
     },
-    "note": "Product List V2 is used for broad discovery. Every published product independently passed the CJ variant inventory endpoint in an allowed EU warehouse with verifiedWarehouse=1. Germany is ranked first when available. Checkout remains disabled until Germany shipping cost/time and product compliance are verified."
+    "note": "CJ Product List V2 is queried directly per EU warehouse using countryCode, verifiedWarehouse=1 and minimum warehouse inventory. Every published product also passes a second variant-level real-time inventory check. Germany remains first priority. Checkout stays disabled until shipping and compliance are verified."
   },
   "products": []
 }
