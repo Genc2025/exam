@@ -27,7 +27,7 @@ jobs:
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
         run: |
-          node - <<'NODE'
+          node --input-type=commonjs - <<'NODE'
           const fs = require('fs');
           const base = 'https://developers.cjdropshipping.com/api2.0/v1';
           const countries = ['DE','PL','CZ','NL','FR','ES'];
@@ -35,7 +35,7 @@ jobs:
           let lastCompleted = 0;
           async function req(url, options={}) {
             const elapsed = Date.now() - lastCompleted;
-            if (lastCompleted && elapsed < 2000) await wait(2000 - elapsed);
+            if (lastCompleted && elapsed < 2500) await wait(2500 - elapsed);
             try {
               const r = await fetch(url, options);
               const p = await r.json();
