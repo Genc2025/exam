@@ -1,0 +1,1624 @@
+{
+  "generatedAt": "2026-08-12T02:49:12.564Z",
+  "source": "Hertwill authenticated API",
+  "selectedCount": 150,
+  "eligibleCount": 0,
+  "assumptions": {
+    "destination": "DE",
+    "vatReserveRate": 0.19,
+    "paymentFeeReserveRate": 0.03,
+    "targetProfitBeforeAdsEur": 15
+  },
+  "products": [
+    {
+      "id": 8821,
+      "sku": "EZ-1301",
+      "name": "Classic Car Seat Organizer",
+      "brand": "Ezimoov",
+      "brandId": 218,
+      "category": "Kids & Baby",
+      "originCountryCode": "FI",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "storage organizer",
+        "car organizer",
+        "travel organizer"
+      ],
+      "slug": "classic-car-seat-organizer",
+      "economics": {
+        "supplierCostEur": 5.76,
+        "shippingGermanyEur": 6.9,
+        "landedCostEur": 12.66,
+        "targetSellingPriceEur": 34.9,
+        "vatReserveEur": 5.57,
+        "paymentReserveEur": 1.05,
+        "profitBeforeAdsEur": 15.62
+      },
+      "eligible": false
+    },
+    {
+      "id": 8822,
+      "sku": "EZ-1302",
+      "name": "Car Seat Organizer & Protector XL",
+      "brand": "Ezimoov",
+      "brandId": 218,
+      "category": "Kids & Baby",
+      "originCountryCode": "FI",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "storage organizer",
+        "car organizer",
+        "travel organizer"
+      ],
+      "slug": "car-seat-organizer-protector-xl",
+      "economics": {
+        "supplierCostEur": 11.58,
+        "shippingGermanyEur": 6.9,
+        "landedCostEur": 18.48,
+        "targetSellingPriceEur": 41.99,
+        "vatReserveEur": 6.7,
+        "paymentReserveEur": 1.26,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3342,
+      "sku": "5907222123683",
+      "name": "Big Bear Silicone Lamp - White",
+      "brand": "Rabbit & Friends",
+      "brandId": 119,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 13,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "bathroom organizer"
+      ],
+      "slug": "big-bear-silicone-lamp-white-2",
+      "economics": {
+        "supplierCostEur": 12.33,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 19.82,
+        "targetSellingPriceEur": 42.99,
+        "vatReserveEur": 6.86,
+        "paymentReserveEur": 1.29,
+        "profitBeforeAdsEur": 15.02
+      },
+      "eligible": false
+    },
+    {
+      "id": 3353,
+      "sku": "5907222123607",
+      "name": "Big Bear Silicone Lamp with Remote - Pink",
+      "brand": "Rabbit & Friends",
+      "brandId": 119,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "bathroom organizer"
+      ],
+      "slug": "big-bear-silicone-lamp-with-remote-pink",
+      "economics": {
+        "supplierCostEur": 13.9,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 21.39,
+        "targetSellingPriceEur": 44.99,
+        "vatReserveEur": 7.18,
+        "paymentReserveEur": 1.35,
+        "profitBeforeAdsEur": 15.07
+      },
+      "eligible": false
+    },
+    {
+      "id": 3360,
+      "sku": "5907222123676",
+      "name": "Big Bear Silicone Lamp with Remote - Blue",
+      "brand": "Rabbit & Friends",
+      "brandId": 119,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 14,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "bathroom organizer"
+      ],
+      "slug": "big-bear-silicone-lamp-with-remote-blue",
+      "economics": {
+        "supplierCostEur": 13.9,
+        "shippingGermanyEur": 7.49,
+        "landedCostEur": 21.39,
+        "targetSellingPriceEur": 44.99,
+        "vatReserveEur": 7.18,
+        "paymentReserveEur": 1.35,
+        "profitBeforeAdsEur": 15.07
+      },
+      "eligible": false
+    },
+    {
+      "id": 8823,
+      "sku": "EZ-1401",
+      "name": "Car Organizer Bag",
+      "brand": "Ezimoov",
+      "brandId": 218,
+      "category": "Kids & Baby",
+      "originCountryCode": "FI",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "storage organizer",
+        "car organizer",
+        "travel organizer"
+      ],
+      "slug": "car-organizer-bag",
+      "economics": {
+        "supplierCostEur": 17.34,
+        "shippingGermanyEur": 6.9,
+        "landedCostEur": 24.24,
+        "targetSellingPriceEur": 48.99,
+        "vatReserveEur": 7.82,
+        "paymentReserveEur": 1.47,
+        "profitBeforeAdsEur": 15.46
+      },
+      "eligible": false
+    },
+    {
+      "id": 8819,
+      "sku": "EZ-1201",
+      "name": "Ezi Mat 3 in 1 Seat Protector",
+      "brand": "Ezimoov",
+      "brandId": 218,
+      "category": "Kids & Baby",
+      "originCountryCode": "FI",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "car organizer",
+        "travel organizer"
+      ],
+      "slug": "ezi-mat-3-in-1-seat-protector",
+      "economics": {
+        "supplierCostEur": 17.34,
+        "shippingGermanyEur": 6.9,
+        "landedCostEur": 24.24,
+        "targetSellingPriceEur": 48.99,
+        "vatReserveEur": 7.82,
+        "paymentReserveEur": 1.47,
+        "profitBeforeAdsEur": 15.46
+      },
+      "eligible": false
+    },
+    {
+      "id": 8830,
+      "sku": "EZ-1203",
+      "name": "Premium Car Seat Protector",
+      "brand": "Ezimoov",
+      "brandId": 218,
+      "category": "Kids & Baby",
+      "originCountryCode": "FI",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "storage organizer",
+        "car organizer",
+        "travel organizer"
+      ],
+      "slug": "premium-car-seat-protector",
+      "economics": {
+        "supplierCostEur": 20.22,
+        "shippingGermanyEur": 6.9,
+        "landedCostEur": 27.12,
+        "targetSellingPriceEur": 51.99,
+        "vatReserveEur": 8.3,
+        "paymentReserveEur": 1.56,
+        "profitBeforeAdsEur": 15.01
+      },
+      "eligible": false
+    },
+    {
+      "id": 2182,
+      "sku": "DAIKTA/MET",
+      "name": "Decorated Storage Box - Mint",
+      "brand": "Kai aš mažas buvau",
+      "brandId": 88,
+      "category": "Kids & Baby",
+      "originCountryCode": "LT",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "decorated-storage-box-mint",
+      "economics": {
+        "supplierCostEur": 18.47,
+        "shippingGermanyEur": 12.99,
+        "landedCostEur": 31.46,
+        "targetSellingPriceEur": 57.99,
+        "vatReserveEur": 9.26,
+        "paymentReserveEur": 1.74,
+        "profitBeforeAdsEur": 15.53
+      },
+      "eligible": false
+    },
+    {
+      "id": 2183,
+      "sku": "DAIKTA/MEL",
+      "name": "Decorated Storage Box - Light Blue",
+      "brand": "Kai aš mažas buvau",
+      "brandId": 88,
+      "category": "Kids & Baby",
+      "originCountryCode": "LT",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "decorated-storage-box-light-blue",
+      "economics": {
+        "supplierCostEur": 18.47,
+        "shippingGermanyEur": 12.99,
+        "landedCostEur": 31.46,
+        "targetSellingPriceEur": 57.99,
+        "vatReserveEur": 9.26,
+        "paymentReserveEur": 1.74,
+        "profitBeforeAdsEur": 15.53
+      },
+      "eligible": false
+    },
+    {
+      "id": 3108,
+      "sku": "ewart-woods-towel-rack-waxed-steel",
+      "name": "Steel & Wood Towel Rack - Waxed Steel",
+      "brand": "Ewart Woods",
+      "brandId": 96,
+      "category": "Bed & Bath",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "bathroom organizer"
+      ],
+      "slug": "steel-wood-towel-rack-waxed-steel",
+      "economics": {
+        "supplierCostEur": 11.65,
+        "shippingGermanyEur": 22.99,
+        "landedCostEur": 34.64,
+        "targetSellingPriceEur": 61.99,
+        "vatReserveEur": 9.9,
+        "paymentReserveEur": 1.86,
+        "profitBeforeAdsEur": 15.59
+      },
+      "eligible": false
+    },
+    {
+      "id": 4314,
+      "sku": "ewart-woods-TP-smile",
+      "name": "Handmade Wooden Toilet Paper Holder - Smile",
+      "brand": "Ewart Woods",
+      "brandId": 96,
+      "category": "Bed & Bath",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "bathroom organizer"
+      ],
+      "slug": "handmade-wooden-toilet-paper-holder-smile",
+      "economics": {
+        "supplierCostEur": 21.48,
+        "shippingGermanyEur": 22.99,
+        "landedCostEur": 44.47,
+        "targetSellingPriceEur": 73.99,
+        "vatReserveEur": 11.81,
+        "paymentReserveEur": 2.22,
+        "profitBeforeAdsEur": 15.49
+      },
+      "eligible": false
+    },
+    {
+      "id": 4315,
+      "sku": "ewart-woods-TP-cloud",
+      "name": "Handmade Wooden Toilet Paper Holder - Cloud",
+      "brand": "Ewart Woods",
+      "brandId": 96,
+      "category": "Bed & Bath",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "bathroom organizer"
+      ],
+      "slug": "handmade-wooden-toilet-paper-holder-cloud",
+      "economics": {
+        "supplierCostEur": 24.51,
+        "shippingGermanyEur": 22.99,
+        "landedCostEur": 47.5,
+        "targetSellingPriceEur": 77.99,
+        "vatReserveEur": 12.45,
+        "paymentReserveEur": 2.34,
+        "profitBeforeAdsEur": 15.7
+      },
+      "eligible": false
+    },
+    {
+      "id": 8691,
+      "sku": "high-chair-mat-red-frame",
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Red Frame",
+      "brand": "OLYA KIDS",
+      "brandId": 205,
+      "category": "Kitchen & Dining",
+      "originCountryCode": "PL",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "manual cleaning tools"
+      ],
+      "slug": "kids-mealtime-floor-mat-non-slip-waterproof-red-frame",
+      "economics": {
+        "supplierCostEur": 41.92,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 51.91,
+        "targetSellingPriceEur": 82.99,
+        "vatReserveEur": 13.25,
+        "paymentReserveEur": 2.49,
+        "profitBeforeAdsEur": 15.34
+      },
+      "eligible": false
+    },
+    {
+      "id": 8689,
+      "sku": "high-chair-mat-wild-ones-citronello",
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Wild Citronello",
+      "brand": "OLYA KIDS",
+      "brandId": 205,
+      "category": "Kitchen & Dining",
+      "originCountryCode": "PL",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "bathroom organizer",
+        "manual cleaning tools"
+      ],
+      "slug": "kids-mealtime-floor-mat-non-slip-waterproof-wild-citronello",
+      "economics": {
+        "supplierCostEur": 41.92,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 51.91,
+        "targetSellingPriceEur": 82.99,
+        "vatReserveEur": 13.25,
+        "paymentReserveEur": 2.49,
+        "profitBeforeAdsEur": 15.34
+      },
+      "eligible": false
+    },
+    {
+      "id": 8515,
+      "sku": "high-chair-mat-chess-terra",
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Chess Terra",
+      "brand": "OLYA KIDS",
+      "brandId": 205,
+      "category": "Kitchen & Dining",
+      "originCountryCode": "PL",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "home organizer",
+        "manual cleaning tools"
+      ],
+      "slug": "kids-mealtime-floor-mat-non-slip-waterproof-chess-terra",
+      "economics": {
+        "supplierCostEur": 41.92,
+        "shippingGermanyEur": 9.99,
+        "landedCostEur": 51.91,
+        "targetSellingPriceEur": 82.99,
+        "vatReserveEur": 13.25,
+        "paymentReserveEur": 2.49,
+        "profitBeforeAdsEur": 15.34
+      },
+      "eligible": false
+    },
+    {
+      "id": 1352,
+      "sku": "hoiukott-ally",
+      "name": "Storage Basket / Diaper Caddy Organizer",
+      "brand": "Ally Scandic",
+      "brandId": 17,
+      "category": "Handbags & Shoulder Bags",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer",
+        "storage organizer",
+        "car organizer",
+        "travel organizer"
+      ],
+      "slug": "storage-basket",
+      "economics": {
+        "supplierCostEur": 37.83,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 53.82,
+        "targetSellingPriceEur": 84.99,
+        "vatReserveEur": 13.57,
+        "paymentReserveEur": 2.55,
+        "profitBeforeAdsEur": 15.05
+      },
+      "eligible": false
+    },
+    {
+      "id": 4637,
+      "sku": "3-1-2-0-109",
+      "name": "Festive Motive Christmas forest Rectangular Tablecloth",
+      "brand": "Hortensias Home",
+      "brandId": 120,
+      "category": "Kitchen & Dining",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer"
+      ],
+      "slug": "christmas-forest-rectangular-tablecloth",
+      "economics": {
+        "supplierCostEur": 46.06,
+        "shippingGermanyEur": 12.99,
+        "landedCostEur": 59.05,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.49
+      },
+      "eligible": false
+    },
+    {
+      "id": 3193,
+      "sku": "tairi-cloud-mustard",
+      "name": "Leather Cloud Purse - Mustard",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "leather-cloud-purse-mustard",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3187,
+      "sku": "tairi-cloud-burgundy",
+      "name": "Leather Cloud Purse - Burgundy",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer",
+        "car organizer"
+      ],
+      "slug": "leather-cloud-purse-burgundy",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3185,
+      "sku": "tairi-cloud-iridescent",
+      "name": "Leather Cloud Purse - Iridescent",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "leather-cloud-purse-iridescent",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3188,
+      "sku": "tairi-cloud-red",
+      "name": "Leather Cloud Purse - Red",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "leather-cloud-purse-red",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3184,
+      "sku": "tairi-cloud-pink",
+      "name": "Leather Cloud Purse - Pink",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "leather-cloud-purse-pink",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3186,
+      "sku": "tairi-cloud-navy",
+      "name": "Leather Cloud Purse - Navy",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 0,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "leather-cloud-purse-navy",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 3189,
+      "sku": "tairi-cloud-black",
+      "name": "Leather Cloud Purse - Black",
+      "brand": "Tairi Roosve",
+      "brandId": 117,
+      "category": "Pouches & Cases",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "leather-cloud-purse-black",
+      "economics": {
+        "supplierCostEur": 43,
+        "shippingGermanyEur": 15.99,
+        "landedCostEur": 58.99,
+        "targetSellingPriceEur": 91.99,
+        "vatReserveEur": 14.69,
+        "paymentReserveEur": 2.76,
+        "profitBeforeAdsEur": 15.55
+      },
+      "eligible": false
+    },
+    {
+      "id": 9080,
+      "sku": "125-32/R-3/N",
+      "name": "Marone Wicker Bike Basket With Beige Lining And Straps",
+      "brand": "Wicker Stories",
+      "brandId": 200,
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer",
+        "travel organizer"
+      ],
+      "slug": "marone-wicker-bike-basket-with-beige-lining-and-straps",
+      "economics": {
+        "supplierCostEur": 42,
+        "shippingGermanyEur": 18,
+        "landedCostEur": 60,
+        "targetSellingPriceEur": 92.99,
+        "vatReserveEur": 14.85,
+        "paymentReserveEur": 2.79,
+        "profitBeforeAdsEur": 15.35
+      },
+      "eligible": false
+    },
+    {
+      "id": 9081,
+      "sku": "125-32/R-3/N1",
+      "name": "Marone Wicker Bike Basket With Pink Lining And Straps",
+      "brand": "Wicker Stories",
+      "brandId": 200,
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer"
+      ],
+      "slug": "marone-wicker-bike-basket-with-pink-lining-and-straps",
+      "economics": {
+        "supplierCostEur": 42,
+        "shippingGermanyEur": 18,
+        "landedCostEur": 60,
+        "targetSellingPriceEur": 92.99,
+        "vatReserveEur": 14.85,
+        "paymentReserveEur": 2.79,
+        "profitBeforeAdsEur": 15.35
+      },
+      "eligible": false
+    },
+    {
+      "id": 1944,
+      "sku": "a3c65c297427",
+      "name": "Yellow Stripes eco wallpaper",
+      "brand": "Miurio",
+      "brandId": 77,
+      "category": "Bed & Bath",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer"
+      ],
+      "slug": "yellow-stripes-eco-wallpaper",
+      "economics": {
+        "supplierCostEur": 68.77,
+        "shippingGermanyEur": 12.99,
+        "landedCostEur": 81.76,
+        "targetSellingPriceEur": 119.99,
+        "vatReserveEur": 19.16,
+        "paymentReserveEur": 3.6,
+        "profitBeforeAdsEur": 15.47
+      },
+      "eligible": false
+    },
+    {
+      "id": 1940,
+      "sku": "2723d092b638",
+      "name": "Lemon Branch eco wallpaper",
+      "brand": "Miurio",
+      "brandId": 77,
+      "category": "Bed & Bath",
+      "originCountryCode": "EE",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer"
+      ],
+      "slug": "lemon-branch-eco-wallpaper",
+      "economics": {
+        "supplierCostEur": 68.77,
+        "shippingGermanyEur": 12.99,
+        "landedCostEur": 81.76,
+        "targetSellingPriceEur": 119.99,
+        "vatReserveEur": 19.16,
+        "paymentReserveEur": 3.6,
+        "profitBeforeAdsEur": 15.47
+      },
+      "eligible": false
+    },
+    {
+      "id": 9303,
+      "sku": "S-S",
+      "name": "Montessori Wooden Shelf – Kids Storage Organizer",
+      "brand": "OakHill",
+      "brandId": 204,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "montessori-wooden-shelf-kids-storage-organizer",
+      "economics": {
+        "supplierCostEur": 107.84,
+        "shippingGermanyEur": 25,
+        "landedCostEur": 132.84,
+        "targetSellingPriceEur": 182.99,
+        "vatReserveEur": 29.22,
+        "paymentReserveEur": 5.49,
+        "profitBeforeAdsEur": 15.44
+      },
+      "eligible": false
+    },
+    {
+      "id": 8034,
+      "sku": "babydreams-chest-of-drawers",
+      "name": "Babydreams Chest of Drawers",
+      "brand": "Kocot Kids",
+      "brandId": 177,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "babydreams-chest-of-drawers",
+      "economics": {
+        "supplierCostEur": 105.84,
+        "shippingGermanyEur": 30,
+        "landedCostEur": 135.84,
+        "targetSellingPriceEur": 186.99,
+        "vatReserveEur": 29.86,
+        "paymentReserveEur": 5.61,
+        "profitBeforeAdsEur": 15.68
+      },
+      "eligible": false
+    },
+    {
+      "id": 3786,
+      "sku": "M_PAK",
+      "name": "House Shaped Clothing Rack with Storage",
+      "brand": "Montessori House Bed",
+      "brandId": 100,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": false,
+      "queries": [
+        "home organizer"
+      ],
+      "slug": "house-shaped-clothing-rack-with-storage",
+      "economics": {
+        "supplierCostEur": 146.14,
+        "shippingGermanyEur": 16.99,
+        "landedCostEur": 163.13,
+        "targetSellingPriceEur": 219.99,
+        "vatReserveEur": 35.12,
+        "paymentReserveEur": 6.6,
+        "profitBeforeAdsEur": 15.14
+      },
+      "eligible": false
+    },
+    {
+      "id": 7620,
+      "sku": "4751040940295",
+      "name": "LUULA Acrylic Board - School Planner",
+      "brand": "Luula",
+      "brandId": 192,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "LV",
+      "stock": 20,
+      "shipsEU": false,
+      "blocked": false,
+      "queries": [
+        "home organizer"
+      ],
+      "slug": "luula-acrylic-board-school-planner",
+      "economics": null,
+      "eligible": false
+    },
+    {
+      "id": 6422,
+      "sku": "TBAOP01IE",
+      "name": "Toy Storage Basket for Kids – Powder Pink",
+      "brand": "MeowBaby",
+      "brandId": 95,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "toy-storage-basket-for-kids-powder-pink",
+      "economics": null,
+      "eligible": false
+    },
+    {
+      "id": 6424,
+      "sku": "TBAOG01IE",
+      "name": "Toy Storage Basket for Kids – Olive Green",
+      "brand": "MeowBaby",
+      "brandId": 95,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "toy-storage-basket-for-kids-olive-green",
+      "economics": null,
+      "eligible": false
+    },
+    {
+      "id": 6423,
+      "sku": "TBABH01IE",
+      "name": "Toy Storage Basket for Kids – Grey",
+      "brand": "MeowBaby",
+      "brandId": 95,
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "shipsEU": true,
+      "blocked": true,
+      "queries": [
+        "storage organizer"
+      ],
+      "slug": "toy-storage-basket-for-kids-grey",
+      "economics": null,
+      "eligible": false
+    },
+    {
+      "id": 3345,
+      "name": "Big Bear Silicone Lamp - Blue",
+      "error": "HTTP 429 /v1/products/3345: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3346,
+      "name": "Big Bear Silicone Lamp - Pink",
+      "error": "HTTP 429 /v1/products/3346: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3347,
+      "name": "Big Bear Silicone Lamp - Sage",
+      "error": "HTTP 429 /v1/products/3347: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3348,
+      "name": "Big Bear Silicone Lamp - Lavender",
+      "error": "HTTP 429 /v1/products/3348: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3352,
+      "name": "Bunny Silicone Lamp - White",
+      "error": "HTTP 429 /v1/products/3352: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3107,
+      "name": "Steel & Wood Towel Rack - Beige",
+      "error": "HTTP 429 /v1/products/3107: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5872,
+      "name": "Bathroom Multi Purpose Cleaner EcoClean, 1L",
+      "error": "HTTP 429 /v1/products/5872: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4602,
+      "name": "Home Spa Set",
+      "error": "HTTP 429 /v1/products/4602: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8134,
+      "name": "Foam Puzzle Playmat - Boho Classic",
+      "error": "HTTP 429 /v1/products/8134: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7984,
+      "name": "Pink Wooden Play Kitchen with Oven, Burners, Microwave and Accessories",
+      "error": "HTTP 429 /v1/products/7984: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7982,
+      "name": "Large Wooden Play Kitchen with Accessories",
+      "error": "HTTP 429 /v1/products/7982: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 1961,
+      "name": "Linen Tales Kitchen Towel",
+      "error": "HTTP 429 /v1/products/1961: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3211,
+      "name": "Wooden 2in1 Diner",
+      "error": "HTTP 429 /v1/products/3211: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5136,
+      "name": "Montessori Play Stand/Toy Shelf For Kids",
+      "error": "HTTP 429 /v1/products/5136: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2469,
+      "name": "Wooden Play Kitchen with Sound and Light",
+      "error": "HTTP 429 /v1/products/2469: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5475,
+      "name": "Cotton Kitchen for Kids",
+      "error": "HTTP 429 /v1/products/5475: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8182,
+      "name": "MeowBaby® Kitchen Helper – Educational Kitchen Tower for Children, MDF board",
+      "error": "HTTP 429 /v1/products/8182: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3251,
+      "name": "MeowBaby® Plywood Kitchen Helper Scandi - Gray",
+      "error": "HTTP 429 /v1/products/3251: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8327,
+      "name": "Oven Glove With Double Wool Filling - Seeds Carbon",
+      "error": "HTTP 429 /v1/products/8327: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3248,
+      "name": "MeowBaby Wooden Kitchen Helper for Children - Black",
+      "error": "HTTP 429 /v1/products/3248: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3250,
+      "name": "MeowBaby® Plywood Kitchen Helper Scandi - White",
+      "error": "HTTP 429 /v1/products/3250: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9482,
+      "name": "Pot Holder - Terra Flora",
+      "error": "HTTP 429 /v1/products/9482: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4756,
+      "name": "Apron “Pervert in the Kitchen”",
+      "error": "HTTP 429 /v1/products/4756: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2310,
+      "name": "MeowBaby Wooden Kitchen Helper for Children",
+      "error": "HTTP 429 /v1/products/2310: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5435,
+      "name": "Montessori Tray with Handle, Sand and Accessories",
+      "error": "HTTP 429 /v1/products/5435: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6935,
+      "name": "Cleaning Kit For Clothinng & Footwear",
+      "error": "HTTP 429 /v1/products/6935: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5492,
+      "name": "Washable Rug Stardust, 120 x 160 cm",
+      "error": "HTTP 429 /v1/products/5492: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5484,
+      "name": "Washable Rug Colorful Lines, 90 x 130 cm",
+      "error": "HTTP 429 /v1/products/5484: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5485,
+      "name": "Washable Rug Colorful Lines, 140 x 200 cm",
+      "error": "HTTP 429 /v1/products/5485: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8526,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Cross Sand",
+      "error": "HTTP 429 /v1/products/8526: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8525,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Cross Azure",
+      "error": "HTTP 429 /v1/products/8525: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5471,
+      "name": "Washable Cotton Rug Kitchen Tiles Rose, 120x160 cm",
+      "error": "HTTP 429 /v1/products/5471: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7284,
+      "name": "Linen Daily Apron for Kids - Cafe Creme",
+      "error": "HTTP 429 /v1/products/7284: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8692,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Yellow Frame",
+      "error": "HTTP 429 /v1/products/8692: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8514,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Chess Pink Beige",
+      "error": "HTTP 429 /v1/products/8514: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8519,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Palm Beach Terra",
+      "error": "HTTP 429 /v1/products/8519: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8516,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Chess Azure",
+      "error": "HTTP 429 /v1/products/8516: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8521,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Daisy Earth",
+      "error": "HTTP 429 /v1/products/8521: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8522,
+      "name": "Kids Mealtime Floor Mat, Non-Slip & Waterproof - Daisy Pink",
+      "error": "HTTP 429 /v1/products/8522: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7372,
+      "name": "Mini Wall Shelf - Lion",
+      "error": "HTTP 429 /v1/products/7372: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7371,
+      "name": "Mini Wall Shelf - Plane",
+      "error": "HTTP 429 /v1/products/7371: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7376,
+      "name": "Mini Wall Shelf - Rabbit",
+      "error": "HTTP 429 /v1/products/7376: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7374,
+      "name": "Mini Wall Shelf - Little Bird",
+      "error": "HTTP 429 /v1/products/7374: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7375,
+      "name": "Mini Wall Shelf - Rocketship",
+      "error": "HTTP 429 /v1/products/7375: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7377,
+      "name": "Mini Wall Shelf - Teddy Bear",
+      "error": "HTTP 429 /v1/products/7377: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7369,
+      "name": "Mini Wall Shelf - Blue Rainbow",
+      "error": "HTTP 429 /v1/products/7369: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7378,
+      "name": "Mini Wall Shelf - Balloon",
+      "error": "HTTP 429 /v1/products/7378: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7370,
+      "name": "Mini Wall Shelf - Pink Rainbow",
+      "error": "HTTP 429 /v1/products/7370: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7373,
+      "name": "Mini Wall Shelf - Lemur",
+      "error": "HTTP 429 /v1/products/7373: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7368,
+      "name": "Mini Wall Shelf - Dino",
+      "error": "HTTP 429 /v1/products/7368: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7750,
+      "name": "Smart Storage Chair",
+      "error": "HTTP 429 /v1/products/7750: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5818,
+      "name": "Desk Victor for Kids ",
+      "error": "HTTP 429 /v1/products/5818: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5862,
+      "name": "Desk Classic",
+      "error": "HTTP 429 /v1/products/5862: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8035,
+      "name": "Babydreams Desk",
+      "error": "HTTP 429 /v1/products/8035: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8761,
+      "name": "Wooden Wall Decoration - Retro Car",
+      "error": "HTTP 429 /v1/products/8761: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8824,
+      "name": "Suction Cup Car Side Window Retractable Sunshade",
+      "error": "HTTP 429 /v1/products/8824: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8827,
+      "name": "Suction Cup Car Side Window Retractable Sunshade - 2 pack",
+      "error": "HTTP 429 /v1/products/8827: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8820,
+      "name": "Car Seat Cover Non-Slip",
+      "error": "HTTP 429 /v1/products/8820: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5495,
+      "name": "Decorative Basket Tractor",
+      "error": "HTTP 429 /v1/products/5495: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8831,
+      "name": "Rain Protection for baby Car Seat",
+      "error": "HTTP 429 /v1/products/8831: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5399,
+      "name": "Wooden Race Track",
+      "error": "HTTP 429 /v1/products/5399: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8828,
+      "name": "Ezimoov EZI SUN SOCKS x2 - Small",
+      "error": "HTTP 429 /v1/products/8828: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5405,
+      "name": "Wooden Construction Cars with Animals",
+      "error": "HTTP 429 /v1/products/5405: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7205,
+      "name": "Origami Nursery Mobile - Gold Dust",
+      "error": "HTTP 429 /v1/products/7205: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6302,
+      "name": "Leash – Travel",
+      "error": "HTTP 429 /v1/products/6302: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7147,
+      "name": "Large Make-Up Bag - Caramel",
+      "error": "HTTP 429 /v1/products/7147: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8815,
+      "name": "Rear Facing Car Seat Mirror",
+      "error": "HTTP 429 /v1/products/8815: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7067,
+      "name": "Wooden Car - Retro",
+      "error": "HTTP 429 /v1/products/7067: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8813,
+      "name": "Baby Car Mirror with LED Light",
+      "error": "HTTP 429 /v1/products/8813: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6298,
+      "name": "Collar With A Plastic Bucle – Travel",
+      "error": "HTTP 429 /v1/products/6298: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6303,
+      "name": "Adjustable Leash – Travel",
+      "error": "HTTP 429 /v1/products/6303: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2996,
+      "name": "Leather Travel Bag 20L - Light Brown",
+      "error": "HTTP 429 /v1/products/2996: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 4595,
+      "name": "Stella Soomlais x Gary Markle Fit For Helsinki Knapsack",
+      "error": "HTTP 429 /v1/products/4595: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 6304,
+      "name": "Harness With Leather – Travel",
+      "error": "HTTP 429 /v1/products/6304: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2997,
+      "name": "Leather Travel Bag 20L - Black",
+      "error": "HTTP 429 /v1/products/2997: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 727,
+      "name": "Travel Bag 008 - Black",
+      "error": "HTTP 429 /v1/products/727: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2251,
+      "name": "Reflective Tote DOT",
+      "error": "HTTP 429 /v1/products/2251: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7830,
+      "name": "Snufkin Travel Cross Body Bag",
+      "error": "HTTP 429 /v1/products/7830: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7836,
+      "name": "Memory Foam Travel Neck Pillow - Gorke",
+      "error": "HTTP 429 /v1/products/7836: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 1482,
+      "name": "Tour Portemonnaie Passport Covers - Black",
+      "error": "HTTP 429 /v1/products/1482: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 1481,
+      "name": "Tour Portemonnaie Passport Covers - Cognac",
+      "error": "HTTP 429 /v1/products/1481: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3253,
+      "name": "XXL Travel Bag 114 - Black",
+      "error": "HTTP 429 /v1/products/3253: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3504,
+      "name": "Daypack Nord",
+      "error": "HTTP 429 /v1/products/3504: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2395,
+      "name": "Reflective Luggage Tag",
+      "error": "HTTP 429 /v1/products/2395: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3959,
+      "name": "Laundry Detergent Sheets – Sea Breeze, 60 loads",
+      "error": "HTTP 429 /v1/products/3959: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8561,
+      "name": "Laundry Detergent Sheets – Fragrance Free, 60 loads",
+      "error": "HTTP 429 /v1/products/8561: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9436,
+      "name": "Montessori Wooden Clothes Drying Rack with Beige Storage",
+      "error": "HTTP 429 /v1/products/9436: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 8132,
+      "name": "Montessori Wooden Clothes Drying Rack with Storage for Kids",
+      "error": "HTTP 429 /v1/products/8132: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9434,
+      "name": "Montessori Wooden Clothes Drying Rack with Grey Storage",
+      "error": "HTTP 429 /v1/products/9434: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9435,
+      "name": "Montessori Wooden Clothes Drying Rack with Green Storage",
+      "error": "HTTP 429 /v1/products/9435: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9259,
+      "name": "Wicker Storage Basket Caros",
+      "error": "HTTP 429 /v1/products/9259: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 2234,
+      "name": "TOKU Stockholm Sneakers - Grey",
+      "error": "HTTP 429 /v1/products/2234: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9261,
+      "name": "Wicker Storage Basket Celia",
+      "error": "HTTP 429 /v1/products/9261: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3511,
+      "name": "Eeva Tropics Tan Through Sarong",
+      "error": "HTTP 429 /v1/products/3511: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 9262,
+      "name": "Wicker Storage Basket Falor",
+      "error": "HTTP 429 /v1/products/9262: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3505,
+      "name": "Terracotta Mandala Tan Through Sarong",
+      "error": "HTTP 429 /v1/products/3505: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3506,
+      "name": "Blue-Purple Mandala Tan Through Sarong",
+      "error": "HTTP 429 /v1/products/3506: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3507,
+      "name": "Green Mandala Tan Through Sarong",
+      "error": "HTTP 429 /v1/products/3507: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3508,
+      "name": "Moonlight Tropics Tan Through Sarong",
+      "error": "HTTP 429 /v1/products/3508: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7169,
+      "name": "Make-Up Bag Set of 2 - Picnic With Flowers",
+      "error": "HTTP 429 /v1/products/7169: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7170,
+      "name": "Make-Up Bag Set of 2 - Baby Pink",
+      "error": "HTTP 429 /v1/products/7170: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7148,
+      "name": "Large Make-Up Bag - Green Striped",
+      "error": "HTTP 429 /v1/products/7148: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7149,
+      "name": "Large Make-Up Bag - Green Garden",
+      "error": "HTTP 429 /v1/products/7149: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7150,
+      "name": "Large Make-Up Bag - Flower Power",
+      "error": "HTTP 429 /v1/products/7150: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7151,
+      "name": "Large Make-Up Bag - Blue Stripes",
+      "error": "HTTP 429 /v1/products/7151: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7152,
+      "name": "Large Make-Up Bag - Spring Garden",
+      "error": "HTTP 429 /v1/products/7152: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7153,
+      "name": "Large Make-Up Bag - Red Flowers",
+      "error": "HTTP 429 /v1/products/7153: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7154,
+      "name": "Large Make-Up Bag - Picnic With Flowers",
+      "error": "HTTP 429 /v1/products/7154: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7155,
+      "name": "Large Make-Up Bag - Baby Pink",
+      "error": "HTTP 429 /v1/products/7155: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7156,
+      "name": "Large Make-Up Bag - Latte",
+      "error": "HTTP 429 /v1/products/7156: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 7157,
+      "name": "Large Make-Up Bag - Coral",
+      "error": "HTTP 429 /v1/products/7157: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 5983,
+      "name": "Montessori Wooden Tray Accessories",
+      "error": "HTTP 429 /v1/products/5983: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3540,
+      "name": "Table Runner, Recycled Fabric - Nord 1",
+      "error": "HTTP 429 /v1/products/3540: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    },
+    {
+      "id": 3541,
+      "name": "Table Runner, Recycled Fabric - Nord 2",
+      "error": "HTTP 429 /v1/products/3541: {\"error\":{\"code\":\"RATE_LIMITED\",\"message\":\"Too many requests. Please try again later.\"}}",
+      "eligible": false
+    }
+  ]
+}
