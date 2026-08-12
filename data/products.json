@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T00:32:41.565Z",
+  "generatedAt": "2026-08-12T00:34:27.573Z",
   "source": "cj",
   "mode": "live-api-empty",
   "selection": {
@@ -14,7 +14,7 @@
       "usdToEur": 0.866551,
       "source": "ecb"
     },
-    "note": "Every published product passed CJ Product List V2 Germany/verified-warehouse filters and a second variant-level inventory check requiring countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified."
+    "note": "Product List V2 is used only for discovery. Every published product must independently pass the CJ variant inventory endpoint with countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified."
   },
   "products": []
 }
