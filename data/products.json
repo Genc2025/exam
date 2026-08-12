@@ -1,10 +1,20 @@
 {
-  "generatedAt": null,
+  "generatedAt": "2026-08-12T00:32:41.565Z",
   "source": "cj",
-  "mode": "awaiting-api-token",
+  "mode": "live-api-empty",
   "selection": {
     "market": "DE",
-    "note": "No live CJ product data is stored until the CJ_API_KEY workflow sync succeeds."
+    "warehouseCountries": [
+      "DE"
+    ],
+    "verifiedWarehouseOnly": true,
+    "minStock": 25,
+    "maxProducts": 24,
+    "exchangeRate": {
+      "usdToEur": 0.866551,
+      "source": "ecb"
+    },
+    "note": "Every published product passed CJ Product List V2 Germany/verified-warehouse filters and a second variant-level inventory check requiring countryCode=DE and verifiedWarehouse=1. This is not a claim of German sales volume. Checkout remains disabled until freight and compliance are verified."
   },
   "products": []
 }
