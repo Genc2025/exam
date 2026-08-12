@@ -1,0 +1,1098 @@
+{
+  "generatedAt": "2026-08-12T01:34:48.036Z",
+  "source": "cj",
+  "configuredCountries": [
+    "DE",
+    "AT",
+    "BE",
+    "BG",
+    "HR",
+    "CY",
+    "CZ",
+    "DK",
+    "EE",
+    "FI",
+    "FR",
+    "GR",
+    "HU",
+    "IE",
+    "IT",
+    "LV",
+    "LT",
+    "LU",
+    "MT",
+    "NL",
+    "PL",
+    "PT",
+    "RO",
+    "SK",
+    "SI",
+    "ES",
+    "SE"
+  ],
+  "globalWarehouses": [
+    {
+      "countryCode": "US",
+      "areaEn": "United States",
+      "disabled": false
+    },
+    {
+      "countryCode": "CN",
+      "areaEn": "China",
+      "disabled": false
+    },
+    {
+      "countryCode": "MX",
+      "areaEn": "Mexico",
+      "disabled": false
+    },
+    {
+      "countryCode": "CA",
+      "areaEn": "Canada",
+      "disabled": false
+    },
+    {
+      "countryCode": "GB",
+      "areaEn": "United Kingdom",
+      "disabled": false
+    },
+    {
+      "countryCode": "DE",
+      "areaEn": "Germany",
+      "disabled": false
+    },
+    {
+      "countryCode": "FR",
+      "areaEn": "France",
+      "disabled": false
+    },
+    {
+      "countryCode": "AU",
+      "areaEn": "Australia",
+      "disabled": false
+    },
+    {
+      "countryCode": "ES",
+      "areaEn": "Spain",
+      "disabled": false
+    },
+    {
+      "countryCode": "JP",
+      "areaEn": "Japan",
+      "disabled": false
+    }
+  ],
+  "countries": {
+    "DE": {
+      "advertisedByGlobalWarehouseList": true,
+      "verified": {
+        "totalRecords": 1,
+        "totalPages": 1,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 1,
+        "totalPages": 1,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 16,
+        "totalPages": 16,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 17,
+        "totalPages": 17,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": [
+        {
+          "id": "58490D32-D5BB-4EE3-A2DA-12FECD3A60BB",
+          "sku": "CJNSFJST00001",
+          "name": "3D Sports Knee Pad",
+          "category": "Sports Accessories",
+          "warehouseInventoryNum": 6,
+          "totalVerifiedInventory": 27,
+          "listedNum": 2232,
+          "nowPrice": "1.52",
+          "sellPrice": "1.65 -- 6.76"
+        }
+      ]
+    },
+    "AT": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "BE": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "BG": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "HR": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "CY": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "CZ": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "DK": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "EE": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "FI": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "FR": {
+      "advertisedByGlobalWarehouseList": true,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 5,
+        "totalPages": 5,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 5,
+        "totalPages": 5,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "GR": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "HU": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "IE": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "IT": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "LV": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "LT": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "LU": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "MT": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "NL": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "PL": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "PT": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "RO": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "SK": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "SI": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    },
+    "ES": {
+      "advertisedByGlobalWarehouseList": true,
+      "verified": {
+        "totalRecords": 25,
+        "totalPages": 25,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 25,
+        "totalPages": 25,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 9,
+        "totalPages": 9,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 34,
+        "totalPages": 34,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": [
+        {
+          "id": "2412050847261618800",
+          "sku": "CJCZ2234028",
+          "name": "PHOFAY MOUSSE BLUSH CREAM",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 1577,
+          "totalVerifiedInventory": 13220,
+          "listedNum": 505,
+          "nowPrice": null,
+          "sellPrice": "1.59 -- 12.72"
+        },
+        {
+          "id": "2406270830381607000",
+          "sku": "CJCZ2070162",
+          "name": "PHOFAY Super Coverage Concealer",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 1201,
+          "totalVerifiedInventory": 4549,
+          "listedNum": 734,
+          "nowPrice": null,
+          "sellPrice": "2.18 -- 13.08"
+        },
+        {
+          "id": "1791411289785380864",
+          "sku": "CJCZ2037682",
+          "name": "PHOFAY Luminous Powder Blush",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 974,
+          "totalVerifiedInventory": 29509,
+          "listedNum": 566,
+          "nowPrice": null,
+          "sellPrice": "3.10 -- 18.60"
+        },
+        {
+          "id": "1795261101102342144",
+          "sku": "CJCZ2047491",
+          "name": "PHOFAY Double-Take Cream & Powder Blush Duo",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 867,
+          "totalVerifiedInventory": 13542,
+          "listedNum": 1073,
+          "nowPrice": null,
+          "sellPrice": "3.48 -- 17.40"
+        },
+        {
+          "id": "2411270128541621000",
+          "sku": "CJYY2225190",
+          "name": "PHOFAY MASHED POTATOES EYESHADOW",
+          "category": "Eyeshadow",
+          "warehouseInventoryNum": 827,
+          "totalVerifiedInventory": 19297,
+          "listedNum": 243,
+          "nowPrice": null,
+          "sellPrice": "2.32 -- 18.56"
+        },
+        {
+          "id": "1791643240295305216",
+          "sku": "CJJT2038068",
+          "name": "PHOFAY Juicy Lip Oil",
+          "category": "Home Office Storage",
+          "warehouseInventoryNum": 807,
+          "totalVerifiedInventory": 14146,
+          "listedNum": 884,
+          "nowPrice": null,
+          "sellPrice": "2.00 -- 4.00"
+        },
+        {
+          "id": "2407030400031621700",
+          "sku": "CJCZ2074229",
+          "name": "PHOFAY Hydrating Makeup Primer",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 705,
+          "totalVerifiedInventory": 3549,
+          "listedNum": 1317,
+          "nowPrice": null,
+          "sellPrice": "1.90 -- 8.78"
+        },
+        {
+          "id": "2408260320391605600",
+          "sku": "CJCZ2120196",
+          "name": "PHOFAY Full Coverage Foundation",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 554,
+          "totalVerifiedInventory": 15064,
+          "listedNum": 1439,
+          "nowPrice": null,
+          "sellPrice": "3.52 -- 35.20"
+        },
+        {
+          "id": "2407030320491614600",
+          "sku": "CJCZ2074197",
+          "name": "PHOFAY Body Shimmer Oil",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 309,
+          "totalVerifiedInventory": 11835,
+          "listedNum": 863,
+          "nowPrice": null,
+          "sellPrice": "2.99 -- 8.97"
+        },
+        {
+          "id": "2408150544151612100",
+          "sku": "CJKH2111087",
+          "name": "PHOFAY Velvet Lip Gloss",
+          "category": "Lipstick",
+          "warehouseInventoryNum": 160,
+          "totalVerifiedInventory": 13818,
+          "listedNum": 667,
+          "nowPrice": null,
+          "sellPrice": "1.80 -- 14.40"
+        },
+        {
+          "id": "2406180509401609600",
+          "sku": "CJKH2062845",
+          "name": "PHOFAY Nude Lipliner Kit",
+          "category": "Lipstick",
+          "warehouseInventoryNum": 124,
+          "totalVerifiedInventory": 1757,
+          "listedNum": 750,
+          "nowPrice": null,
+          "sellPrice": "3.50 -- 10.50"
+        },
+        {
+          "id": "2411250611241611900",
+          "sku": "CJHZ2223396",
+          "name": "PHOFAY Colorful Mascara",
+          "category": "Makeup Brushes",
+          "warehouseInventoryNum": 120,
+          "totalVerifiedInventory": 4001,
+          "listedNum": 415,
+          "nowPrice": null,
+          "sellPrice": "2.52 -- 15.12"
+        },
+        {
+          "id": "2406290817461625000",
+          "sku": "CJYY2071647",
+          "name": "PHOFAY Contour Stick",
+          "category": "Eyeshadow",
+          "warehouseInventoryNum": 119,
+          "totalVerifiedInventory": 7877,
+          "listedNum": 574,
+          "nowPrice": null,
+          "sellPrice": "2.72 -- 16.32"
+        },
+        {
+          "id": "1790187718702542848",
+          "sku": "CJKH2034719",
+          "name": "PHOFAY Mousse Liquid Blush",
+          "category": "Lipstick",
+          "warehouseInventoryNum": 119,
+          "totalVerifiedInventory": 9541,
+          "listedNum": 1497,
+          "nowPrice": null,
+          "sellPrice": "2.00 -- 12.00"
+        },
+        {
+          "id": "1795383390359785472",
+          "sku": "CJCZ2048033",
+          "name": "PHOFAY Setting Soft Touch Loose Powder",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 116,
+          "totalVerifiedInventory": 19758,
+          "listedNum": 1234,
+          "nowPrice": null,
+          "sellPrice": "4.22 -- 16.88"
+        },
+        {
+          "id": "1795746559951380480",
+          "sku": "CJCZ2048956",
+          "name": "PHOFAY Ultra-Glossy Lip Gloss",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 115,
+          "totalVerifiedInventory": 7893,
+          "listedNum": 1008,
+          "nowPrice": null,
+          "sellPrice": "1.80 -- 14.40"
+        },
+        {
+          "id": "2505070935021604200",
+          "sku": "CJCZ2370694",
+          "name": "C-F019 Shining High Gloss",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 90,
+          "totalVerifiedInventory": 13018,
+          "listedNum": 145,
+          "nowPrice": null,
+          "sellPrice": "4.92 -- 29.52"
+        },
+        {
+          "id": "1790923312701382656",
+          "sku": "CJKH2036487",
+          "name": "PHOFAY Non-Sticky Lip Gloss",
+          "category": "Lipstick",
+          "warehouseInventoryNum": 88,
+          "totalVerifiedInventory": 12098,
+          "listedNum": 615,
+          "nowPrice": null,
+          "sellPrice": "1.80 -- 18.00"
+        },
+        {
+          "id": "1791411822801719296",
+          "sku": "CJCZ2037686",
+          "name": "PHOFAY Matte Setting Pressed Powder",
+          "category": "Makeup Set",
+          "warehouseInventoryNum": 80,
+          "totalVerifiedInventory": 18679,
+          "listedNum": 1380,
+          "nowPrice": null,
+          "sellPrice": "2.90 -- 23.20"
+        },
+        {
+          "id": "2409070222331618900",
+          "sku": "CJKH2130850",
+          "name": "PHOFAY Mirror Moisturizing Lip Gloss",
+          "category": "Lipstick",
+          "warehouseInventoryNum": 72,
+          "totalVerifiedInventory": 8747,
+          "listedNum": 300,
+          "nowPrice": null,
+          "sellPrice": "2.14 -- 17.12"
+        }
+      ]
+    },
+    "SE": {
+      "advertisedByGlobalWarehouseList": false,
+      "verified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "verifiedWithIsWarehouseTrue": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "unverified": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "allStock": {
+        "totalRecords": 0,
+        "totalPages": 0,
+        "pageSize": 1,
+        "pageNumber": 1
+      },
+      "samples": []
+    }
+  },
+  "summary": {
+    "countriesWithVerifiedStock": [
+      {
+        "countryCode": "DE",
+        "verified": 1,
+        "verifiedWithIsWarehouseTrue": 1,
+        "unverified": 16,
+        "allStock": 17,
+        "advertisedByGlobalWarehouseList": true
+      },
+      {
+        "countryCode": "ES",
+        "verified": 25,
+        "verifiedWithIsWarehouseTrue": 25,
+        "unverified": 9,
+        "allStock": 34,
+        "advertisedByGlobalWarehouseList": true
+      }
+    ],
+    "totalVerifiedCountryProductMatches": 26,
+    "note": "Counts are country-product matches and may include the same product in more than one country. Use product inventory endpoint for final per-product verification."
+  }
+}
