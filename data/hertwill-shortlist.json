@@ -1,0 +1,173 @@
+{
+  "generatedAt": "2026-08-12T02:17:08.638Z",
+  "source": "Hertwill Public API research snapshot",
+  "note": "Public Hertwill API currently redacts wholesale and shipping prices as null. Shortlist is based on verified public stock, EU shipping region, Germany route metadata, origin and category risk only. Profit cannot be verified until authenticated pricing is available.",
+  "candidateCount": 5,
+  "shortlist": [
+    {
+      "id": 6302,
+      "sku": "leash-travel",
+      "name": "Leash – Travel",
+      "brandId": 165,
+      "brand": "Matteo",
+      "category": "Pet Supplies",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 314,
+        "listName": "EE flat-rate EU - Matteo April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100
+    },
+    {
+      "id": 7205,
+      "sku": "5906508784372",
+      "name": "Origami Nursery Mobile - Gold Dust",
+      "brandId": 186,
+      "brand": "moi mili",
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 316,
+        "listName": "EE flat-rate EU - moi mili April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100
+    },
+    {
+      "id": 7206,
+      "sku": "5904119248856",
+      "name": "Origami Nursery Mobile - Vintage Vibe",
+      "brandId": 186,
+      "brand": "moi mili",
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 316,
+        "listName": "EE flat-rate EU - moi mili April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100
+    },
+    {
+      "id": 7208,
+      "sku": "5904119243219",
+      "name": "Origami Nursery Mobile - White",
+      "brandId": 186,
+      "brand": "moi mili",
+      "category": "Home & Garden",
+      "originCountryCode": "PL",
+      "stock": 20,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 316,
+        "listName": "EE flat-rate EU - moi mili April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": true,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 100
+    },
+    {
+      "id": 5495,
+      "sku": "8435392628952",
+      "name": "Decorative Basket Tractor",
+      "brandId": 167,
+      "brand": "Lorena Canals",
+      "category": "Furniture & Nursery",
+      "originCountryCode": "PL",
+      "stock": 5,
+      "stockStatus": "instock",
+      "shipsEU": true,
+      "germanyShippingRoutePresent": true,
+      "germanyShipping": {
+        "listId": 304,
+        "listName": "EE flat-rate EU - Lorena Canals April 2026",
+        "originIsoCode": "PL",
+        "destinationIsoCode": "DE",
+        "price": null,
+        "originCountry": "Poland",
+        "destinationCountry": "Germany"
+      },
+      "wholesalePrice": null,
+      "salePrice": null,
+      "riskBlocked": false,
+      "relevance": false,
+      "shippingRegions": [
+        {
+          "code": "EU",
+          "name": "European Union"
+        }
+      ],
+      "score": 85
+    }
+  ]
+}
