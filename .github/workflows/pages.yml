@@ -27,7 +27,7 @@ jobs:
           ref: ${{ github.sha }}
           fetch-depth: 1
 
-      - name: Verify CJ storefront assets
+      - name: Verify Virello multi-source storefront assets
         run: |
           set -euo pipefail
           test -f index.html
@@ -35,22 +35,28 @@ jobs:
           test -f src/store-cj.css
           test -f src/economics-ui.js
           test -f src/economics-ui.css
+          test -f src/hertwill-merge.js
           test -f scripts/sync-cj-europe-v4.mjs
           test -f data/products.json
+          test -f data/hertwill-products.json
           test -f data/catalog-config.json
           node --check src/store-cj.js
           node --check src/economics-ui.js
+          node --check src/hertwill-merge.js
           node --check scripts/sync-cj-europe-v4.mjs
           node - <<'NODE'
           const fs = require('fs');
-          const feed = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
+          const cj = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
+          const hertwill = JSON.parse(fs.readFileSync('data/hertwill-products.json', 'utf8'));
           const config = JSON.parse(fs.readFileSync('data/catalog-config.json', 'utf8'));
-          if (feed.source !== 'cj') throw new Error('Catalog source must be cj.');
+          if (cj.source !== 'cj') throw new Error('Primary catalog source must remain cj.');
+          if (hertwill.source !== 'hertwill') throw new Error('Hertwill catalog source is invalid.');
+          if (!Array.isArray(hertwill.products) || !hertwill.products.length) throw new Error('Hertwill catalog is empty.');
           if (config.market !== 'DE') throw new Error('Market must be DE.');
           if (config.warehouseRegion !== 'EUROPE') throw new Error('Warehouse region must be EUROPE.');
           if (!Array.isArray(config.warehouseCountries) || config.warehouseCountries.length < 10) throw new Error('Europe warehouse country set is incomplete.');
           if (!(Number(config.minStock) >= 1)) throw new Error('minStock must be at least 1.');
-          console.log(`Static CJ Europe storefront validation passed with ${feed.products?.length || 0} products.`);
+          console.log(`Virello multi-source validation passed: CJ=${cj.products?.length || 0}, Hertwill=${hertwill.products.length}.`);
           NODE
 
       - name: Build isolated storefront
@@ -63,7 +69,9 @@ jobs:
           cp src/store-cj.css _site/src/
           cp src/economics-ui.js _site/src/
           cp src/economics-ui.css _site/src/
+          cp src/hertwill-merge.js _site/src/
           cp data/products.json _site/data/
+          cp data/hertwill-products.json _site/data/
           touch _site/.nojekyll
           printf 'VIRELLO %s\n' "$GITHUB_SHA" > _site/build.txt
 
