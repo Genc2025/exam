@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T01:48:02.148Z",
+  "generatedAt": "2026-08-12T01:52:55.301Z",
   "source": "cj",
   "mode": "live-api-europe",
   "selection": {
@@ -3903,12 +3903,12 @@
         "raw": "167.89"
       },
       "sourceCurrency": "USD",
-      "stock": 20,
+      "stock": 18,
       "warehouses": [
         {
           "countryCode": "GB",
           "areaEn": "United Kingdom",
-          "stock": 20,
+          "stock": 18,
           "verified": true,
           "euMember": false,
           "customsRiskToGermany": true
@@ -3935,7 +3935,7 @@
       "hasVideo": false,
       "videoList": [],
       "adCandidate": false,
-      "score": 18.61,
+      "score": 18.1,
       "sellReady": false,
       "sellReadyReason": "CJ verified European warehouse inventory is present. Germany delivery cost/time, variant-level stock, payment, legal and product-specific compliance must still be verified before checkout."
     },
