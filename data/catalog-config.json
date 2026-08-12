@@ -3,8 +3,7 @@
   "currency": "EUR",
   "warehouseRegion": "EUROPE",
   "warehouseCountries": [
-    "AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE",
-    "GB", "CH", "NO", "IS", "LI"
+    "AD", "AL", "AT", "BA", "BE", "BG", "CH", "CY", "CZ", "DE", "DK", "EE", "ES", "FI", "FR", "GB", "GR", "HR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MC", "MD", "ME", "MK", "MT", "NL", "NO", "PL", "PT", "RO", "RS", "SE", "SI", "SK", "SM", "TR", "UA", "VA", "XK"
   ],
   "searchPageSize": 100,
   "maxDiscoveryPagesPerWarehouse": 60,
