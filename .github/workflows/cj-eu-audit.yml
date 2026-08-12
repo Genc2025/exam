@@ -18,7 +18,7 @@ concurrency:
 jobs:
   audit:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,7 +35,7 @@ jobs:
         env:
           CJ_API_KEY: ${{ secrets.CJ_API_KEY }}
           CJ_API_BASE: https://developers.cjdropshipping.com/api2.0/v1
-          CJ_API_DELAY_MS: 1800
+          CJ_API_DELAY_MS: 3000
         run: node scripts/audit-cj-eu-inventory.mjs
 
       - name: Commit audit result
